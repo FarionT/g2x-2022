@@ -138,3 +138,31 @@
 .footer-info p {
     font-size: 10pt;
 }
+
+/* CSS PAGE DOWNLOAD */
+
+.button-game {
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    font-size: 30px;
+}
+
+.box-game {
+    width: 600px;
+    height: 350px;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.button-choose {
+    width: 200px;
+}
+
+.profile {
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    border: 3px solid black;
+}

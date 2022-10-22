@@ -16,7 +16,86 @@
 <body>
     <div class="container">
         <?php require_once('header.html'); ?>
-
+        <div class="d-flex justify-content-around mt-5">
+            <button class="button-game align-self-center"><</button>
+            <div class="box-game"></div>
+            <button class="button-game align-self-center">></button>
+        </div>
+        <div class="d-flex flex-column align-items-center mt-5">
+            <h1 class="mx-auto mt-5">GAME TITLE GAME TITLE</h1>
+            <h3 class="mb-5">Team Name</h3>
+            <div>
+                <button class="button-choose rounded-pill py-2 me-3"><h4>DOWNLOAD</h4></button>
+                <button class="button-choose rounded-pill py-2"><h4>VOTE</h4></button>
+            </div>
+        </div>
+        <div class="w-75 d-flex mx-auto mt-5">
+            <div class="d-flex flex-column">
+                <h3>ABOUT GAME</h3>
+                <p>Description Description Description Description Description Description Description Description Description Description</p>
+            </div>
+            <div class="d-flex flex-column">
+                <h3>HOW TO PLAY</h3>
+                <p>Description Description Description Description Description Description Description Description Description Description</p>
+            </div>
+        </div>
+        <div class="w-75 d-flex flex-column mx-auto mt-5">
+            <h3 class="mb-5">CREATORS</h3>
+            <div class="d-flex">
+                <div style="margin-right: 220px">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="profile rounded-circle"></div>
+                        <div class="ms-3">
+                            <h5 class="mb-3">Name Name Name</h5>
+                            <p class="mb-0">Job Description</p>
+                            <p>NIM NIM NIM(Jurusan)</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="profile rounded-circle"></div>
+                        <div class="ms-3">
+                            <h5 class="mb-3">Name Name Name</h5>
+                            <p class="mb-0">Job Description</p>
+                            <p>NIM NIM NIM(Jurusan)</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="profile rounded-circle"></div>
+                        <div class="ms-3">
+                            <h5 class="mb-3">Name Name Name</h5>
+                            <p class="mb-0">Job Description</p>
+                            <p>NIM NIM NIM(Jurusan)</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="profile rounded-circle"></div>
+                        <div class="ms-3">
+                            <h5 class="mb-3">Name Name Name</h5>
+                            <p class="mb-0">Job Description</p>
+                            <p>NIM NIM NIM(Jurusan)</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="profile rounded-circle"></div>
+                        <div class="ms-3">
+                            <h5 class="mb-3">Name Name Name</h5>
+                            <p class="mb-0">Job Description</p>
+                            <p>NIM NIM NIM(Jurusan)</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="profile rounded-circle"></div>
+                        <div class="ms-3">
+                            <h5 class="mb-3">Name Name Name</h5>
+                            <p class="mb-0">Job Description</p>
+                            <p>NIM NIM NIM(Jurusan)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <?php require_once('footer.html'); ?>
     </div>
