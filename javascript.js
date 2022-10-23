@@ -1,43 +1,28 @@
-window.addEventListener('resize', () => {
-    if (window.innerWidth <= 600) {
-        $('#competitions').hide();
-        $('#webinar').hide();
-        $('#game-entries-2').hide();
-    }
+let sliderContainer = document.querySelector('.game-entries-div');
+let innerSlider = document.querySelector('#game-entries-1');
+
+let pressed = false;
+let startX;
+let x;
+
+sliderContainer.addEventListener("mousemove", (e) => {
+    if (!pressed) return;
+    e.preventDefault();
+
+    x = e.offsetX;
+
+    innerSlider.style.left = `${x - startX}px`;
 });
 
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 600) {
-      $('#competitions').show();
-      $('#webinar').show();
-      $('#game-entries-2').show();
-  }
-});
+const checkBoundary = () => {
+    let outer = sliderContainer.getBoundingClientRect();
+    let inner = innerSlider.getBoundingClientRect();
 
-var counter = 1;
+    if (parseInt(innerSlider.style.left) > 0) {
+        innerSlider.style.left = "0px";
+    }
 
-$('#gantiKiriShows').click(function(){
-    if(counter == 2) {
-      counter = 1;
-      $('#competitions').hide();
-      $('#games').show();
+    if (inner.right < outer.right) {
+        innerSlider.style.left = `-${inner.width - outer.width}px`;
     }
-    else if(counter == 3) {
-      counter = 2;
-      $('#webinar').hide();
-      $('#competitions').show();
-    }
-});
-
-$('#gantiKananShows').click(function(){
-    if(counter == 1) {
-      counter = 2;
-      $('#games').hide();
-      $('#competitions').show();
-    }
-    else if(counter == 2) {
-      counter = 3;
-      $('#competitions').hide();
-      $('#webinar').show();
-    } 
-});
+};
