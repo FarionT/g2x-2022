@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="indexstyle.css" rel="stylesheet" />
+        <link href="indexstyles.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>G2X 2022</title> 
     </head>
@@ -81,11 +81,12 @@
             <br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br />
-            <h2 class="button-arrow text-center mb-5">GAME ENTRIES →</h2>
-            <div class="d-flex justify-content-md-around">
+            <h2 class="button-arrow text-center game-entries-def mb-5">GAME ENTRIES →</h2>
+            <h2 class="button-arrow text-center game-entries-resp mb-5">GAME ENTRIES</h2>
+            <div class="d-flex justify-content-md-around game-entries-div">
                 <button class="button-game-entries align-self-center">&lt</button>
                 <div>
-                    <div id="game-entries-1" class="d-flex flex-column flex-md-row justify-content-md-around mb-5">
+                    <div id="game-entries-1" class="d-flex justify-content-md-around mb-5"> 
                         <div class="game-entries-box mb-5 mb-md-0 me-md-5">1</div>
                         <div class="game-entries-box mb-5 mb-md-0">2</div>
                         <div class="game-entries-box ms-md-5">3</div>
@@ -127,5 +128,6 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
     </body>
 </html>
