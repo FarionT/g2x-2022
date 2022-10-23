@@ -166,3 +166,7 @@
     background-color: gray;
     border: 3px solid black;
 }
+
+.button-choose>p{
+    font-size: 12px;
+}
