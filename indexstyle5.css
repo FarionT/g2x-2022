@@ -75,6 +75,48 @@
     display: none;
 }
 
+@media screen and (max-width: 1200px) {
+    #judul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #judul-welcome, #judul-g2x {
+        font-size: 50px;
+    }
+
+    #judul-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #games, #competitions, #webinar {
+        margin-bottom: 100px;
+    }
+
+    .button-arrow-def {
+        display: none;
+    }
+
+    .button-arrow-resp {
+        display: block;
+    }
+
+    .sub-judul {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #judul-welcome, #judul-g2x {
+        font-size: 40px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #judul {
         display: flex;
@@ -104,16 +146,8 @@
         display: none;
     }
 
-    #games, #competitions, #webinar {
-        margin-bottom: 100px;
-    }
-
-    .button-arrow-def {
-        display: none;
-    }
-
-    .button-arrow-resp {
-        display: block;
+    .sub-judul {
+        font-size: 30px;
     }
 
     #game-entries-2 {

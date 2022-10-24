@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet" />
-        <link href="indexstyle4.css" rel="stylesheet" />
+        <link href="indexstyle5.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <title>G2X 2022</title> 
@@ -14,7 +14,7 @@
         <div class="container">
            <?php require_once('header.html'); ?>
             <div id="judul" class="mt-5">
-                <div class="d-flex flex-md-column flex-row mb-md-0 mb-3">
+                <div class="d-flex flex-xl-column flex-row mb-xl-0 mb-3">
                     <h1 class="mb-0" id="judul-welcome">WELCOME TO&nbsp;</h1>
                     <h1 class="mt-0" id="judul-g2x">G2X</h1> <br />
                 </div>
@@ -30,10 +30,10 @@
                 <p class="mb-0">Copywriting Copywriting Copywriting</p>
                 <p class="mt-0 mb-5">Copywriting Copywriting Copywriting</p>
             </div>
-            <div class="d-flex flex-column flex-md-row justify-content-md-around">
+            <div class="d-flex flex-column flex-lg-row justify-content-lg-around">
                 <div id="games">
                     <button class="button-arrow button-arrow-resp mb-5">→</button>
-                    <h2>GAMES</h2>
+                    <h2 class="sub-judul">GAMES</h2>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5">Copywriting Copywriting Copywriting</p>
@@ -41,7 +41,7 @@
                 </div>
                 <div id="competitions">
                     <button class="button-arrow button-arrow-resp mb-5">→</button>
-                    <h2>COMPETITIONS</h2>
+                    <h2 class="sub-judul">COMPETITIONS</h2>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5">Copywriting Copywriting Copywriting</p>
@@ -49,7 +49,7 @@
                 </div>
                 <div id="webinar">
                     <button class="button-arrow button-arrow-resp mb-5">→</button>
-                    <h2>WEBINAR</h2>
+                    <h2 class="sub-judul">WEBINAR</h2>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5">Copywriting Copywriting Copywriting</p>
