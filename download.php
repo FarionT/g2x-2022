@@ -15,7 +15,7 @@ $creator = $key->query($sql);
 // vote count
 $sql = "select count(*) vote from voting where gameid = {$gameID}";
 $voteCount = $key->query($sql);
-$voteCount = $voteCount->fetch(PDO::FETCH_ASSOC)['vote']
+$voteCount = $voteCount->fetch(PDO::FETCH_ASSOC)['vote'];
 
 ?>
 <!DOCTYPE html>
@@ -118,7 +118,6 @@ $voteCount = $voteCount->fetch(PDO::FETCH_ASSOC)['vote']
             type: "post",    //request type,
             data: {vote: '<?= $gameID?>', ReURL: 'http://localhost/g2x/g2x-2022/login/google/vote.php', ReReURL: '<?= $url?>'},
             success:function(result){
-                console.log(result);
                 document.getElementById("modal-content").innerHTML = result;
                 if(result.substring(0, 2) == '<a'){
                     return;
@@ -127,7 +126,15 @@ $voteCount = $voteCount->fetch(PDO::FETCH_ASSOC)['vote']
                     return;
                 }
                 if(result.substring(0, 9) == '<p>Thanks'){
-                    document.getElementById("btn_voting").innerHTML = "<h4>VOTE (<?= $voteCount+1?>)</h4>"
+                    $.ajax({
+                        url:"Login/Google/voteCount.php",
+                        type: "post",
+                        data: {vote: '<?= $gameID?>'},
+                        success:function(re){
+                            console.log(re);
+                            document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">VOTE ("+re+")</p>";
+                        }
+                    });
                 }
             }
         });
