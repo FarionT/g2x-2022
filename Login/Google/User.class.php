@@ -83,4 +83,8 @@ class User {
         $query = "INSERT INTO ".$this->voteTbl." (gameid, user_id) VALUES ('{$gameid}', '{$data['oauth_uid']}')";
         $insert = $this->db->query($query); 
     }
+    function UnVote($data = array(), $gameid){
+        $query = "DELETE FROM ".$this->voteTbl." where gameid = '$gameid' AND user_id = '{$data['oauth_uid']}')";
+        $insert = $this->db->query($query); 
+    }
 }

@@ -1,4 +1,7 @@
 <?php
+if(!session_id()){
+    session_start();
+}
 $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://"; 
 $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 require_once("connect.php");
@@ -17,6 +20,13 @@ $sql = "select count(*) vote from voting where gameid = {$gameID}";
 $voteCount = $key->query($sql);
 $voteCount = $voteCount->fetch(PDO::FETCH_ASSOC)['vote'];
 
+// Is vote
+$isVote = false;
+if(isset($_SESSION['userData'])){
+    $sql = "select count(*) isVote from voting where gameid = {$gameID} AND user_id = {$_SESSION['userData']['oauth_uid']}";
+    $isVote = $key->query($sql);
+    $isVote = $isVote->fetch(PDO::FETCH_ASSOC)['isVote'] ? true : false;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +58,7 @@ $voteCount = $voteCount->fetch(PDO::FETCH_ASSOC)['vote'];
                 <h3 class="mb-5 text-center">By <?= $game['team_name'] ?></h3>
                 <div class="d-flex justify-content-center container-lg-fluid">
                     <a href="<?= $game['download_link'] ?>"><button class="button-choose rounded-pill py-2 mx-2"><p class="m-auto">DOWNLOAD</p></button></a>
-                    <button class="button-choose rounded-pill py-2 mx-2" id="btn_voting"><p class="m-auto">VOTE (<?= $voteCount?>)</p></button>
+                    <button class="button-choose rounded-pill py-2 mx-2" id="btn_voting"><p class="m-auto"><?php if($isVote) echo "UNVOTE ($voteCount)"; else echo "VOTE ($voteCount)";?></p></button>
                 </div>
                 <div id="modal-content"  style="display:none">
                 
@@ -122,17 +132,25 @@ $voteCount = $voteCount->fetch(PDO::FETCH_ASSOC)['vote'];
                 if(result.substring(0, 2) == '<a'){
                     return;
                 }
-                if(result.substring(0, 8) == '<p>You a'){
-                    return;
+                if(result.substring(0, 8) == '<p>You u'){
+                    $.ajax({
+                        url:"Login/Google/voteCount.php",
+                        type: "post",
+                        data: {vote: '<?= $gameID?>', user: '<?= $_SESSION['userData']['oauth_uid']?>', doing: 'unvote'},
+                        success:function(re){
+                            console.log(re);
+                            document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">VOTE ("+re+")</p>";
+                        }
+                    });
                 }
                 if(result.substring(0, 9) == '<p>Thanks'){
                     $.ajax({
                         url:"Login/Google/voteCount.php",
                         type: "post",
-                        data: {vote: '<?= $gameID?>'},
+                        data: {vote: '<?= $gameID?>',user: '<?= $_SESSION['userData']['oauth_uid']?>', doing: 'vote'},
                         success:function(re){
                             console.log(re);
-                            document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">VOTE ("+re+")</p>";
+                            document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">UNVOTE ("+re+")</p>";
                         }
                     });
                 }
