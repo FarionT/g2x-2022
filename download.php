@@ -63,7 +63,7 @@ if(isset($_SESSION['userData'])){
                     <a href="<?= $game['download_link'] ?>"><button class="button-choose rounded-pill py-2 mx-2"><p class="m-auto">DOWNLOAD</p></button></a>
                     <button class="button-choose rounded-pill py-2 mx-2" id="btn_voting"><p class="m-auto"><?php if($isVote) echo "UNVOTE ($voteCount)"; else echo "VOTE ($voteCount)";?></p></button>
                 </div>
-                <div id="modal-content"  style="display:none">
+                <div id="modal-content" style="display:none">
                 
                 </div>
             </div>
@@ -131,6 +131,7 @@ if(isset($_SESSION['userData'])){
             type: "post",    //request type,
             data: {vote: '<?= $gameID?>', ReURL: 'http://localhost/g2x/g2x-2022/login/google/vote.php', ReReURL: '<?= $url?>'},
             success:function(result){
+                console.log(result);
                 document.getElementById("modal-content").innerHTML = result;
                 if(result.substring(0, 2) == '<a'){
                     return;
@@ -139,7 +140,7 @@ if(isset($_SESSION['userData'])){
                     $.ajax({
                         url:"Login/Google/voteCount.php",
                         type: "post",
-                        data: {vote: '<?= $gameID?>', user: '<?= $_SESSION['userData']['oauth_uid']?>', doing: 'unvote'},
+                        data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'unvote'},
                         success:function(re){
                             console.log(re);
                             document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">VOTE ("+re+")</p>";
@@ -150,7 +151,7 @@ if(isset($_SESSION['userData'])){
                     $.ajax({
                         url:"Login/Google/voteCount.php",
                         type: "post",
-                        data: {vote: '<?= $gameID?>',user: '<?= $_SESSION['userData']['oauth_uid']?>', doing: 'vote'},
+                        data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'vote'},
                         success:function(re){
                             console.log(re);
                             document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">UNVOTE ("+re+")</p>";
