@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 23, 2022 at 11:22 AM
+-- Generation Time: Oct 25, 2022 at 07:15 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -70,14 +70,10 @@ INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`
 (2, 'Title 2', 'Team 2', 'ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ', 'HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 ', 'https://drive.google.com/drive/folders/1EWZBUic6L6rPaDLTQf2zkfuh61xlcqKS'),
 (3, 'Title 3', 'Team 3', 'ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ', 'HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 ', 'https://drive.google.com/drive/folders/1a2aaV_O0NOE_GPt7YcEDtAEsQdkUDF_F'),
 (4, 'Title 4', 'Team 4', 'ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ', 'HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 ', 'https://drive.google.com/drive/folders/1O-GcTReE6Jjr7gsNDIYcYvDP9uvYN50G'),
-(5, 'Title 5', '', 'Short Desc 5', '', 'https://drive.google.com/drive/folders/19qSKeWyi3HnrJ-60E23FpEyUJcIOS4s1'),
-(6, 'Title 6', '', 'Short Desc 6', '', 'https://drive.google.com/drive/folders/1OhqS_qNqQYRoystLfVaaxa5-6PVDRGg-'),
-(7, 'Title 7', '', 'Short Desc 7', '', 'https://drive.google.com/drive/folders/1DKYtirUeHqChtn5CYiOUlJGh6icDGQb9'),
-(8, 'Title 8', '', 'Short Desc 8', '', 'https://drive.google.com/drive/folders/1J1LCJTb0qwkQGGHMB6mBGFuLQdVxyvYG'),
-(9, 'Title 9', '', 'Short Desc 9', '', ''),
-(13, 'Title 10', '', 'Short Desc 10', '', ''),
-(14, 'Title 11', '', 'Short Desc 11', '', ''),
-(16, 'Title 12', '', 'Short Desc 12', '', '');
+(5, 'Title 5', 'Team 5', 'ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ', 'HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 ', 'https://drive.google.com/drive/folders/19qSKeWyi3HnrJ-60E23FpEyUJcIOS4s1'),
+(6, 'Title 6', 'Team 6', 'ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ', 'HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 ', 'https://drive.google.com/drive/folders/1OhqS_qNqQYRoystLfVaaxa5-6PVDRGg-'),
+(7, 'Title 7', 'Team 7', 'ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ', 'HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 ', 'https://drive.google.com/drive/folders/1DKYtirUeHqChtn5CYiOUlJGh6icDGQb9'),
+(8, 'Title 8', 'Team 8', 'ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ', 'HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 ', 'https://drive.google.com/drive/folders/1J1LCJTb0qwkQGGHMB6mBGFuLQdVxyvYG');
 
 -- --------------------------------------------------------
 
@@ -104,7 +100,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `oauth_provider`, `oauth_uid`, `first_name`, `last_name`, `email`, `gender`, `locale`, `picture`, `created`, `modified`) VALUES
-(2, 'google', '112245201279323118066', 'RICH', 'EVAN LEE (00000055564)', 'rich.evan@student.umn.ac.id', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu0KYKtoBPIS_c6eAEKJRAyDgoEV6Yn0BBLRj3Fx=s96-c', '2022-10-08 14:52:52', '2022-10-08 14:52:52');
+(2, 'google', '112245201279323118066', 'RICH', 'EVAN LEE (00000055564)', 'rich.evan@student.umn.ac.id', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu0KYKtoBPIS_c6eAEKJRAyDgoEV6Yn0BBLRj3Fx=s96-c', '2022-10-08 14:52:52', '2022-10-08 14:52:52'),
+(5, 'google', '114850611052126455915', 'Super', 'Gamer', 'supergamerzone134@gmail.com', '', 'en-GB', 'https://lh3.googleusercontent.com/a/ALm5wu03_LUrw-qLR_9Gfei0jIEm7QvwoBJ_UWhJ3uO2=s96-c', '2022-10-24 06:52:21', '2022-10-25 19:00:01'),
+(6, 'google', '106392472297681206816', 'けんじ_kenzi', '', 'pixelmantm@gmail.com', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu28eowWZLqmpbsreDYRXqRQzqhxLB2ytzjVOJcBMA=s96-c', '2022-10-25 16:00:54', '2022-10-25 16:07:22');
 
 -- --------------------------------------------------------
 
@@ -122,8 +120,7 @@ CREATE TABLE `voting` (
 --
 
 INSERT INTO `voting` (`gameID`, `user_id`) VALUES
-(1, '106392472297681206816'),
-(1, '114850611052126455915');
+(1, '106392472297681206816');
 
 --
 -- Indexes for dumped tables
@@ -161,13 +158,13 @@ ALTER TABLE `voting`
 -- AUTO_INCREMENT for table `game_entries`
 --
 ALTER TABLE `game_entries`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
