@@ -49,20 +49,6 @@ for ($i = 0; $i < page_amount($countRow['count']); $i++) {
 }
 
 $pageBg[$page] = "color: white; background-color: rgb(105, 105, 105)";
-
-$prev = $page - 1;
-if ($prev < 0) $prev = 0;
-
-$next = $page + 1;
-if ($next > page_amount($countRow['count']) - 1) $next = $page;
-
-if ($page < 3) {
-    $startpage = 0;
-    $endpage = 3;
-} else {
-    $startpage = $page - 2;
-    $endpage = $page + 1;
-}
 ?>
 
 <!DOCTYPE html>
@@ -79,7 +65,7 @@ if ($page < 3) {
         crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body>
+  <body id="game-entries">
     <div class="container-fluid justify-content-center m-0 p-0">
         <header>
             <?php include("header.html"); ?>
@@ -132,12 +118,8 @@ if ($page < 3) {
         <div id="game-mobile" class="text-center">
             <div class="mb-5 text-center" data-aos="fade-down">
                 <form action="game_entries.php" method="get">
-                    <button type="submit" class="btn btn-light btn-arrow mx-1 border border-2 border-dark rounded-circle" name="page" value="<?= $prev ?>">
-                        <b><</b>
-                    </button>
-
                     <?php 
-                    for ($i = $startpage; $i < $endpage; $i++) {
+                    for ($i = 0; $i < page_amount($countRow['count']); $i++) {
                     ?>
                         <button type="submit" class="btn btn-light btn-page mx-1 border border-2 border-dark rounded-circle" style="<?= $pageBg[$i] ?>" name="page" value="<?= $i ?>">
                             <b><?= $num = $i + 1 ?></b>
@@ -145,10 +127,6 @@ if ($page < 3) {
                     <?php 
                     }
                     ?>
-
-                    <button type="submit" class="btn btn-light btn-arrow mx-1 border border-2 border-dark rounded-circle" name="page" value="<?= $next ?>">
-                        <b>></b>
-                    </button>
                 </form>
             </div>
 
@@ -164,7 +142,7 @@ if ($page < 3) {
                             </a>
                             <h5 class="mt-3 px-3"><b><?= $mbData[$i]['title'] ?></b></h5>
                             <p class="px-5">
-                                <?= $mbData[$i]['shortdesc'] ?>
+                                <?= $mbData[$i]['game_desc'] ?>
                             </p>
                             <!-- <h5 class="mt-3 px-3"><b>GAME TITLE GAME TITLE</b></h5>
                             <p class="px-5">
@@ -180,12 +158,8 @@ if ($page < 3) {
 
             <div class="mb-5 text-center" data-aos="fade-up">
                 <form action="game_entries.php" method="get">
-                    <button type="submit" class="btn btn-light btn-arrow mx-1 border border-2 border-dark rounded-circle" name="page" value="<?= $prev ?>">
-                        <b><</b>
-                    </button>
-
                     <?php 
-                    for ($i = $startpage; $i < $endpage; $i++) {
+                    for ($i = 0; $i < page_amount($countRow['count']); $i++) {
                     ?>
                         <button type="submit" class="btn btn-light btn-page mx-1 border border-2 border-dark rounded-circle" style="<?= $pageBg[$i] ?>" name="page" value="<?= $i ?>">
                             <b><?= $num = $i + 1 ?></b>
@@ -193,10 +167,6 @@ if ($page < 3) {
                     <?php 
                     }
                     ?>
-
-                    <button type="submit" class="btn btn-light btn-arrow mx-1 border border-2 border-dark rounded-circle" name="page" value="<?= $next ?>">
-                        <b>></b>
-                    </button>
                 </form>
             </div>
         </div>

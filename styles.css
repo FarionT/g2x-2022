@@ -46,11 +46,11 @@
 
 @media only screen and (min-width: 768px) {
     .navbar-brand img {
-        width: 64px;
+        width: 120px;
     }
 
-    .footer-info {
-        padding-top: 400px;
+    .footer-info h3 {
+        padding-top: 650px;
     }
 
     #game-desktop {
@@ -65,10 +65,10 @@
 
 @media only screen and (max-width: 768px) {
     .navbar-brand img {
-        width: 48px;
+        width: 72px;
     }
 
-    .footer-info {
+    .footer-info h3 {
         padding-top: 250px;
     }
 
@@ -96,6 +96,12 @@
     .game-container p {
         font-size: 9pt;
     }
+}
+
+#game-entries {
+    background-image: url('src/backgrounds/website_game_page.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #game-desktop {
@@ -133,6 +139,12 @@
 
 .btn-arrow b {
     font-size: 16pt;
+}
+
+.footer-info {
+    background-image: url('src/backgrounds/website_footer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .footer-info p {
