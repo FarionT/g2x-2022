@@ -3,7 +3,9 @@
 require_once 'config.php';
 // Include User library file 
 require_once 'User.class.php';
-
+if(!session_id()){
+    session_start();
+}
 if(isset($_GET['code'])){ //login with google
     $gClient->authenticate($_GET['code']); 
     $_SESSION['token'] = $gClient->getAccessToken();
@@ -18,10 +20,11 @@ if(isset($_GET['code'])){ //login with google
     $gpUserData['gender']       = !empty($gpUserProfile['gender'])?$gpUserProfile['gender']:''; 
     $gpUserData['locale']       = !empty($gpUserProfile['locale'])?$gpUserProfile['locale']:''; 
     $gpUserData['picture']      = !empty($gpUserProfile['picture'])?$gpUserProfile['picture']:''; 
-     
+    
     // Insert or update user data to the database 
     $gpUserData['oauth_provider'] = 'google'; 
-    $userData = $user->checkUser($gpUserData); 
+    $userData = $user->checkUser($gpUserData);
+    $_SESSION['userData'] = $userData;
     exit(header('location: '.$_SESSION['ReReURL']));
 } 
 
@@ -44,14 +47,14 @@ if($gClient->getAccessToken()){ //already login with google
      
     // Insert or update user data to the database 
     $gpUserData['oauth_provider'] = 'google'; 
-    $userData = $user->checkUser($gpUserData); 
+    $userData = $user->checkUser($gpUserData);
+    $_SESSION['userData'] = $userData;
     if(!empty($userData)){// user login
         if($user->isVote($gpUserData, $_POST['vote'])){
-            echo "<p>You already voted</p>";
+            echo "<p>You unvoted</p>";
         }
         else{
             echo "<p>Thanks for voting</p>";
-            $user->DoVote($gpUserData, $_POST['vote']);
         }
     }
 }
