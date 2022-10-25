@@ -7,8 +7,8 @@ $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 require_once("connect.php");
 
 $gameID = 1;
-if(isset($_GET['game'])) 
-    if(is_numeric($_GET['game'])) $gameID = $_GET['game'];
+if(isset($_GET['id'])) 
+    if(is_numeric($_GET['id'])) $gameID = $_GET['id'];
 
 
 // game detail
@@ -133,7 +133,7 @@ if(isset($_SESSION['userData'])){
         $.ajax({
             url:"Login/Google/vote.php",    //the page containing php script
             type: "post",    //request type,
-            data: {vote: '<?= $gameID?>', ReURL: 'http://localhost/g2x/g2x-2022/login/google/vote.php', ReReURL: '<?= $url?>'},
+            data: {vote: '<?= $gameID?>', ReURL: 'http://localhost:8000/login/google/vote.php', ReReURL: '<?= $url?>'},
             success:function(result){
                 console.log(result);
                 document.getElementById("modal-content").innerHTML = result;
