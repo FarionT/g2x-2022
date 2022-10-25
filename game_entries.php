@@ -111,7 +111,7 @@ if ($page < 3) {
                             </a>
                             <h5 class="mt-3 px-3"><b><?= $dataRow['title'] ?></b></h5>
                             <p class="px-5">
-                                <?= $dataRow['shortdesc'] ?>
+                                <?= $dataRow['game_desc'] ?>
                             </p>
                             <!-- <h5 class="mt-3 px-3"><b>GAME TITLE GAME TITLE</b></h5>
                             <p class="px-5">
