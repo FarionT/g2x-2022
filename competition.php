@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body{background-image: url("src/bg-website-game-page.png");}
+    </style>
 </head>
 <body>
-    
+    <header>
+        <?php include("header.html"); ?>
+    </header>
     <div class="container col col-lg-10">
-        <header>
-            <?php include("header.html"); ?>
-        </header>
+        
         <div class="container text-center my-5">
             <div id="pageTitle" class="mb-3 h1" >COMPTETITIONS</div>
             <p style="font-size:small" class="mb-0">Copywriting Copywriting Copywriting</p>
