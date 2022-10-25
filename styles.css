@@ -50,7 +50,7 @@
     }
 
     .footer-info h3 {
-        padding-top: 650px;
+        padding-top: 600px;
     }
 
     #game-desktop {
@@ -99,9 +99,9 @@
 }
 
 #game-entries {
-    background-image: url('src/backgrounds/website_game_page.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url('src/backgrounds/website_game_page.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
 }
 
 #game-desktop {
