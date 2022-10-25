@@ -1,0 +1,184 @@
+@media only screen and (min-width: 992px) {
+    #game-mobile {
+        display: none;
+    }
+
+    .header-navbar {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    #title h1 {
+        font-size: 48pt;
+    }
+    
+    #title p {
+        font-size: 12pt;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #game-desktop {
+        display: none;
+    }
+
+    .header-navbar {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #title h1 {
+        font-size: 56pt;
+    }
+    
+    #title p {
+        font-size: 14pt;
+    }
+
+    .game-container h5 {
+        font-size: 24pt;
+    }
+
+    .game-container p {
+        font-size: 14pt;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand img {
+        width: 120px;
+    }
+
+    .footer-info h3 {
+        padding-top: 600px;
+    }
+
+    #game-desktop {
+        margin-left: 210px;
+        margin-right: 210px;
+    }
+
+    #title {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand img {
+        width: 72px;
+    }
+
+    .footer-info h3 {
+        padding-top: 250px;
+    }
+
+    #game-mobile {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #title {
+        margin-top: 50px;
+    }
+
+    #title h1 {
+        font-size: 26pt;
+    }
+    
+    #title p {
+        font-size: 10pt;
+    }
+
+    .game-container h5 {
+        font-size: 14pt;
+    }
+    
+    .game-container p {
+        font-size: 9pt;
+    }
+}
+
+#game-entries {
+    background-image: url('src/backgrounds/website_game_page.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
+
+#game-desktop {
+    margin-top: 120px;
+}
+
+#game-mobile {
+    margin-top: 80px;
+}
+
+.game-container {
+    width: auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.image-container img {
+    transition: transform .3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.btn-page {
+    padding: 8px 16px !important;
+    font-size: 18pt;
+}
+
+.btn-arrow {
+    padding: 4px 13px !important;
+}
+
+.btn-arrow b {
+    font-size: 16pt;
+}
+
+.footer-info {
+    background-image: url('src/backgrounds/website_footer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-info p {
+    font-size: 10pt;
+}
+
+/* CSS PAGE DOWNLOAD */
+
+.button-game {
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    font-size: 30px;
+}
+
+.box-game {
+    width: 600px;
+    height: 350px;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.button-choose {
+    width: 200px;
+}
+
+.profile {
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    border: 3px solid black;
+}
+
+.button-choose>p{
+    font-size: 12px;
+}

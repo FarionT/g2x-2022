@@ -5,7 +5,11 @@ if(!session_id()){
 $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://"; 
 $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 require_once("connect.php");
+
 $gameID = 1;
+if(isset($_GET['game'])) 
+    if(is_numeric($_GET['game'])) $gameID = $_GET['game'];
+
 
 // game detail
 $sql = "select * from game_entries where id = {$gameID}";
