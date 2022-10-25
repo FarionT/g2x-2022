@@ -13,9 +13,6 @@
         width: 40px;
       }
 
-      * {
-        background-color: white;
-      }
 
       .navbar-expand-md {
         background-color: rgba(245, 233, 5, 0);
@@ -45,7 +42,7 @@
       .webinar {
         margin-bottom: 80px;
       }
-
+      body{background-image: url("src/bg-website-game-page.png");}
       #btnRegist {
         padding-left: 50px;
         padding-right: 50px;

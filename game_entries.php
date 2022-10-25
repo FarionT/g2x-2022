@@ -64,6 +64,9 @@ $pageBg[$page] = "color: white; background-color: rgb(105, 105, 105)";
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
         crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+            body{background-image: url("src/bg-website-game-page.png");}
+    </style>
   </head>
   <body id="game-entries">
     <div class="container-fluid justify-content-center m-0 p-0">
