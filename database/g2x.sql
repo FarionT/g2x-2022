@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2022 at 07:15 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Waktu pembuatan: 26 Okt 2022 pada 16.37
+-- Versi server: 10.4.25-MariaDB
+-- Versi PHP: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `creator`
+-- Struktur dari tabel `creator`
 --
 
 CREATE TABLE `creator` (
@@ -37,7 +37,7 @@ CREATE TABLE `creator` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `creator`
+-- Dumping data untuk tabel `creator`
 --
 
 INSERT INTO `creator` (`gameID`, `name`, `nim`, `major`, `job`, `profile`) VALUES
@@ -49,7 +49,7 @@ INSERT INTO `creator` (`gameID`, `name`, `nim`, `major`, `job`, `profile`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `game_entries`
+-- Struktur dari tabel `game_entries`
 --
 
 CREATE TABLE `game_entries` (
@@ -58,27 +58,28 @@ CREATE TABLE `game_entries` (
   `team_name` varchar(50) NOT NULL,
   `game_desc` varchar(300) NOT NULL,
   `HowToPlay` varchar(300) NOT NULL,
-  `download_link` varchar(150) NOT NULL
+  `download_link` varchar(150) NOT NULL,
+  `game_cover` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `game_entries`
+-- Dumping data untuk tabel `game_entries`
 --
 
-INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`, `download_link`) VALUES
-(1, 'Title 1', 'Team 1', 'ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ', 'HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1', 'https://drive.google.com/drive/folders/1YHK5h_chV9VNBsjGZKVxfC-nHqBPsGq3'),
-(2, 'Title 2', 'Team 2', 'ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ', 'HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 ', 'https://drive.google.com/drive/folders/1EWZBUic6L6rPaDLTQf2zkfuh61xlcqKS'),
-(3, 'Title 3', 'Team 3', 'ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ', 'HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 ', 'https://drive.google.com/drive/folders/1a2aaV_O0NOE_GPt7YcEDtAEsQdkUDF_F'),
-(4, 'Title 4', 'Team 4', 'ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ', 'HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 ', 'https://drive.google.com/drive/folders/1O-GcTReE6Jjr7gsNDIYcYvDP9uvYN50G'),
-(5, 'Title 5', 'Team 5', 'ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ', 'HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 ', 'https://drive.google.com/drive/folders/19qSKeWyi3HnrJ-60E23FpEyUJcIOS4s1'),
-(6, 'Title 6', 'Team 6', 'ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ', 'HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 ', 'https://drive.google.com/drive/folders/1OhqS_qNqQYRoystLfVaaxa5-6PVDRGg-'),
-(7, 'Title 7', 'Team 7', 'ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ', 'HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 ', 'https://drive.google.com/drive/folders/1DKYtirUeHqChtn5CYiOUlJGh6icDGQb9'),
-(8, 'Title 8', 'Team 8', 'ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ', 'HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 ', 'https://drive.google.com/drive/folders/1J1LCJTb0qwkQGGHMB6mBGFuLQdVxyvYG');
+INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`, `download_link`, `game_cover`) VALUES
+(1, 'Title 1', 'Team 1', 'ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ', 'HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1', 'https://drive.google.com/drive/folders/1YHK5h_chV9VNBsjGZKVxfC-nHqBPsGq3', ''),
+(2, 'Title 2', 'Team 2', 'ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ', 'HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 ', 'https://drive.google.com/drive/folders/1EWZBUic6L6rPaDLTQf2zkfuh61xlcqKS', ''),
+(3, 'Title 3', 'Team 3', 'ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ', 'HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 ', 'https://drive.google.com/drive/folders/1a2aaV_O0NOE_GPt7YcEDtAEsQdkUDF_F', ''),
+(4, 'Title 4', 'Team 4', 'ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ', 'HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 ', 'https://drive.google.com/drive/folders/1O-GcTReE6Jjr7gsNDIYcYvDP9uvYN50G', ''),
+(5, 'Title 5', 'Team 5', 'ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ', 'HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 ', 'https://drive.google.com/drive/folders/19qSKeWyi3HnrJ-60E23FpEyUJcIOS4s1', ''),
+(6, 'Title 6', 'Team 6', 'ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ', 'HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 ', 'https://drive.google.com/drive/folders/1OhqS_qNqQYRoystLfVaaxa5-6PVDRGg-', ''),
+(7, 'Title 7', 'Team 7', 'ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ', 'HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 ', 'https://drive.google.com/drive/folders/1DKYtirUeHqChtn5CYiOUlJGh6icDGQb9', ''),
+(8, 'Title 8', 'Team 8', 'ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ', 'HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 ', 'https://drive.google.com/drive/folders/1J1LCJTb0qwkQGGHMB6mBGFuLQdVxyvYG', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -96,7 +97,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id`, `oauth_provider`, `oauth_uid`, `first_name`, `last_name`, `email`, `gender`, `locale`, `picture`, `created`, `modified`) VALUES
@@ -107,7 +108,7 @@ INSERT INTO `users` (`id`, `oauth_provider`, `oauth_uid`, `first_name`, `last_na
 -- --------------------------------------------------------
 
 --
--- Table structure for table `voting`
+-- Struktur dari tabel `voting`
 --
 
 CREATE TABLE `voting` (
@@ -116,7 +117,7 @@ CREATE TABLE `voting` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `voting`
+-- Dumping data untuk tabel `voting`
 --
 
 INSERT INTO `voting` (`gameID`, `user_id`) VALUES
@@ -127,41 +128,41 @@ INSERT INTO `voting` (`gameID`, `user_id`) VALUES
 --
 
 --
--- Indexes for table `creator`
+-- Indeks untuk tabel `creator`
 --
 ALTER TABLE `creator`
   ADD UNIQUE KEY `nim` (`nim`);
 
 --
--- Indexes for table `game_entries`
+-- Indeks untuk tabel `game_entries`
 --
 ALTER TABLE `game_entries`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `voting`
+-- Indeks untuk tabel `voting`
 --
 ALTER TABLE `voting`
   ADD UNIQUE KEY `user_id` (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `game_entries`
+-- AUTO_INCREMENT untuk tabel `game_entries`
 --
 ALTER TABLE `game_entries`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
