@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 26 Okt 2022 pada 16.37
--- Versi server: 10.4.25-MariaDB
--- Versi PHP: 7.4.30
+-- Generation Time: Oct 26, 2022 at 04:54 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `creator`
+-- Table structure for table `creator`
 --
 
 CREATE TABLE `creator` (
@@ -37,7 +37,7 @@ CREATE TABLE `creator` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `creator`
+-- Dumping data for table `creator`
 --
 
 INSERT INTO `creator` (`gameID`, `name`, `nim`, `major`, `job`, `profile`) VALUES
@@ -49,7 +49,7 @@ INSERT INTO `creator` (`gameID`, `name`, `nim`, `major`, `job`, `profile`) VALUE
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `game_entries`
+-- Table structure for table `game_entries`
 --
 
 CREATE TABLE `game_entries` (
@@ -63,7 +63,7 @@ CREATE TABLE `game_entries` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `game_entries`
+-- Dumping data for table `game_entries`
 --
 
 INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`, `download_link`, `game_cover`) VALUES
@@ -79,7 +79,7 @@ INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -97,18 +97,18 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data untuk tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `oauth_provider`, `oauth_uid`, `first_name`, `last_name`, `email`, `gender`, `locale`, `picture`, `created`, `modified`) VALUES
 (2, 'google', '112245201279323118066', 'RICH', 'EVAN LEE (00000055564)', 'rich.evan@student.umn.ac.id', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu0KYKtoBPIS_c6eAEKJRAyDgoEV6Yn0BBLRj3Fx=s96-c', '2022-10-08 14:52:52', '2022-10-08 14:52:52'),
-(5, 'google', '114850611052126455915', 'Super', 'Gamer', 'supergamerzone134@gmail.com', '', 'en-GB', 'https://lh3.googleusercontent.com/a/ALm5wu03_LUrw-qLR_9Gfei0jIEm7QvwoBJ_UWhJ3uO2=s96-c', '2022-10-24 06:52:21', '2022-10-25 19:00:01'),
-(6, 'google', '106392472297681206816', 'けんじ_kenzi', '', 'pixelmantm@gmail.com', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu28eowWZLqmpbsreDYRXqRQzqhxLB2ytzjVOJcBMA=s96-c', '2022-10-25 16:00:54', '2022-10-25 16:07:22');
+(5, 'google', '114850611052126455915', 'Super', 'Gamer', 'supergamerzone134@gmail.com', '', 'en-GB', 'https://lh3.googleusercontent.com/a/ALm5wu03_LUrw-qLR_9Gfei0jIEm7QvwoBJ_UWhJ3uO2=s96-c', '2022-10-24 06:52:21', '2022-10-26 16:53:50'),
+(6, 'google', '106392472297681206816', '???_kenzi', '', 'pixelmantm@gmail.com', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu28eowWZLqmpbsreDYRXqRQzqhxLB2ytzjVOJcBMA=s96-c', '2022-10-25 16:00:54', '2022-10-25 16:07:22');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `voting`
+-- Table structure for table `voting`
 --
 
 CREATE TABLE `voting` (
@@ -117,52 +117,54 @@ CREATE TABLE `voting` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `voting`
+-- Dumping data for table `voting`
 --
 
 INSERT INTO `voting` (`gameID`, `user_id`) VALUES
-(1, '106392472297681206816');
+(1, '106392472297681206816'),
+(1, '114850611052126455915'),
+(2, '114850611052126455915');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `creator`
+-- Indexes for table `creator`
 --
 ALTER TABLE `creator`
   ADD UNIQUE KEY `nim` (`nim`);
 
 --
--- Indeks untuk tabel `game_entries`
+-- Indexes for table `game_entries`
 --
 ALTER TABLE `game_entries`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `voting`
+-- Indexes for table `voting`
 --
 ALTER TABLE `voting`
-  ADD UNIQUE KEY `user_id` (`user_id`);
+  ADD PRIMARY KEY (`gameID`,`user_id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `game_entries`
+-- AUTO_INCREMENT for table `game_entries`
 --
 ALTER TABLE `game_entries`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT untuk tabel `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
