@@ -30,7 +30,6 @@ function page_amount($countRow) {
 $start = 0;
 $end = 3;
 $mbData = array();
-$pageBg = array();
 
 for ($i = 0; $i < $page; $i++) {
     $start += 4;
@@ -43,12 +42,6 @@ $data = $key->query($query);
 $query = "SELECT COUNT(*) AS count FROM game_entries";
 $count = $key->query($query);
 $countRow = $count->fetch(PDO::FETCH_ASSOC);
-
-for ($i = 0; $i < page_amount($countRow['count']); $i++) {
-    array_push($pageBg, "");
-}
-
-$pageBg[$page] = "color: white; background-color: rgb(105, 105, 105)";
 ?>
 
 <!DOCTYPE html>
@@ -102,11 +95,6 @@ $pageBg[$page] = "color: white; background-color: rgb(105, 105, 105)";
                             <p class="px-5">
                                 <?= $dataRow['game_desc'] ?>
                             </p>
-                            <!-- <h5 class="mt-3 px-3"><b>GAME TITLE GAME TITLE</b></h5>
-                            <p class="px-5">
-                                Short description Short description
-                                Short description Short description
-                            </p> -->
                         </div>
                     </div>
                 <?php
@@ -124,8 +112,12 @@ $pageBg[$page] = "color: white; background-color: rgb(105, 105, 105)";
                     <?php 
                     for ($i = 0; $i < page_amount($countRow['count']); $i++) {
                     ?>
-                        <button type="submit" class="btn btn-light btn-page mx-1 border border-2 border-dark rounded-circle" style="<?= $pageBg[$i] ?>" name="page" value="<?= $i ?>">
-                            <b><?= $num = $i + 1 ?></b>
+                        <button type="submit" class="btn btn-link btn-page p-0 rounded-circle" name="page" value="<?= $i ?>">
+                        <?php if ($i != $page) {?>
+                            <img src="src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
+                        <?php } else {?>
+                            <img src="src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
+                        <?php }?>
                         </button>
                     <?php 
                     }
@@ -147,11 +139,6 @@ $pageBg[$page] = "color: white; background-color: rgb(105, 105, 105)";
                             <p class="px-5">
                                 <?= $mbData[$i]['game_desc'] ?>
                             </p>
-                            <!-- <h5 class="mt-3 px-3"><b>GAME TITLE GAME TITLE</b></h5>
-                            <p class="px-5">
-                                Short description Short description
-                                Short description Short description
-                            </p> -->
                         </div>
                     </div>
                 <?php 
@@ -159,13 +146,17 @@ $pageBg[$page] = "color: white; background-color: rgb(105, 105, 105)";
                 ?>
             </div>
 
-            <div class="mb-5 text-center" data-aos="fade-up">
+            <div class="mb-5 text-center" data-aos="fade-down">
                 <form action="game_entries.php" method="get">
                     <?php 
                     for ($i = 0; $i < page_amount($countRow['count']); $i++) {
                     ?>
-                        <button type="submit" class="btn btn-light btn-page mx-1 border border-2 border-dark rounded-circle" style="<?= $pageBg[$i] ?>" name="page" value="<?= $i ?>">
-                            <b><?= $num = $i + 1 ?></b>
+                        <button type="submit" class="btn btn-link btn-page p-0 rounded-circle" name="page" value="<?= $i ?>">
+                        <?php if ($i != $page) {?>
+                            <img src="src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
+                        <?php } else {?>
+                            <img src="src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
+                        <?php }?>
                         </button>
                     <?php 
                     }
