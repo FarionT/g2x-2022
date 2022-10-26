@@ -1,6 +1,4 @@
-window.addEventListener('resize', () => {
-    if(window.innerWidth <= 600) {
-
+if(window.innerWidth <= 600) {
         let sliderContainer = document.querySelector('.game-entries-div');
         let innerSlider = document.querySelector('.game-entries-1');
 
@@ -50,4 +48,3 @@ window.addEventListener('resize', () => {
         });
 
     }
-});

@@ -5,9 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet" />
-        <link href="indexstyle7.css" rel="stylesheet" />
+        <link href="indexstyle8.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <title>G2X 2022</title> 
         <style>
             body{background-image: url("src/bg-website-landing-page.png"); background-size: 1600px;}
@@ -25,7 +24,7 @@
                 </div>
                 <p class="mb-0">Copywriting Copywriting Copywriting</p>
                 <p class="mt-0" style="margin-bottom: 100px;">Copywriting Copywriting Copywriting</p>
-                <a href="#judulsubjudul" id="judul-button"><img class="button-logo" src="src/index/awan_start.png" />START</a>
+                <a href="#judulsubjudul" id="judul-button"><img class="button-logo" src="src/index/awan_start1.png" /></a>
             </div>
             <div class="d-flex flex-column align-items-center mb-5">
                 <h2 id="judulsubjudul">G2X</h2>
@@ -103,9 +102,8 @@
             <br /><br /><br /><br /><br /><br /><br /><br /><br />
             <?php require_once('footer.php'); ?>
         </div>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script src="javaindex1.js"></script>
+        <script src="javaindex2.js"></script>
     </body>
 </html>
