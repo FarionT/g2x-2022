@@ -91,7 +91,7 @@
 
 <!-- content -->
     <div id="kosong"></div>
-    <div class="container-fluid">
+    <div class="container-fluid justify-content-center">
     <header>  
       <?php require_once('header.html'); ?>
   </header>

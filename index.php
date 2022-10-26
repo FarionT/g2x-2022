@@ -14,7 +14,7 @@
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid justify-content-center m-0 p-0">
             <header>
                 <?php require_once('header.html'); ?>
             </header>
