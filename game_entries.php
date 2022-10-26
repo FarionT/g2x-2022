@@ -1,11 +1,10 @@
 <?php 
 require_once('connect.php');
 
-if (empty($_GET['page'])) {
-    $page = 0;
-} else {
-    $page = $_GET['page'];
-}
+$page = 0;
+if(isset($_GET['page'])) 
+    if(is_numeric($_GET['page'])) $page = $_GET['page'];
+
 
 function amount($countRow) {
     if ($countRow % 3 == 0) {
@@ -64,7 +63,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
   <body id="game-entries">
     <div class="container-fluid justify-content-center m-0 p-0">
         <header>
-            <?php include("header.html"); ?>
+            <?php include("header.php"); ?>
         </header>
         
         <div id="title" class="text-center mx-3" data-aos="fade-down">
@@ -166,7 +165,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
         </div>
 
         <footer>
-            <?php include("footer.html"); ?>
+            <?php include("footer.php"); ?>
         </footer>
     </div>
     <script 

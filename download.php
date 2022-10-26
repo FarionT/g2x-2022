@@ -52,7 +52,7 @@ if(isset($_SESSION['userData'])){
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
-    <?php require_once('header.html'); ?>
+    <?php require_once('header.php'); ?>
     <div class="container col col-lg-10">
         <div class="container container-md-fluid">
             <div class="d-flex justify-content-around mt-5">
@@ -113,7 +113,7 @@ if(isset($_SESSION['userData'])){
             </div>
         </div>
 
-        <?php require_once('footer.html'); require_once("close.php");?>
+        <?php require_once('footer.php'); require_once("close.php");?>
     </div>
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
