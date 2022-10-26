@@ -64,7 +64,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
   <body id="game-entries">
     <div class="container-fluid justify-content-center m-0 p-0">
         <header>
-            <?php include("header.html"); ?>
+            <?php include("header.php"); ?>
         </header>
         
         <div id="title" class="text-center mx-3" data-aos="fade-down">
@@ -166,7 +166,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
         </div>
 
         <footer>
-            <?php include("footer.html"); ?>
+            <?php include("footer.php"); ?>
         </footer>
     </div>
     <script 

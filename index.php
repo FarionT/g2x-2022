@@ -16,7 +16,7 @@
     <body>
         <div class="container-fluid justify-content-center m-0 p-0">
             <header>
-                <?php require_once('header.html'); ?>
+                <?php require_once('header.php'); ?>
             </header>
             <div id="judul" class="mt-5">
                 <div class="d-flex flex-xl-column flex-row mb-xl-0 mb-3">
@@ -101,7 +101,7 @@
             </div>
             <br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <?php require_once('footer.html'); ?>
+            <?php require_once('footer.php'); ?>
         </div>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

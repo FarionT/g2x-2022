@@ -93,7 +93,7 @@
     <div id="kosong"></div>
     <div class="container-fluid justify-content-center">
     <header>  
-      <?php require_once('header.html'); ?>
+      <?php require_once('header.php'); ?>
   </header>
       <div id="title">
         <h1 class="d-flex justify-content-center" id="judul" >WEBINAR</h1>
@@ -150,7 +150,7 @@
 
     <!-- footer -->
     <footer>
-            <?php include("footer.html"); ?>
+            <?php include("footer.php"); ?>
         </footer>
       </div>
 </body>
