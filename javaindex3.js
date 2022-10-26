@@ -51,16 +51,32 @@ else {
     var counter = 1;
     $('#button-arrow-left').click(function(){
         if(counter == 2) {
-
-            
+            var box1 = $('#game-entries-box-1').text();
+            var box2 = $('#game-entries-box-2').text();
+            var box3 = $('#game-entries-box-4').text();
+            var box4 = $('#game-entries-box-5').text();
+            $("#game-entries-box-1").text("Slide 1");
+            $("#game-entries-box-2").text(box1);
+            $("#game-entries-box-3").text(box2);
+            $("#game-entries-box-4").text("Slide 2");
+            $("#game-entries-box-5").text(box3);
+            $("#game-entries-box-6").text(box4);
             counter--;
         }
     });
 
     $('#button-arrow-right').click(function(){
         if(counter == 1) {
-
-
+            var box1 = $('#game-entries-box-2').text();
+            var box2 = $('#game-entries-box-3').text();
+            var box3 = $('#game-entries-box-5').text();
+            var box4 = $('#game-entries-box-6').text();
+            $("#game-entries-box-1").text(box1);
+            $("#game-entries-box-2").text(box2);
+            $("#game-entries-box-3").text("Slide 7");
+            $("#game-entries-box-4").text(box3);
+            $("#game-entries-box-5").text(box4);
+            $("#game-entries-box-6").text("Slide 8");
             counter++;
         }
     });

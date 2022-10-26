@@ -44,11 +44,7 @@
 
 .button-arrow-resp {
     display: none;
-}
-
-#game-entries-2 {
-    display: flex;
-    justify-content: space-around;
+   justify-content: space-around;
 }
 
 .game-entries-box {
@@ -57,6 +53,7 @@
     background-color: gray;
     border: 3px solid black;
     border-radius: 10px;
+    margin-left: 150px;
 }
 
 .logo-arrow {
@@ -66,6 +63,7 @@
 .button-game-entries {
     background-color: transparent;
     border: 0px;
+    margin-bottom: 40px;
 }
 
 .footer-box {
@@ -113,10 +111,6 @@
     }
 
     /* DRAGABLE CAROUSEL */
-
-    #game-entries-2 {
-        display: none;
-    }
 
     .button-game-entries {
         display: none;
@@ -176,10 +170,6 @@
 
     /* DRAGABLE CAROUSEL */
 
-    #game-entries-2 {
-        display: none;
-    }
-
     .button-game-entries {
         display: none;
     }
@@ -226,10 +216,6 @@
 
     /* DRAGABLE CAROUSEL */
 
-    #game-entries-2 {
-        display: none;
-    }
-
     .button-game-entries {
         display: none;
     }
@@ -272,10 +258,6 @@
 @media screen and (max-width: 760px) {
     /* DRAGABLE CAROUSEL */
 
-    #game-entries-2 {
-        display: none;
-    }
-
     .button-game-entries {
         display: none;
     }
@@ -317,10 +299,6 @@
 
 @media screen and (max-width: 730px) {
     /* DRAGABLE CAROUSEL */
-
-    #game-entries-2 {
-        display: none;
-    }
 
     .button-game-entries {
         display: none;
@@ -395,10 +373,6 @@
     }
 
     /* DRAGABLE CAROUSEL */
-
-    #game-entries-2 {
-        display: none;
-    }
 
     .button-game-entries {
         display: none;

@@ -34,30 +34,30 @@
             <div class="d-flex flex-column flex-lg-row justify-content-lg-around">
                 <div id="games">
                     <img src="src/index/gameboy.png" class="logo"/>
-                    <button class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></button>
+                    <a href="game_entries.php" class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h2 class="sub-judul">GAMES</h2>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5">Copywriting Copywriting Copywriting</p>
-                    <button class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></button>
+                    <a href="game_entries.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
                 <div id="competitions">
                     <img src="src/index/piala.png" class="logo"/>
-                    <button class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></button>
+                    <a href="competition.php" class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h2 class="sub-judul">COMPETITIONS</h2>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5">Copywriting Copywriting Copywriting</p>
-                    <button class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></button>
+                    <a href="competition.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
                 <div id="webinar">
                     <img src="src/index/laptop.png" class="logo"/>
-                    <button class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></button>
+                    <a href="webinar.php" class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h2 class="sub-judul">WEBINAR</h2>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5">Copywriting Copywriting Copywriting</p>
-                    <button class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></button>
+                    <a href="webinar.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
             </div>
             <br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -66,21 +66,17 @@
             <h2 class="button-arrow text-center game-entries-def mb-5">GAME ENTRIES →</h2>
             <h2 class="button-arrow text-center game-entries-resp mb-5">GAME ENTRIES</h2>
             <div class="body-slider">
-                <div class="d-flex justify-content-xl-around game-entries-div">
-                    <button id="button-arrow-left" class="button-game-entries align-self-center"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
-                    <div>
-                        <div class="game-entries-1 d-flex justify-content-xl-around mb-xl-5"> 
-                            <div class="game-entries-box mb-5 mb-xl-0 me-xl-5">Slide 1</div>
-                            <div class="game-entries-box mb-5 mb-xl-0">Slide 2</div>
-                            <div class="game-entries-box ms-xl-5">Slide 3</div>
-                        </div>
-                        <div id="game-entries-2">
-                            <div class="game-entries-box me-5">Slide 4</div>
-                            <div class="game-entries-box">Slide 5</div>
-                            <div class="game-entries-box ms-5">Slide 6</div>
-                        </div>
+                <div class="d-flex justify-content-xl-center game-entries-div">
+                    <button id="button-arrow-left" class="button-game-entries"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
+                    <div class="game-entries-1 d-flex flex-xl-wrap w-75"> 
+                        <div id="game-entries-box-1" class="game-entries-box mb-5 me-xl-5">Slide 1</div>
+                        <div id="game-entries-box-2" class="game-entries-box ms-xl-0 mb-5">Slide 3</div>
+                        <div id="game-entries-box-3" class="game-entries-box ms-xl-5">Slide 5</div>
+                        <div id="game-entries-box-4" class="game-entries-box mb-5 me-xl-5">Slide 2</div>
+                        <div id="game-entries-box-5" class="game-entries-box ms-xl-0 mb-5">Slide 4</div>
+                        <div id="game-entries-box-6" class="game-entries-box ms-xl-5">Slide 6</div>
                     </div>
-                    <button id="button-arrow-right" class="button-game-entries align-self-center"><img src="src/index/arrow_right.png" class="logo-arrow"/></button>
+                    <button id="button-arrow-right" class="button-game-entries"><img src="src/index/arrow_right.png" class="logo-arrow"/></button>
                 </div>
             </div>
             <br /><br /><br /><br /><br /><br /><br /><br /><br />
