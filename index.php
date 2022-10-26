@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet" />
-        <link href="indexstyle8.css" rel="stylesheet" />
+        <link href="indexstyle9.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>G2X 2022</title> 
         <style>
@@ -66,21 +66,21 @@
             <h2 class="button-arrow text-center game-entries-def mb-5">GAME ENTRIES →</h2>
             <h2 class="button-arrow text-center game-entries-resp mb-5">GAME ENTRIES</h2>
             <div class="body-slider">
-                <div class="d-flex justify-content-md-around game-entries-div">
-                    <button class="button-game-entries align-self-center">&lt</button>
+                <div class="d-flex justify-content-xl-around game-entries-div">
+                    <button class="button-game-entries align-self-center"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
                     <div>
-                        <div class="game-entries-1 d-flex justify-content-md-around mb-md-5"> 
-                            <div class="game-entries-box mb-5 mb-md-0 me-md-5">Slide 1</div>
-                            <div class="game-entries-box mb-5 mb-md-0">Slide 2</div>
-                            <div class="game-entries-box ms-md-5">Slide 3</div>
+                        <div class="game-entries-1 d-flex justify-content-xl-around mb-xl-5"> 
+                            <div class="game-entries-box mb-5 mb-xl-0 me-xl-5">Slide 1</div>
+                            <div class="game-entries-box mb-5 mb-xl-0">Slide 2</div>
+                            <div class="game-entries-box ms-xl-5">Slide 3</div>
                         </div>
                         <div id="game-entries-2">
-                            <div class="game-entries-box me-5"></div>
-                            <div class="game-entries-box"></div>
-                            <div class="game-entries-box ms-5"></div>
+                            <div class="game-entries-box me-5">Slide 4</div>
+                            <div class="game-entries-box">Slide 5</div>
+                            <div class="game-entries-box ms-5">Slide 6</div>
                         </div>
                     </div>
-                    <button class="button-game-entries align-self-center">&gt</button>
+                    <button class="button-game-entries align-self-center"><img src="src/index/arrow_right.png" class="logo-arrow"/></button>
                 </div>
             </div>
             <br /><br /><br /><br /><br /><br /><br /><br /><br />

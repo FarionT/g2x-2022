@@ -1,0 +1,441 @@
+#judul {
+    margin-left: 800px;
+    margin-top: 250px;
+    margin-bottom: 200px;
+}
+
+#judul-welcome {
+    font-size: 65px;
+}
+
+#judul-g2x {
+    font-size: 120px;
+}
+
+#judul-button {
+    margin-right: 50px;
+    padding-left: 0px;
+}
+
+.button-logo {
+    width: 250px;
+    position: relative;
+    left: -5%;
+}
+
+#games, #competitions, #webinar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#competitions {
+    margin-top: 120px;
+}
+
+.img-button-arrow {
+    width: 200px;
+}
+
+.button-arrow {
+    font-size: 40px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.button-arrow-resp {
+    display: none;
+}
+
+#game-entries-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.game-entries-box {
+    width: 250px;
+    height: 120px;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.logo-arrow {
+    width: 100px;
+}
+
+.button-game-entries {
+    background-color: transparent;
+    border: 0px;
+}
+
+.footer-box {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+#button-contact {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.game-entries-def {
+    display: block;
+}
+
+.game-entries-resp {
+    display: none;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+    #judul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #judul-welcome, #judul-g2x {
+        font-size: 50px;
+    }
+
+    #judul-button {
+        display: none;
+    }
+
+    /* DRAGABLE CAROUSEL */
+
+    #game-entries-2 {
+        display: none;
+    }
+
+    .button-game-entries {
+        display: none;
+    }
+
+    .game-entries-def {
+        display: none;
+    }
+
+    .game-entries-resp {
+        display: block;
+    }
+
+    .game-entries-box {
+        height: 150px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+    }
+    
+    .game-entries-div {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 2150px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    .game-entries-1 {
+        width: 150%;
+        display: flex;
+        gap: 10px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #games, #competitions, #webinar {
+        margin-bottom: 100px;
+    }
+
+    .button-arrow-def {
+        display: none;
+    }
+
+    .button-arrow-resp {
+        display: block;
+    }
+
+    .sub-judul {
+        font-size: 45px;
+    }
+
+    /* DRAGABLE CAROUSEL */
+
+    #game-entries-2 {
+        display: none;
+    }
+
+    .button-game-entries {
+        display: none;
+    }
+
+    .game-entries-def {
+        display: none;
+    }
+
+    .game-entries-resp {
+        display: block;
+    }
+
+    .game-entries-box {
+        height: 150px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+    }
+    
+    .game-entries-div {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 3500px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    .game-entries-1 {
+        width: 150%;
+        display: flex;
+        gap: 10px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #judul-welcome, #judul-g2x {
+        font-size: 40px;
+    }
+
+    /* DRAGABLE CAROUSEL */
+
+    #game-entries-2 {
+        display: none;
+    }
+
+    .button-game-entries {
+        display: none;
+    }
+
+    .game-entries-def {
+        display: none;
+    }
+
+    .game-entries-resp {
+        display: block;
+    }
+
+    .game-entries-box {
+        height: 150px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+    }
+    
+    .game-entries-div {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 3480px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    .game-entries-1 {
+        width: 150%;
+        display: flex;
+        gap: 10px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    /* DRAGABLE CAROUSEL */
+
+    #game-entries-2 {
+        display: none;
+    }
+
+    .button-game-entries {
+        display: none;
+    }
+
+    .game-entries-def {
+        display: none;
+    }
+
+    .game-entries-resp {
+        display: block;
+    }
+
+    .game-entries-box {
+        height: 150px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+    }
+    
+    .game-entries-div {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 3420px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    .game-entries-1 {
+        width: 150%;
+        display: flex;
+        gap: 10px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    /* DRAGABLE CAROUSEL */
+
+    #game-entries-2 {
+        display: none;
+    }
+
+    .button-game-entries {
+        display: none;
+    }
+
+    .game-entries-def {
+        display: none;
+    }
+
+    .game-entries-resp {
+        display: block;
+    }
+
+    .game-entries-box {
+        height: 150px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+    }
+    
+    .game-entries-div {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 3480px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    .game-entries-1 {
+        width: 150%;
+        display: flex;
+        gap: 10px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #judul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #judul-welcome, #judul-g2x {
+        font-size: 30px;
+    }
+
+    #competitions {
+        margin-top: 0px;
+    }
+
+    .footer-box {
+        width: 60px;
+        height: 60px;
+        background-color: gray;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    #judul-button {
+        display: none;
+    }
+
+    .sub-judul {
+        font-size: 30px;
+    }
+
+    /* DRAGABLE CAROUSEL */
+
+    #game-entries-2 {
+        display: none;
+    }
+
+    .button-game-entries {
+        display: none;
+    }
+
+    .game-entries-def {
+        display: none;
+    }
+
+    .game-entries-resp {
+        display: block;
+    }
+
+    .game-entries-box {
+        height: 150px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+    }
+    
+    .game-entries-div {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 3240px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    .game-entries-1 {
+        width: 150%;
+        display: flex;
+        gap: 10px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
