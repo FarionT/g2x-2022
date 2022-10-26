@@ -1,5 +1,5 @@
 #judul {
-    margin-left: 800px;
+    margin-left: 50%;
     margin-top: 250px;
     margin-bottom: 200px;
 }
@@ -18,9 +18,8 @@
 }
 
 .button-logo {
-    width: 250px;
+    width: 180px;
     position: relative;
-    left: -5%;
 }
 
 #games, #competitions, #webinar {
@@ -34,7 +33,7 @@
 }
 
 .img-button-arrow {
-    width: 200px;
+    width: 150px;
 }
 
 .button-arrow {
