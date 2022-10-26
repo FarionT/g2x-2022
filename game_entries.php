@@ -1,11 +1,10 @@
 <?php 
 require_once('connect.php');
 
-if (empty($_GET['page'])) {
-    $page = 0;
-} else {
-    $page = $_GET['page'];
-}
+$page = 0;
+if(isset($_GET['page'])) 
+    if(is_numeric($_GET['page'])) $page = $_GET['page'];
+
 
 function amount($countRow) {
     if ($countRow % 3 == 0) {
