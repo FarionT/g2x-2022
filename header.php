@@ -11,17 +11,17 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link pe-5" href="game_entries.php">
-                        <h4 class="ps-1">Games</h4>
+                        <h4 class="ps-1 font_title">Games</h4>
                     </a>
                 </li>
                 <li class="nav-item pe-5">
                     <a class="nav-link" href="competition.php">
-                        <h4 class="ps-1">Competition</h4>
+                        <h4 class="ps-1 font_title">Competition</h4>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="webinar.php">
-                        <h4 class="ps-1">Webinar</h4>
+                        <h4 class="ps-1 font_title">Webinar</h4>
                     </a>
                 </li>
             </ul>
