@@ -93,6 +93,78 @@
     height: 200px;
 }
 
+.game-entries-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.game-entries-1 {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1400px) {
+    #judul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #judul-welcome, #judul-g2x {
+        font-size: 50px;
+    }
+
+    #judul-button {
+        display: none;
+    }
+
+    /* DRAGABLE CAROUSEL */
+
+    .button-game-entries {
+        display: none;
+    }
+
+    .game-entries-def {
+        display: none;
+    }
+
+    .game-entries-resp {
+        display: block;
+    }
+
+    .game-entries-box {
+        height: 150px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .game-entries-div {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 2220px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    .game-entries-1 {
+        width: 150%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #judul {
         display: flex;
@@ -129,6 +201,8 @@
         width: 400px;
         border-radius: 5px;
         background-color: #D9D9D9;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     .game-entries-div {
@@ -143,6 +217,7 @@
     .game-entries-1 {
         width: 150%;
         display: flex;
+        flex-wrap: nowrap;
         gap: 10px;
         pointer-events: none;
         position: absolute;
@@ -187,6 +262,8 @@
         width: 400px;
         border-radius: 5px;
         background-color: #D9D9D9;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     .game-entries-div {
@@ -201,6 +278,7 @@
     .game-entries-1 {
         width: 150%;
         display: flex;
+        flex-wrap: nowrap;
         gap: 10px;
         pointer-events: none;
         position: absolute;
@@ -233,6 +311,8 @@
         width: 400px;
         border-radius: 5px;
         background-color: #D9D9D9;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     .game-entries-div {
@@ -247,6 +327,7 @@
     .game-entries-1 {
         width: 150%;
         display: flex;
+        flex-wrap: nowrap;
         gap: 10px;
         pointer-events: none;
         position: absolute;
@@ -275,6 +356,8 @@
         width: 400px;
         border-radius: 5px;
         background-color: #D9D9D9;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     .game-entries-div {
@@ -289,6 +372,7 @@
     .game-entries-1 {
         width: 150%;
         display: flex;
+        flex-wrap: nowrap;
         gap: 10px;
         pointer-events: none;
         position: absolute;
@@ -317,13 +401,15 @@
         width: 400px;
         border-radius: 5px;
         background-color: #D9D9D9;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     .game-entries-div {
         width: 100%;
         height: 150px;
         position: absolute;
-        top: 3480px;
+        top: 3400px;
         left: 50%;
         transform: translate(-50%, -50%);
         overflow: hidden;
@@ -331,6 +417,7 @@
     .game-entries-1 {
         width: 150%;
         display: flex;
+        flex-wrap: nowrap;
         gap: 10px;
         pointer-events: none;
         position: absolute;
@@ -391,6 +478,8 @@
         width: 400px;
         border-radius: 5px;
         background-color: #D9D9D9;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     .game-entries-div {
@@ -405,6 +494,7 @@
     .game-entries-1 {
         width: 150%;
         display: flex;
+        flex-wrap: nowrap;
         gap: 10px;
         pointer-events: none;
         position: absolute;

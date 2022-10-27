@@ -1,4 +1,4 @@
-if(window.innerWidth <= 1200) {
+if(window.innerWidth <= 1400) {
     let sliderContainer = document.querySelector('.game-entries-div');
     let innerSlider = document.querySelector('.game-entries-1');
 
