@@ -7,7 +7,7 @@
     <link rel="icon" href="src/g2x_logo.png">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="stylecomp2.css">
+    <link rel="stylesheet" href="stylecomp3.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- link font -->
@@ -34,7 +34,7 @@
     </header>
     <div class="container col col-lg-10">
         
-        <div class="container text-center mt-5" id="title" data-aos="fade-down">
+        <div class="container text-center" id="title" data-aos="fade-down">
             <h1 id="pageTitle" class="mb-4 font_title">COMPETITIONS</h1>
             <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
             <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
