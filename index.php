@@ -103,25 +103,25 @@
                 <div class="mx-2">
                     <img src="src/medpar_sponsor/Logo_BinusGDC.PNG" class="footer-box"/>
                 </div>
-                <div class="footer-box mx-2">
+                <div class=" mx-2">
                     <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="footer-box"/>
                 </div>
-                <div class="footer-box mx-2">
+                <div class="mx-2">
                     <img src="src/medpar_sponsor/Logo_jcafest.png" class="footer-box"/>
                 </div>
-                <div class="footer-box mx-2">
+                <div class="mx-2">
                     <img src="src/medpar_sponsor/Logo_MXM.png" class="footer-box"/>
                 </div>
-                <div class="footer-box mx-2">
+                <div class="mx-2">
                     <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="footer-box"/>
                 </div>
             </div>
             <h2 class="button-arrow text-center mt-5 mb-3 font_title">SPONSORS</h2>
             <div class="d-flex justify-content-center">
-                <div class="footer-box mx-5 d-flex justify-content-start">
+                <div class="mx-5 d-flex justify-content-start">
                     <img src="src/medpar_sponsor/Logo_Mandiri-Utama-Finance.png" class="footer-box" style="width:auto"/>
                 </div>
-                <div class="footer-box mx-5 d-flex justify-content-end">
+                <div class="mx-5 d-flex justify-content-end">
                     <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="footer-box"/>
                 </div>
             </div>
