@@ -58,7 +58,7 @@ if(isset($_SESSION['userData'])){
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
     <style>
-        body{background-image: url("src/bg-website-game-page.png");}
+        body{background-image: url("src/bg-website-game-page.png"); background-size: 1600px;}
         .font_content{font-family: 'Varela', sans-serif;}
         
         .font_title{
@@ -72,9 +72,9 @@ if(isset($_SESSION['userData'])){
     <div class="container col col-lg-10">
         <div class="container container-md-fluid">
             <div class="d-flex justify-content-around mt-5">
-                <button class="btn btn-light border border-2 border-dark rounded-circle align-self-center"><</button>
+                <button class="align-self-center" style="background-color: transparent; border: 0px;"><img src="src/index/arrow_left.png" style="width: 100px; height: 100px;"/></button>
                 <img class="border border-dark border-4 rounded-4 w-75" src="src/game_placeholder.png"></img>
-                <button class="btn btn-light border border-2 border-dark rounded-circle align-self-center">></button>
+                <button class="align-self-center" style="background-color: transparent; border: 0px;"><img src="src/index/arrow_right.png" style="width: 100px; height: 100px;"/></button>
             </div>
             <div class="d-flex flex-column align-items-center mt-5">
                 <h1 class="mx-auto mt-5 text-center font_title"><?= $game['title'] ?></h1>
