@@ -38,8 +38,9 @@ if(isset($_SESSION['userData'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G2X</title>
-    <link rel="stylesheet" href="styledown1.css">
+    <link rel="icon" href="src/g2x_logo.png">
+    <title>Game Details</title>
+    <link rel="stylesheet" href="styledown.css">
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" 

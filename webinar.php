@@ -4,154 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="src/g2x_logo.png">
     <title>Webinar</title>
-    <link rel="icon" href="Assets/logo.png" type="image/x-icon">
-    <style type="text/css">
-    
-      #logo-header {
-        width: 40px;
-      }
-
-
-      .navbar-expand-md {
-        background-color: rgba(245, 233, 5, 0);
-        height: 100px;
-      }
-
-      #kosong {
-        height: 80px;
-      }
-
-      .container-fluid {
-        width: 960px;
-      }
-
-      #webinar-list {
-        width: 820px;
-      }
-
-      #webinar {
-        height: 200px;
-      }
-
-      #day, #time ,#gdcumn {
-        margin: 0;
-      }
-
-      .webinar {
-        margin-bottom: 80px;
-      }
-      body{background-image: url("src/bg-website-game-page.png");}
-      #btnRegist {
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 200px;
-      }
-      
-      footer {
-        margin-top: 300px;
-      }
-
-      #logo-ig {
-        width: 30px;
-        margin-right: 10px;
-      }
-
-      #contact-detail {
-        margin-bottom: 80px;
-        margin-right: 0;
-      }
-
-      #gdcumn {
-        font-size: 20px;
-        width: fit-content;
-      }
-
-      #h2contctus {
-        margin-right: 0;
-      }
-
-      #allright {
-        margin-bottom: 50px;
-      }
-
-      img{
-        width:54px;
-        height:54px;
-      }
-
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body{background-image: url("src/bg-website-game-page.png");}
     </style>
 </head>
-<body>
-  <!-- header -->
-  
-
-<!-- content -->
-    <div id="kosong"></div>
-    <div class="container-fluid justify-content-center">
     <header>  
-      <?php require_once('header.php'); ?>
-  </header>
-      <div id="title">
-        <h1 class="d-flex justify-content-center" id="judul" >WEBINAR</h1>
-        <h4 class="d-flex justify-content-center" id="subjudul">lorem ipsum lorem ipsum lorem ipsum <br> lorem ipsum lorem ipsum lorem ipsum</h4>
-      </div>
-      <div id="kosong"></div>
-      <!-- webinar list -->
-      <div class="container webinar" id="webinar-list">
-        <div class="row">
-          <div class="col-4"><img id="webinar" src="Assets/logo.png" alt=""></div>
-          <div class="col-8 d-inline-flex align-items-center">
-            <div></div>
-            <div id="explaination">
-              <h4>WEBINAR TITLE<br>WEBINAR TITLE</h4>
-              <p id="category">Category</p>
-              <p id="day">Day, DD MM YY</p>
-              <p id="time">Pukul 00.00 WIB</p>
-            </div>
-          </div>
+        <?php require_once('header.php'); ?>
+    </header>
+    <div id="kosong"></div>
+    <div class="container-fluid justify-content-center mx-auto px-auto col col-lg-10">
+        <div id="title">
+            <p class="d-flex justify-content-center" id="judul" style="font-size:64px;">WEBINAR</p>
+            <p class="d-flex justify-content-center" id="subjudul">Copywriting Copywriting Copywriting<br>Copywriting Copywriting Copywriting</p>
         </div>
-      </div>
-      <div class="container webinar" id="webinar-list">
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-4" id="webinar-logo"><img id="webinar" src="Assets/logo.png" alt=""></div>
-          <div class="col-5 d-inline-flex align-items-center">
-            <div></div>
-            <div id="explaination">
-              <h4>WEBINAR TITLE<br>WEBINAR TITLE</h4>
-              <p id="category">Category</p>
-              <p id="day">Day, DD MM YY</p>
-              <p id="time">Pukul 00.00 WIB</p>
+        <div id="kosong"></div>
+        <div id="webinar">
+            <div class="d-flex justify-content-lg-start justify-content-center mx-5 my-5" id="webinar1">
+                <div class="d-flex row row-md-2 justify-content-center">
+                    <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
+                        <div class="col-auto">
+                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle" style="width:170px; height:170px"/>
+                        </div>
+                    </div>
+                    <div id="upRight" class="mx-4 col col-auto">
+                        <div class="d-flex justify-content-lg-start justify-content-center justify-content-center">
+                            <p class="mx-2 h3">Webinar title title<br> Webinar title title</p>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-lg-start justify-content-center">
+                                <div>
+                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center">Category</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center">Day, DD MM YY</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center">Pukul 00.00 WIB</p>
+                                </div> 
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="container webinar" id="webinar-list">
-        <div class="row">
-          <div class="col-4"><img id="webinar" src="Assets/logo.png" alt=""></div>
-          <div class="col-8 d-inline-flex align-items-center">
-            <div></div>
-            <div id="explaination">
-              <h4>WEBINAR TITLE<br>WEBINAR TITLE</h4>
-              <p id="category">Category</p>
-              <p id="day">Day, DD MM YY</p>
-              <p id="time">Pukul 00.00 WIB</p>
+            <div class="d-flex justify-content-lg-end justify-content-center mx-5 my-5" id="webinar2">
+                <div class="d-flex row row-md-2 justify-content-center">
+                    <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
+                        <div class="col-auto">
+                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle" style="width:170px; height:170px"/>
+                        </div>
+                    </div>
+                    <div id="upRight" class="mx-4 col col-auto">
+                        <div class="d-flex justify-content-lg-start justify-content-sm-center justify-content-center">
+                            <p class="mx-2 h3">Webinar title title<br> Webinar title title</p>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-lg-start justify-content-center">
+                                <div>
+                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center">Category</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center">Day, DD MM YY</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center">Pukul 00.00 WIB</p>
+                                </div> 
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="d-flex justify-content-lg-start justify-content-center mx-5 my-5" id="webinar3">
+                <div class="d-flex row row-md-2 justify-content-center">
+                    <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
+                        <div class="col-auto">
+                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle" style="width:170px; height:170px"/>
+                        </div>
+                    </div>
+                    <div id="upRight" class="mx-4 col col-auto">
+                        <div class="d-flex justify-content-lg-start justify-content-sm-center justify-content-center">
+                            <p class="mx-2 h3">Webinar title title<br> Webinar title title</p>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-lg-start justify-content-center">
+                                <div>
+                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center">Category</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center">Day, DD MM YY</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center">Pukul 00.00 WIB</p>
+                                </div> 
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <button id="btnRegist" href="#">REGIST HERE</button>
-      </div>
-
-    <!-- footer -->
+        <div class="d-flex justify-content-center">
+            <a href="#"><img src="src/buttons/register_here.png" style="width:315px; height:auto"/></a>
+        </div>
+    </div>
     <footer>
-            <?php include("footer.php"); ?>
-        </footer>
-      </div>
+        <?php include("footer.php"); ?>
+    </footer>
 </body>
 </html>
