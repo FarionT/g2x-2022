@@ -9,8 +9,22 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- link font -->
+    <!-- varela -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <!-- dosis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
     <style>
         body{background-image: url("src/bg-website-game-page.png");}
+        .font_content{font-family: 'Varela', sans-serif;}
+        
+        .font_title{
+            font-family: 'Dosis', sans-serif;
+        }
     </style>
 </head>
     <header>  
@@ -19,8 +33,8 @@
     <div id="kosong"></div>
     <div class="container-fluid justify-content-center mx-auto px-auto col col-lg-10">
         <div id="title">
-            <p class="d-flex justify-content-center" id="judul" style="font-size:64px;">WEBINAR</p>
-            <p class="d-flex justify-content-center" id="subjudul">Copywriting Copywriting Copywriting<br>Copywriting Copywriting Copywriting</p>
+            <p class="d-flex justify-content-center font_title" id="judul" style="font-size:64px;">WEBINAR</p>
+            <p class="d-flex justify-content-center font_content" id="subjudul">Copywriting Copywriting Copywriting<br>Copywriting Copywriting Copywriting</p>
         </div>
         <div id="kosong"></div>
         <div id="webinar">
@@ -33,14 +47,14 @@
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
                         <div class="d-flex justify-content-lg-start justify-content-center justify-content-center">
-                            <p class="mx-2 h3">Webinar title title<br> Webinar title title</p>
+                            <p class="mx-2 h3 font_title">Webinar title title<br> Webinar title title</p>
                         </div>
                         <div>
                             <div class="d-flex justify-content-lg-start justify-content-center">
                                 <div>
-                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center">Category</p>
-                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center">Day, DD MM YY</p>
-                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center">Pukul 00.00 WIB</p>
+                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Category</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Day, DD MM YY</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Pukul 00.00 WIB</p>
                                 </div> 
                             </div>                    
                         </div>
@@ -56,14 +70,14 @@
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
                         <div class="d-flex justify-content-lg-start justify-content-sm-center justify-content-center">
-                            <p class="mx-2 h3">Webinar title title<br> Webinar title title</p>
+                            <p class="mx-2 h3 font_title">Webinar title title<br> Webinar title title</p>
                         </div>
                         <div>
                             <div class="d-flex justify-content-lg-start justify-content-center">
                                 <div>
-                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center">Category</p>
-                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center">Day, DD MM YY</p>
-                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center">Pukul 00.00 WIB</p>
+                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Category</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Day, DD MM YY</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Pukul 00.00 WIB</p>
                                 </div> 
                             </div>                    
                         </div>
@@ -79,14 +93,14 @@
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
                         <div class="d-flex justify-content-lg-start justify-content-sm-center justify-content-center">
-                            <p class="mx-2 h3">Webinar title title<br> Webinar title title</p>
+                            <p class="mx-2 h3 font_title">Webinar title title<br> Webinar title title</p>
                         </div>
                         <div>
                             <div class="d-flex justify-content-lg-start justify-content-center">
                                 <div>
-                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center">Category</p>
-                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center">Day, DD MM YY</p>
-                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center">Pukul 00.00 WIB</p>
+                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Category</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Day, DD MM YY</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Pukul 00.00 WIB</p>
                                 </div> 
                             </div>                    
                         </div>

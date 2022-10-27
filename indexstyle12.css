@@ -4,6 +4,11 @@
     margin-bottom: 200px;
 }
 
+#judul-text {
+    display: flex;
+    flex-direction: column;
+}
+
 #judul-welcome {
     font-size: 65px;
 }
@@ -53,7 +58,19 @@
     background-color: gray;
     border: 3px solid black;
     border-radius: 10px;
-    margin-left: 150px;
+    margin-left: 90px;
+}
+
+#game-entries-1, #game-entries-4 {
+    margin-right: 20px;
+}
+
+#game-entries-2, #game-entries-5 {
+    margin-left: 0px;
+}
+
+#game-entries-3, #game-entries-6 {
+    margin-left: 20px;
 }
 
 .logo-arrow {
@@ -113,6 +130,11 @@
         margin-top: 0px;
     }
 
+    #judul-text {
+        display: flex;
+        flex-direction: row;
+    }
+
     #judul-welcome, #judul-g2x {
         font-size: 50px;
     }
@@ -162,6 +184,10 @@
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    .game-entries-box {
+        margin: 0;
     }
 }
 
