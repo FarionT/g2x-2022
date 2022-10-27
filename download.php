@@ -86,7 +86,7 @@ if(isset($_SESSION['userData'])){
                 <div id="myModal" class="modal">
                     <div id="modal-content">
                         <span class="close">&times;</span>
-                        <div id="msg"></div>
+                        <h1 class="font_title">You have to sign in first</h1>
                     </div>
                 </div>
             </div>
@@ -153,18 +153,20 @@ if(isset($_SESSION['userData'])){
         $.ajax({
             url:"Login/Google/vote.php",    //the page containing php script
             type: "post",    //request type,
-            data: {vote: '<?= $gameID?>', ReReURL: '<?= $url?>'},
+            data: {vote: '<?= $gameID?>', ReURL: 'http://localhost/g2x/g2x-2022/login/google/vote.php', ReReURL: '<?= $url?>'},
             success:function(result){
-                document.getElementById('msg').innerHTML = result;
                 console.log(result);
-                if(result.substring(0, 2) == '<a'){ // login button
+                // tadi biar nggak kelooping button sign in googlenya, kalau ini jadinya nge looping tiap bukak tutup vote nya
+                // var counternya jangan dihilangin :')
+                if(counter == 1){ // login button
                     var googlebutton = document.createElement('div');
                     googlebutton.innerHTML = result;
                     var divmodal = document.getElementById("modal-content");
                     divmodal.appendChild(googlebutton);
+                    counter = 2;
                     return;
                 }
-                if(result.includes('You unvoted')){ // already vote
+                if(result.substring(0, 8) == '<p>You u'){ // already vote
                     $.ajax({
                         url:"Login/Google/voteCount.php",
                         type: "post",
@@ -175,7 +177,7 @@ if(isset($_SESSION['userData'])){
                         }
                     });
                 }
-                if(result.includes('Thanks for voting')){ // already vote
+                if(result.substring(0, 9) == '<p>Thanks'){ // vote
                     $.ajax({
                         url:"Login/Google/voteCount.php",
                         type: "post",
