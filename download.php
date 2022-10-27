@@ -130,7 +130,6 @@ if(isset($_SESSION['userData'])){
     </script>
     <script src="javadown.js" type="text/javascript"></script>
     <script type="text/javascript">
-    var counter = 1;
     document.getElementById("btn_voting").addEventListener("click", function() {
         vote();
     });
@@ -141,17 +140,14 @@ if(isset($_SESSION['userData'])){
             data: {vote: '<?= $gameID?>', ReURL: 'http://localhost/g2x/g2x-2022/login/google/vote.php', ReReURL: '<?= $url?>'},
             success:function(result){
                 console.log(result);
-                if(counter == 1) {
+                if(result.substring(0, 2) == '<a'){ // login button
                     var googlebutton = document.createElement('div');
                     googlebutton.innerHTML = result;
                     var divmodal = document.getElementById("modal-content");
                     divmodal.appendChild(googlebutton);
-                    counter++;
-                }
-                if(result.substring(0, 2) == '<a'){
                     return;
                 }
-                if(result.substring(0, 8) == '<p>You u'){
+                if(result.substring(0, 8) == '<p>You u'){ // already vote
                     $.ajax({
                         url:"Login/Google/voteCount.php",
                         type: "post",
@@ -162,7 +158,7 @@ if(isset($_SESSION['userData'])){
                         }
                     });
                 }
-                if(result.substring(0, 9) == '<p>Thanks'){
+                if(result.substring(0, 9) == '<p>Thanks'){ // vote
                     $.ajax({
                         url:"Login/Google/voteCount.php",
                         type: "post",
