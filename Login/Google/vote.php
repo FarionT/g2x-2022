@@ -51,10 +51,10 @@ if($gClient->getAccessToken()){ //already login with google
     $_SESSION['userData'] = $userData;
     if(!empty($userData)){// user login
         if($user->isVote($gpUserData, $_POST['vote'])){
-            echo "<p>You unvoted</p>";
+            echo "<h1>You unvoted</h1>";
         }
         else{
-            echo "<p>Thanks for voting</p>";
+            echo "<h1>Thanks for voting</h1>";
         }
     }
 }
