@@ -57,8 +57,22 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
         crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- link font -->
+    <!-- varela -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <!-- dosis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
     <style>
-            body{background-image: url("src/bg-website-game-page.png");}
+        body{background-image: url("src/bg-website-game-page.png");}
+        .font_content{font-family: 'Varela', sans-serif;}
+        
+        .font_title{
+            font-family: 'Dosis', sans-serif;
+        }
     </style>
   </head>
   <body id="game-entries">
@@ -68,8 +82,8 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
         </header>
         
         <div id="title" class="text-center mx-3" data-aos="fade-down">
-            <h1>GAME ENTRIES</h1>
-            <p class="mt-3">
+            <h1 class="font_title">GAME ENTRIES</h1>
+            <p class="mt-3 font_content">
                 Copywriting Copywriting Copywriting Copywriting <br />
                 Copywriting Copywriting Copywriting Copywriting
             </p>
@@ -91,8 +105,8 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                             <a href="#" class="image-container">
                                 <img class="border border-dark border-4 rounded-4" src="src/game_placeholder.png" width="85%"/>
                             </a>
-                            <h5 class="mt-3 px-3"><b><?= $dataRow['title'] ?></b></h5>
-                            <p class="px-5">
+                            <h5 class="mt-3 px-3 font_title"><b><?= $dataRow['title'] ?></b></h5>
+                            <p class="px-5 font_content">
                                 <?= $dataRow['game_desc'] ?>
                             </p>
                         </div>
