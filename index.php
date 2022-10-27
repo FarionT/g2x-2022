@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet" />
-        <link href="indexstyle11.css" rel="stylesheet" />
+        <link href="indexstyle12.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>G2X 2022</title> 
         <style>
@@ -19,7 +19,7 @@
                 <?php require_once('header.php'); ?>
             </header>
             <div id="judul" class="mt-5">
-                <div class="d-flex flex-xl-column flex-row mb-xl-0 mb-3">
+                <div id="judul-text" class="d-flex mb-xl-0 mb-3">
                     <h1 class="mb-0" id="judul-welcome">WELCOME TO&nbsp;</h1>
                     <h1 class="mt-0" id="judul-g2x">G2X</h1> <br />
                 </div>
@@ -70,12 +70,12 @@
                 <div class="game-entries-div">
                     <button id="button-arrow-left" class="button-game-entries"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
                     <div class="game-entries-1"> 
-                        <div id="game-entries-box-1" class="game-entries-box mb-5 me-xl-5 me-0">Slide 1</div>
-                        <div id="game-entries-box-2" class="game-entries-box mb-5 ms-xl-0 ms-0">Slide 3</div>
-                        <div id="game-entries-box-3" class="game-entries-box ms-xl-5 ms-0">Slide 5</div>
-                        <div id="game-entries-box-4" class="game-entries-box mb-5 me-xl-5 me-0">Slide 2</div>
-                        <div id="game-entries-box-5" class="game-entries-box mb-5 ms-xl-0 ms-0">Slide 4</div>
-                        <div id="game-entries-box-6" class="game-entries-box ms-xl-5 ms-0">Slide 6</div>
+                        <div id="game-entries-box-1" class="game-entries-box mb-5">Slide 1</div>
+                        <div id="game-entries-box-2" class="game-entries-box mb-5">Slide 3</div>
+                        <div id="game-entries-box-3" class="game-entries-box">Slide 5</div>
+                        <div id="game-entries-box-4" class="game-entries-box mb-5">Slide 2</div>
+                        <div id="game-entries-box-5" class="game-entries-box mb-5">Slide 4</div>
+                        <div id="game-entries-box-6" class="game-entries-box">Slide 6</div>
                     </div>
                     <button id="button-arrow-right" class="button-game-entries"><img src="src/index/arrow_right.png" class="logo-arrow"/></button>
                 </div>
