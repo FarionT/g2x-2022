@@ -130,6 +130,7 @@ if(isset($_SESSION['userData'])){
     </script>
     <script src="javadown.js" type="text/javascript"></script>
     <script type="text/javascript">
+    var counter = 1;
     document.getElementById("btn_voting").addEventListener("click", function() {
         vote();
     });
@@ -140,11 +141,14 @@ if(isset($_SESSION['userData'])){
             data: {vote: '<?= $gameID?>', ReURL: 'http://localhost/g2x/g2x-2022/login/google/vote.php', ReReURL: '<?= $url?>'},
             success:function(result){
                 console.log(result);
-                if(result.substring(0, 2) == '<a'){ // login button
+                // tadi biar nggak kelooping button sign in googlenya, kalau ini jadinya nge looping tiap bukak tutup vote nya
+                // var counternya jangan dihilangin :')
+                if(counter == 1){ // login button
                     var googlebutton = document.createElement('div');
                     googlebutton.innerHTML = result;
                     var divmodal = document.getElementById("modal-content");
                     divmodal.appendChild(googlebutton);
+                    counter = 2;
                     return;
                 }
                 if(result.substring(0, 8) == '<p>You u'){ // already vote
