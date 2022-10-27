@@ -32,13 +32,13 @@
     </header>
     <div id="kosong"></div>
     <div class="container-fluid justify-content-center mx-auto px-auto col col-lg-10">
-        <div id="title">
+        <div id="title" data-aos="fade-down">
             <p class="d-flex justify-content-center font_title" id="judul" style="font-size:64px;">WEBINAR</p>
             <p class="d-flex justify-content-center font_content" id="subjudul">Copywriting Copywriting Copywriting<br>Copywriting Copywriting Copywriting</p>
         </div>
         <div id="kosong"></div>
         <div id="webinar">
-            <div class="d-flex justify-content-lg-start justify-content-center mx-5 my-5" id="webinar1">
+            <div class="d-flex justify-content-lg-start justify-content-center mx-5 my-5" id="webinar1" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-lg-end justify-content-center mx-5 my-5" id="webinar2">
+            <div class="d-flex justify-content-lg-end justify-content-center mx-5 my-5" id="webinar2" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-lg-start justify-content-center mx-5 my-5" id="webinar3">
+            <div class="d-flex justify-content-lg-start justify-content-center mx-5 my-5" id="webinar3" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">

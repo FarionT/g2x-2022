@@ -34,13 +34,13 @@
     </header>
     <div class="container col col-lg-10">
         
-        <div class="container text-center mt-5" id="title">
+        <div class="container text-center mt-5" id="title" data-aos="fade-down">
             <h1 id="pageTitle" class="mb-4 font_title">COMPETITIONS</h1>
             <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
             <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
         </div>
         <div id="competitions" class="my-5">
-            <div id="firstCompetition" class="d-flex justify-content-lg-start justify-content-center mx-5">
+            <div id="firstCompetition" class="d-flex justify-content-lg-start justify-content-center mx-5" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div id="secondCompetition" class="d-flex justify-content-center justify-content-lg-end mx-5">
+            <div id="secondCompetition" class="d-flex justify-content-center justify-content-lg-end mx-5" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div id="thirdCompetition" class="d-flex justify-content-lg-start justify-content-center mx-5">
+            <div id="thirdCompetition" class="d-flex justify-content-lg-start justify-content-center mx-5" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
@@ -159,7 +159,10 @@
     <footer>
         <?php include("footer.php"); ?>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
