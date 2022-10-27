@@ -27,7 +27,7 @@
             }
         </style>
     </head>
-    <body>
+    <body id="index">
         <div class="container-fluid justify-content-center m-0 p-0">
             <header>
                 <?php require_once('header.php'); ?>

@@ -28,7 +28,7 @@
     .navbar-brand img {
         width: 96px;
     }
-    #game-entries {
+    #competition {
         background-image: url('src/backgrounds/mobile_game_page.png') !important;
     }
     #game-mobile {
@@ -81,17 +81,17 @@
         font-size: 16px;;
     }
 
-    .register_here{
-        width:177px;
+    .register img{
+        width:97px;
         height:auto;
     }
 
-    .webinar_profile{
+    .competition_profile{
         width:113px;
         height:113px;   
     }
 
-    .webinar_title{
+    .competition_title{
         font-size: 28px;
     }
 
@@ -99,7 +99,7 @@
         font-size: 14px;
         padding:4px;
     }
-    #webinar1, #webinar2, #webinar3{
+    #firstCompetition, #secondCompetition, #thirdCompetition{
         margin-bottom: 75px;
     }
 }
@@ -120,17 +120,17 @@
         font-size: 16px;;
     }
 
-    .register_here{
-        width:235px;
+    .register img{
+        width:135px;
         height:auto;
     }
 
-    .webinar_profile{
+    .competition_profile{
         width: 180px;
         height:180px;   
     }
 
-    .webinar_title{
+    .competition_title{
         font-size: 33px;
     }
 
@@ -138,7 +138,7 @@
         font-size: 16px;
         padding:4px;
     }
-    #webinar1, #webinar2, #webinar3{
+    #firstCompetition, #secondCompetition, #thirdCompetition{
         margin-bottom: 100px;
     }
 }
@@ -148,7 +148,7 @@
         width: 160px;
     }
 
-    #game-entries {
+    #competition {
         background-image: url('src/backgrounds/website_game_page.png') !important;
     }
 
@@ -168,17 +168,17 @@
         font-size: 16px;;
     }
 
-    .register_here{
-        width:270px;
+    .register img{
+        width:178px;
         height:auto;
     }
 
-    .webinar_profile{
+    .competition_profile{
         width:200px;
         height:200px;   
     }
 
-    .webinar_title{
+    .competition_title{
         font-size: 33px;
     }
 
@@ -186,7 +186,7 @@
         font-size: 18px;
         padding:2px;
     }
-    #webinar1, #webinar2, #webinar3{
+    #firstCompetition, #secondCompetition, #thirdCompetition{
         margin-bottom: 125px;
     }
 }
@@ -201,7 +201,7 @@
         margin-right: 200px;
     }
     #title {
-        margin-top: 75px;
+        margin-top: 80px;
     }
     #title h1{
         font-size: 64px;
@@ -211,17 +211,17 @@
         font-size: 16px;;
     }
 
-    .register_here{
-        width:315px;
+    .register img{
+        width:204px;
         height:auto;
     }
 
-    .webinar_profile{
+    .competition_profile{
         width:229px;
         height:229px;   
     }
 
-    .webinar_title{
+    .competition_title{
         font-size: 37px;
     }
 
@@ -229,12 +229,12 @@
         font-size: 18px;
         padding:2px;
     }
-    #webinar1, #webinar2, #webinar3{
+    #firstCompetition, #secondCompetition, #thirdCompetition{
         margin-bottom: 150px;
     }
 }
 
-#game-entries {
+#competition {
     background-repeat: no-repeat !important;
     background-size: cover;
 }

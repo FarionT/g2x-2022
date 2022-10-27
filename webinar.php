@@ -7,7 +7,7 @@
     <link rel="icon" href="src/g2x_logo.png">
     <title>Webinar</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="webinarstyle.css">
+    <link rel="stylesheet" href="webinarstyle2.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- link font -->
@@ -28,16 +28,18 @@
         }
     </style>
 </head>
+<body id="webinar">
     <header>  
         <?php require_once('header.php'); ?>
     </header>
+
     <div id="kosong"></div>
     <div class="container-fluid justify-content-center mx-auto px-auto col col-lg-10">
         <div id="title" data-aos="fade-down">
             <p class="d-flex justify-content-center font_title" id="judul" style="font-size:64px;">WEBINAR</p>
             <p class="d-flex justify-content-center font_content" id="subjudul">Copywriting Copywriting Copywriting<br>Copywriting Copywriting Copywriting</p>
         </div>
-        <div id="webinar">
+        <div id="webinars">
             <div class="d-flex justify-content-lg-start justify-content-center mx-5" id="webinar1" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
