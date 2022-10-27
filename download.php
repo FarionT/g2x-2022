@@ -39,7 +39,7 @@ if(isset($_SESSION['userData'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G2X</title>
-    <link rel="stylesheet" href="styledown.css">
+    <link rel="stylesheet" href="styledown1.css">
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
@@ -67,8 +67,11 @@ if(isset($_SESSION['userData'])){
                     <a href="<?= $game['download_link'] ?>"><button class="button-choose rounded-pill py-2 mx-2"><p class="m-auto">DOWNLOAD</p></button></a>
                     <button class="button-choose rounded-pill py-2 mx-2" id="btn_voting"><p class="m-auto"><?php if($isVote) echo "UNVOTE ($voteCount)"; else echo "VOTE ($voteCount)";?></p></button>
                 </div>
-                <div id="modal-content" style="display:none">
-                
+                <div id="myModal" class="modal">
+                    <div id="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>You have to sign in first</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,9 +127,10 @@ if(isset($_SESSION['userData'])){
     <script>
         AOS.init();
     </script>
+    <script src="javadown.js" type="text/javascript"></script>
     <script type="text/javascript">
+    var counter = 1;
     document.getElementById("btn_voting").addEventListener("click", function() {
-        document.getElementById("modal-content").style.display = "block";
         vote();
     });
     function vote() {
@@ -136,7 +140,13 @@ if(isset($_SESSION['userData'])){
             data: {vote: '<?= $gameID?>', ReURL: 'http://localhost/g2x/g2x-2022/login/google/vote.php', ReReURL: '<?= $url?>'},
             success:function(result){
                 console.log(result);
-                document.getElementById("modal-content").innerHTML = result;
+                if(counter == 1) {
+                    var googlebutton = document.createElement('div');
+                    googlebutton.innerHTML = result;
+                    var divmodal = document.getElementById("modal-content");
+                    divmodal.appendChild(googlebutton);
+                    counter++;
+                }
                 if(result.substring(0, 2) == '<a'){
                     return;
                 }
