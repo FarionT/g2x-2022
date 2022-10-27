@@ -69,7 +69,7 @@ if(isset($_SESSION['userData'])){
 </head>
 <body>
     <?php require_once('header.php'); ?>
-    <div class="container col col-lg-10">
+    <div class="container col col-lg-10 px-5">
         <div class="container container-md-fluid">
             <div class="d-flex justify-content-around mt-5">
                 <button class="align-self-center" style="background-color: transparent; border: 0px;"><img src="src/index/arrow_left.png" style="width: 100px; height: 100px;"/></button>

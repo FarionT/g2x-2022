@@ -7,6 +7,7 @@
     <link rel="icon" href="src/g2x_logo.png">
     <title>Webinar</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="webinarstyle.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- link font -->
@@ -32,75 +33,74 @@
     </header>
     <div id="kosong"></div>
     <div class="container-fluid justify-content-center mx-auto px-auto col col-lg-10">
-        <div id="title">
+        <div id="title" data-aos="fade-down">
             <p class="d-flex justify-content-center font_title" id="judul" style="font-size:64px;">WEBINAR</p>
             <p class="d-flex justify-content-center font_content" id="subjudul">Copywriting Copywriting Copywriting<br>Copywriting Copywriting Copywriting</p>
         </div>
-        <div id="kosong"></div>
         <div id="webinar">
-            <div class="d-flex justify-content-lg-start justify-content-center mx-5 my-5" id="webinar1">
+            <div class="d-flex justify-content-lg-start justify-content-center mx-5" id="webinar1" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
-                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle" style="width:170px; height:170px"/>
+                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
-                        <div class="d-flex justify-content-lg-start justify-content-center justify-content-center">
-                            <p class="mx-2 h3 font_title">Webinar title title<br> Webinar title title</p>
+                        <div class="d-flex justify-content-md-start justify-content-center justify-content-center">
+                            <p class="mx-2 font_title webinar_title">Webinar title title<br> Webinar title title</p>
                         </div>
                         <div>
-                            <div class="d-flex justify-content-lg-start justify-content-center">
+                            <div class="d-flex justify-content-md-start justify-content-center">
                                 <div>
-                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Category</p>
-                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Day, DD MM YY</p>
-                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Pukul 00.00 WIB</p>
+                                    <p id="category" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Category</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Day, DD MM YY</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Pukul 00.00 WIB</p>
                                 </div> 
                             </div>                    
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-lg-end justify-content-center mx-5 my-5" id="webinar2">
+            <div class="d-flex justify-content-lg-end justify-content-center mx-5" id="webinar2" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
-                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle" style="width:170px; height:170px"/>
+                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
-                        <div class="d-flex justify-content-lg-start justify-content-sm-center justify-content-center">
-                            <p class="mx-2 h3 font_title">Webinar title title<br> Webinar title title</p>
+                        <div class="d-flex justify-content-md-start justify-content-sm-center justify-content-center">
+                            <p class="mx-2 font_title webinar_title">Webinar title title<br> Webinar title title</p>
                         </div>
                         <div>
-                            <div class="d-flex justify-content-lg-start justify-content-center">
+                            <div class="d-flex justify-content-md-start justify-content-center">
                                 <div>
-                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Category</p>
-                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Day, DD MM YY</p>
-                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Pukul 00.00 WIB</p>
+                                    <p id="category" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Category</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Day, DD MM YY</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Pukul 00.00 WIB</p>
                                 </div> 
                             </div>                    
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-lg-start justify-content-center mx-5 my-5" id="webinar3">
+            <div class="d-flex justify-content-lg-start justify-content-center mx-5" id="webinar3" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
-                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle" style="width:170px; height:170px"/>
+                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
-                        <div class="d-flex justify-content-lg-start justify-content-sm-center justify-content-center">
-                            <p class="mx-2 h3 font_title">Webinar title title<br> Webinar title title</p>
+                        <div class="d-flex justify-content-md-start justify-content-sm-center justify-content-center">
+                            <p class="mx-2 font_title webinar_title">Webinar title title<br> Webinar title title</p>
                         </div>
                         <div>
-                            <div class="d-flex justify-content-lg-start justify-content-center">
+                            <div class="d-flex justify-content-md-start justify-content-center">
                                 <div>
-                                    <p id="category" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Category</p>
-                                    <p id="day" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Day, DD MM YY</p>
-                                    <p id="time" class="mx-2 d-flex justify-content-lg-start justify-content-center font_content">Pukul 00.00 WIB</p>
+                                    <p id="category" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Category</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Day, DD MM YY</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Pukul 00.00 WIB</p>
                                 </div> 
                             </div>                    
                         </div>
@@ -108,8 +108,8 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center">
-            <a href="#"><img src="src/buttons/register_here.png" style="width:315px; height:auto"/></a>
+        <div class="d-flex justify-content-center" data-aos="fade-down">
+            <a href="#"><img src="src/buttons/register_here.png" class="register_here"/></a>
         </div>
     </div>
     <footer>

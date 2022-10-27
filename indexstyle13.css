@@ -49,7 +49,7 @@
 
 .button-arrow-resp {
     display: none;
-    justify-content: space-around;
+   justify-content: space-around;
 }
 
 .game-entries-box {
@@ -73,10 +73,6 @@
     margin-left: 20px;
 }
 
-.outside {
-    display: none;
-}
-
 .logo-arrow {
     width: 100px;
 }
@@ -90,9 +86,6 @@
 .footer-box {
     width: 100px;
     height: 100px;
-    background-color: gray;
-    border: 3px solid black;
-    border-radius: 20px;
 }
 
 #button-contact {
@@ -148,10 +141,6 @@
     }
 
     /* DRAGABLE CAROUSEL */
-
-    .outside {
-        display: block;
-    }
 
     .button-game-entries {
         display: none;
