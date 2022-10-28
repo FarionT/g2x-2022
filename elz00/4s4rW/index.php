@@ -51,14 +51,14 @@ if($gClient->getAccessToken()){ //already login with google
     $_SESSION['userData'] = $userData;
     if(!empty($userData)){// user login
         if($user->isVote($gpUserData, $_POST['vote'])){
-            echo "<p>You unvoted</p>";
+            echo "<h1 class='font_title'>You unvoted</h1>";
         }
         else{
-            echo "<p>Thanks for voting</p>";
+            echo "<h1 class='font_title'>Thanks for voting</h1>";
         }
     }
 }
 if(empty($userData)){ 
     $authUrl = $gClient->createAuthUrl();
-    echo '<a href="'.filter_var($authUrl, FILTER_SANITIZE_URL).'"><img src="src/google-sign-in-btn.png" alt="vote"/></a>'; 
+    echo '<h1 class="font_title">You have to sign in first</h1><a href="'.filter_var($authUrl, FILTER_SANITIZE_URL).'"><img src="src/google-sign-in-btn.png" alt="vote"/></a>'; 
 }
