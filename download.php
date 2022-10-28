@@ -24,6 +24,10 @@ $sql = "select count(*) vote from voting where gameid = {$gameID}";
 $voteCount = $key->query($sql);
 $voteCount = $voteCount->fetch(PDO::FETCH_ASSOC)['vote'];
 
+if($game == null){
+    return;
+}
+
 // Is vote
 $isVote = false;
 if(isset($_SESSION['userData'])){
@@ -86,7 +90,7 @@ if(isset($_SESSION['userData'])){
                 <div id="myModal" class="modal">
                     <div id="modal-content">
                         <span class="close">&times;</span>
-                        <h1 class="font_title">You have to sign in first</h1>
+                        <div id="msg"></div>
                     </div>
                 </div>
             </div>
@@ -151,25 +155,27 @@ if(isset($_SESSION['userData'])){
     });
     function vote() {
         $.ajax({
-            url:"Login/Google/vote.php",    //the page containing php script
-            type: "post",    //request type,
-            data: {vote: '<?= $gameID?>', ReURL: 'http://localhost/g2x/g2x-2022/login/google/vote.php', ReReURL: '<?= $url?>'},
+            url:"elz00/4s4rW/",
+            type: "post",
+            data: {vote: '<?= $gameID?>', ReReURL: '<?= $url?>'},
             success:function(result){
                 console.log(result);
                 // tadi biar nggak kelooping button sign in googlenya, kalau ini jadinya nge looping tiap bukak tutup vote nya
                 // var counternya jangan dihilangin :')
-                if(counter == 1){ // login button
-                    var googlebutton = document.createElement('div');
-                    googlebutton.innerHTML = result;
-                    var divmodal = document.getElementById("modal-content");
-                    divmodal.appendChild(googlebutton);
-                    counter = 2;
-                    return;
-                }
-                if(result.substring(0, 8) == '<p>You u'){ // already vote
+
+                //codingan ku udah perfect yak :)
+                document.getElementById('msg').innerHTML = result;
+                // if(counter == 1){ // login button
+                    // var googlebutton = document.createElement('div');
+                    // googlebutton.innerHTML = result;
+                    // var divmodal = document.getElementById("modal-content");
+                    // divmodal.appendChild(googlebutton);
+                    // counter = 2;
+                // }
+                if(result.includes('You unvoted')){ // already vote
                     $.ajax({
-                        url:"Login/Google/voteCount.php",
-                        type: "post",
+                        url:"elz00/4s4rW/j59YI",
+                        type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'unvote'},
                         success:function(re){
                             console.log(re);
@@ -177,10 +183,10 @@ if(isset($_SESSION['userData'])){
                         }
                     });
                 }
-                if(result.substring(0, 9) == '<p>Thanks'){ // vote
+                if(result.includes('Thanks for voting')){ // vote
                     $.ajax({
-                        url:"Login/Google/voteCount.php",
-                        type: "post",
+                        url:"elz00/4s4rW/j59YI",
+                        type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'vote'},
                         success:function(re){
                             console.log(re);
