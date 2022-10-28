@@ -60,5 +60,5 @@ if($gClient->getAccessToken()){ //already login with google
 }
 if(empty($userData)){ 
     $authUrl = $gClient->createAuthUrl();
-    echo '<h1 class="font_title">You have to sign in first</h1><a href="'.filter_var($authUrl, FILTER_SANITIZE_URL).'"><img src="src/google-sign-in-btn.png" alt="vote"/></a>'; 
+    echo '<h1 class="font_title">You have to sign in first</h1><a href="'.filter_var($authUrl, FILTER_SANITIZE_URL).'"><img src="../google-sign-in-btn.png" alt="vote"/></a>'; 
 }

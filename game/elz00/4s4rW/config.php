@@ -4,7 +4,7 @@ if(!session_id()){
     session_start();
 }
 if(isset($_POST['ReReURL'])){
-    $_SESSION['ReURL'] = 'http://localhost/g2x/g2x-2022/login/google/vote.php';
+    $_SESSION['ReURL'] = 'http://localhost/g2x/g2x-2022/game/elz00/4s4rW/';
     $_SESSION['ReReURL'] = $_POST['ReReURL'];
 }
 // Database configuration

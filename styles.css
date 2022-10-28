@@ -151,12 +151,36 @@
     color: gainsboro !important;
 }
 
+.image-container {
+    position: relative;
+}
+
 .image-container img {
     transition: transform .3s;
 }
 
-.image-container img:hover {
+.image-container:hover img {
     transform: scale(1.05);
+}
+
+.play-button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    transition: transform .3s;
+    transition: opacity .3s;
+}
+
+.image-container:hover .play-button {
+    opacity: 100;
 }
 
 .btn-page {
