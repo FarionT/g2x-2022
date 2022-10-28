@@ -6,9 +6,10 @@ $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERV
 $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 require_once("connect.php");
 
-$gameID = 1;
-if(isset($_GET['game'])) 
-    if(is_numeric($_GET['game'])) $gameID = $_GET['game'];
+$gameID = $_GET['id'];
+// echo($gameID);
+if(isset($gameID)) 
+    if(is_numeric($_GET['id'])) $gameID = $_GET['id'];
 
 
 // game detail
@@ -52,13 +53,14 @@ if(isset($_SESSION['userData'])){
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
-    <?php require_once('header.php'); ?>
+    <?php require_once('header.php'); 
+    if($gameID > 1 && $gameID < 8) { ?>
     <div class="container col col-lg-10">
         <div class="container container-md-fluid">
             <div class="d-flex justify-content-around mt-5">
-                <button class="btn btn-light border border-2 border-dark rounded-circle align-self-center"><</button>
+                <button id="prev-game" class="btn btn-light border border-2 border-dark rounded-circle align-self-center" onclick="window.location.href ='download.php?id=<?= ($gameID - 1) ?>'"><</button>
                 <img class="border border-dark border-4 rounded-4 w-75" src="src/game_placeholder.png"></img>
-                <button class="btn btn-light border border-2 border-dark rounded-circle align-self-center">></button>
+                <button id="next-game"class="btn btn-light border border-2 border-dark rounded-circle align-self-center" onclick="window.location.href ='download.php?id=<?= ($gameID + 1) ?>'">></button>
             </div>
             <div class="d-flex flex-column align-items-center mt-5">
                 <h1 class="mx-auto mt-5 text-center"><?= $game['title'] ?></h1>
@@ -112,8 +114,128 @@ if(isset($_SESSION['userData'])){
                 </div>
             </div>
         </div>
-
-        <?php require_once('footer.php'); require_once("close.php");?>
+        <?php } else if ($gameID == 8) { ?>
+            <div class="container col col-lg-10">
+                <div class="container container-md-fluid">
+                    <div class="d-flex justify-content-around mt-5">
+                        <button id="prev-game" class="btn btn-light border border-2 border-dark rounded-circle align-self-center" onclick="window.location.href ='download.php?id=<?= ($gameID - 1) ?>'"><</button>
+                        <img class="border border-dark border-4 rounded-4 w-75" src="src/game_placeholder.png"></img>
+                        <button id="next-game"class="btn btn-light border border-2 border-dark rounded-circle align-self-center" onclick="#">></button>
+                    </div>
+                    <div class="d-flex flex-column align-items-center mt-5">
+                        <h1 class="mx-auto mt-5 text-center"><?= $game['title'] ?></h1>
+                        <h3 class="mb-5 text-center">By <?= $game['team_name'] ?></h3>
+                        <div class="d-flex justify-content-center container-lg-fluid">
+                            <a href="<?= $game['download_link'] ?>"><button class="button-choose rounded-pill py-2 mx-2"><p class="m-auto">DOWNLOAD</p></button></a>
+                            <button class="button-choose rounded-pill py-2 mx-2" id="btn_voting"><p class="m-auto"><?php if($isVote) echo "UNVOTE ($voteCount)"; else echo "VOTE ($voteCount)";?></p></button>
+                        </div>
+                        <div id="modal-content" style="display:none">
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class=" d-flex mt-5 row row-2 row-lg-2 justify-content-lg-around justify-content-center">
+                    <div class="col col-lg-6 col-12 mb-5">
+                        <p class="h3">ABOUT GAME</p>
+                        <p class=""><?= $game['game_desc'] ?></p>
+                    </div>
+                    <div class="col col-lg-6 col-12 ">
+                        <p class="h3">HOW TO PLAY</p>
+                        <p class=""><?= $game['HowToPlay'] ?></p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column mx-auto mt-5">
+                    <h3 class="mb-5">CREATORS</h3>
+                    <div class="d-flex row row-2 ">
+                        <div class="col col-lg-6 col-12">
+                            <?php for($i = 0; $i < 3; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){?>
+                            <div class="d-flex mb-3">
+                                <div class="profile rounded-circle"></div>
+                                <div class="ms-3">
+                                    <h5 class="mb-3"><?= $data['name']?></h5>
+                                    <p class="mb-0"><?= $data['job']?></p>
+                                    <p><?= $data['nim']?>(<?= $data['major']?>)</p>
+                                </div>
+                            </div>
+                            <?php }}?>
+                        </div>
+                        <div class="col col-lg-6 col-12">
+                            <?php for($i = 0; $i < 3; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){?>
+                            <div class="d-flex mb-3">
+                                <div class="profile rounded-circle"></div>
+                                <div class="ms-3">
+                                    <h5 class="mb-3"><?= $data['name']?></h5>
+                                    <p class="mb-0"><?= $data['job']?></p>
+                                    <p><?= $data['nim']?>(<?= $data['major']?>)</p>
+                                </div>
+                            </div>
+                            <?php }}?>
+                        </div>
+                    </div>
+                </div>
+        <?php } else if ($gameID == 1) { ?>
+            <div class="container col col-lg-10">
+                <div class="container container-md-fluid">
+                    <div class="d-flex justify-content-around mt-5">
+                        <button id="prev-game" class="btn btn-light border border-2 border-dark rounded-circle align-self-center" onclick="#"><</button>
+                        <img class="border border-dark border-4 rounded-4 w-75" src="src/game_placeholder.png"></img>
+                        <button id="next-game"class="btn btn-light border border-2 border-dark rounded-circle align-self-center" onclick="window.location.href ='download.php?id=<?= ($gameID + 1) ?>'">></button>
+                    </div>
+                    <div class="d-flex flex-column align-items-center mt-5">
+                        <h1 class="mx-auto mt-5 text-center"><?= $game['title'] ?></h1>
+                        <h3 class="mb-5 text-center">By <?= $game['team_name'] ?></h3>
+                        <div class="d-flex justify-content-center container-lg-fluid">
+                            <a href="<?= $game['download_link'] ?>"><button class="button-choose rounded-pill py-2 mx-2"><p class="m-auto">DOWNLOAD</p></button></a>
+                            <button class="button-choose rounded-pill py-2 mx-2" id="btn_voting"><p class="m-auto"><?php if($isVote) echo "UNVOTE ($voteCount)"; else echo "VOTE ($voteCount)";?></p></button>
+                        </div>
+                        <div id="modal-content" style="display:none">
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class=" d-flex mt-5 row row-2 row-lg-2 justify-content-lg-around justify-content-center">
+                    <div class="col col-lg-6 col-12 mb-5">
+                        <p class="h3">ABOUT GAME</p>
+                        <p class=""><?= $game['game_desc'] ?></p>
+                    </div>
+                    <div class="col col-lg-6 col-12 ">
+                        <p class="h3">HOW TO PLAY</p>
+                        <p class=""><?= $game['HowToPlay'] ?></p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column mx-auto mt-5">
+                    <h3 class="mb-5">CREATORS</h3>
+                    <div class="d-flex row row-2 ">
+                        <div class="col col-lg-6 col-12">
+                            <?php for($i = 0; $i < 3; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){?>
+                            <div class="d-flex mb-3">
+                                <div class="profile rounded-circle"></div>
+                                <div class="ms-3">
+                                    <h5 class="mb-3"><?= $data['name']?></h5>
+                                    <p class="mb-0"><?= $data['job']?></p>
+                                    <p><?= $data['nim']?>(<?= $data['major']?>)</p>
+                                </div>
+                            </div>
+                            <?php }}?>
+                        </div>
+                        <div class="col col-lg-6 col-12">
+                            <?php for($i = 0; $i < 3; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){?>
+                            <div class="d-flex mb-3">
+                                <div class="profile rounded-circle"></div>
+                                <div class="ms-3">
+                                    <h5 class="mb-3"><?= $data['name']?></h5>
+                                    <p class="mb-0"><?= $data['job']?></p>
+                                    <p><?= $data['nim']?>(<?= $data['major']?>)</p>
+                                </div>
+                            </div>
+                            <?php }}?>
+                        </div>
+                    </div>
+                </div>
+        <?php }
+        require_once('footer.php'); require_once("close.php");?>
     </div>
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 

@@ -88,9 +88,9 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="#" class="image-container">
+                            <button href="download.php" onclick="window.location.href ='download.php?id=<?= $dataRow['id'] ?>'" class="image-container" style="background-color: transparent;border-width: 0;">
                                 <img class="border border-dark border-4 rounded-4" src="src/game_placeholder.png" width="85%"/>
-                            </a>
+                            </button>
                             <h5 class="mt-3 px-3"><b><?= $dataRow['title'] ?></b></h5>
                             <p class="px-5">
                                 <?= $dataRow['game_desc'] ?>
@@ -132,9 +132,9 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="#" class="image-container">
+                            <button href="download.php" onclick="window.location.href ='download.php?id=<?= $dataRow['id'] ?>'" class="image-container" style="background-color: transparent;border-width: 0;">
                                 <img class="border border-dark border-4 rounded-4" src="src/game_placeholder.png" width="85%"/>
-                            </a>
+                            </button>
                             <h5 class="mt-3 px-3"><b><?= $mbData[$i]['title'] ?></b></h5>
                             <p class="px-5">
                                 <?= $mbData[$i]['game_desc'] ?>
