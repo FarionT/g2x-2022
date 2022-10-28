@@ -163,6 +163,10 @@ if(isset($_SESSION['userData'])){
     <script src="../../javadown.js" type="text/javascript"></script>
     <script type="text/javascript">
     var counter = 1;
+    msg = document.getElementById('msg');
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("btn_voting");
+
     document.getElementById("btn_voting").addEventListener("click", function() {
         vote();
     });
@@ -172,12 +176,14 @@ if(isset($_SESSION['userData'])){
             type: "post",
             data: {vote: '<?= $gameID?>', ReReURL: '<?= $url?>'},
             success:function(result){
-                console.log(result);
                 // tadi biar nggak kelooping button sign in googlenya, kalau ini jadinya nge looping tiap bukak tutup vote nya
                 // var counternya jangan dihilangin :')
 
                 //codingan ku udah perfect yak :)
-                document.getElementById('msg').innerHTML = result;
+                msg.innerHTML = result;
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
                 // if(counter == 1){ // login button
                     // var googlebutton = document.createElement('div');
                     // googlebutton.innerHTML = result;
@@ -191,7 +197,6 @@ if(isset($_SESSION['userData'])){
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'unvote'},
                         success:function(re){
-                            console.log(re);
                             document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">VOTE ("+re+")</p>";
                         }
                     });
@@ -202,7 +207,6 @@ if(isset($_SESSION['userData'])){
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'vote'},
                         success:function(re){
-                            console.log(re);
                             document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">UNVOTE ("+re+")</p>";
                         }
                     });

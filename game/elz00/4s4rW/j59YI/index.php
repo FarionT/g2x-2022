@@ -1,5 +1,5 @@
 <?php
-include_once('../../../connect.php');
+include_once('../../../../connect.php');
 // vote count
 if(!isset($_GET['doing'])) return;
 if($_GET['doing'] == 'vote'){
