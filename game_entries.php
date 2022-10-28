@@ -102,7 +102,8 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="#" class="image-container">
+                            <a href="#" class="image-container text-decoration-none text-reset">
+                                <h4 class="mx-5 font_title play-button border border-0 rounded-2"><b>P L A Y</b></h4>
                                 <img class="border border-dark border-4 rounded-4" src="src/game_placeholder.png" width="85%"/>
                             </a>
                             <h5 class="mt-3 px-3 font_title"><b><?= $dataRow['title'] ?></b></h5>
@@ -146,11 +147,12 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="#" class="image-container">
+                            <a href="#" class="image-container text-decoration-none text-reset">
+                                <h1 class="mx-5 font_title play-button border border-0 rounded-2"><b>P L A Y</b></h1>
                                 <img class="border border-dark border-4 rounded-4" src="src/game_placeholder.png" width="85%"/>
                             </a>
-                            <h5 class="mt-3 px-3"><b><?= $mbData[$i]['title'] ?></b></h5>
-                            <p class="px-5">
+                            <h5 class="mt-3 px-3 font_title"><b><?= $mbData[$i]['title'] ?></b></h5>
+                            <p class="px-5 font_content">
                                 <?= $mbData[$i]['game_desc'] ?>
                             </p>
                         </div>
