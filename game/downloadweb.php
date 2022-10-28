@@ -12,6 +12,20 @@ $sql = "select * from game_entries where id = {$gameID}";
 $game = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
 if(empty($game['game_cover'])) $game['game_cover'] = "../../src/game_placeholder.png";
 
+// Prev and next game
+$min = 1;
+$sql = "select * from game_entries where id = (select min(id) from game_entries)";
+$min = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
+$prev = $gameID - 1;
+$sql = "select * from game_entries where id = $prev";
+$prev = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
+$next = $gameID + 1;
+$sql = "select * from game_entries where id = $next";
+$next = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
+$max = 8;
+$sql = "select * from game_entries where id = (select max(id) from game_entries)";
+$max = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
+
 // creator detail
 $sql = "select * from creator where gameid = {$gameID}";
 $creator = $key->query($sql);
@@ -69,9 +83,15 @@ if(isset($_SESSION['userData'])){
     <div class="container col col-lg-10 px-5">
         <div class="container container-md-fluid">
             <div class="d-flex justify-content-around mt-5">
-                <button class="align-self-center" style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_left.png" style="width: 100px; height: 100px;"/></button>
-                <img class="border border-dark border-4 rounded-4 w-75" src="<?=$game['game_cover']?>"></img>
-                <button class="align-self-center" style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_right.png" style="width: 100px; height: 100px;"/></button>
+                <form action="../" class="align-self-center">
+                    <input type="text" name="game" hidden value="<?php if(empty($prev)){ echo $max['id'];} else { echo $prev['id']; }?>">
+                    <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_left.png" style="width: 100px; height: 100px;"/></button>
+                </form>
+                <img class="border border-dark border-4 rounded-4 w-75" src="../../src/game_placeholder.png"></img>
+                <form action="../" class="align-self-center">
+                    <input type="text" name="game" hidden value="<?php if(empty($next)){ echo $min['id'];} else { echo $next['id']; }?>">
+                    <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_right.png" style="width: 100px; height: 100px;"/></button>
+                </form>
             </div>
             <div class="d-flex flex-column align-items-center mt-5">
                 <h1 class="mx-auto mt-5 text-center font_title"><?= $game['title'] ?></h1>
