@@ -185,9 +185,7 @@ if(isset($_SESSION['userData'])){
 
                 //codingan ku udah perfect yak :)
                 msg.innerHTML = result;
-                btn.onclick = function() {
-                    modal.style.display = "block";
-                }
+
                 // if(counter == 1){ // login button
                     // var googlebutton = document.createElement('div');
                     // googlebutton.innerHTML = result;

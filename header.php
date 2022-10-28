@@ -2,6 +2,8 @@
 if(empty($alt)){
     $alt = "";
 }
+// $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+// $alt = $protocol . $_SERVER['HTTP_HOST']. '/';
 ?>
 <div class="header-navbar pt-lg-5 mt-3">
     <nav class="navbar navbar-expand-md bg-transparent">
