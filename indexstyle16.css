@@ -56,13 +56,52 @@
     justify-content: space-around;
 }
 
+.game-entries-div {
+    display: flex;
+    justify-content: center;
+}
+
+.game-entries-1 {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 0px;
+}
+
 .game-entries-box {
     width: 250px;
     height: 120px;
     background-color: gray;
     border: 3px solid black;
     border-radius: 10px;
-    margin-left: 90px;
+    margin-left: 80px;
+}
+
+#button-arrow-left {
+    margin-left: 50px;
+}
+
+#game-entries-box-1, #game-entries-box-6 {
+    margin-left: 0px;
+}
+
+#game-entries-box-3, #game-entries-box-8 {
+    margin-right: 0px;
+}
+
+.button-game-entries {
+    background-color: transparent;
+    border: 0px;
+    margin-bottom: 40px;
+}
+
+#button-arrow-left {
+    margin-left: 40px;
+}
+
+#button-arrow-right {
+    margin-right: 40px;
 }
 
 #game-entries-1, #game-entries-4 {
@@ -83,12 +122,6 @@
 
 .logo-arrow {
     width: 100px;
-}
-
-.button-game-entries {
-    background-color: transparent;
-    border: 0px;
-    margin-bottom: 40px;
 }
 
 .footer-box {
@@ -113,17 +146,6 @@
 .logo {
     width: 200px;
     height: 200px;
-}
-
-.game-entries-div {
-    display: flex;
-    justify-content: space-around;
-}
-
-.game-entries-1 {
-    width: 75%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1400px) {
@@ -541,7 +563,7 @@
         overflow: hidden;
     }
     .game-entries-1 {
-        width: 150%;
+        width: 1000px;
         display: flex;
         flex-wrap: nowrap;
         gap: 10px;
