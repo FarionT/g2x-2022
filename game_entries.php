@@ -149,8 +149,8 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                             <a href="download.php?game=<?= ($i +1) ?>" class="image-container" style="background-color: transparent;border-width: 0;">
                                 <img class="border border-dark border-4 rounded-4" src="src/game_placeholder.png" width="85%"/>
                             </a>
-                            <h5 class="mt-3 px-3"><b><?= $mbData[$i]['title'] ?></b></h5>
-                            <p class="px-5">
+                            <h5 class="mt-3 px-3 font_title"><b><?= $mbData[$i]['title'] ?></b></h5>
+                            <p class="px-5 font_content">
                                 <?= $mbData[$i]['game_desc'] ?>
                             </p>
                         </div>
