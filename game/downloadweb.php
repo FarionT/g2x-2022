@@ -1,51 +1,16 @@
 <?php
-$gameID = 1;
-if(isset($_GET['game'])) 
-    if(is_numeric($_GET['game'])) $gameID = $_GET['game'];
-
-$redirect = "";
-switch($gameID){
-    case 1:
-        $redirect = "game/Umlja";
-        break;
-    case 2:
-        $redirect = "game/CBFdm";
-        break;
-    case 3:
-        $redirect = "game/FuIEx";
-        break;
-    case 4:
-        $redirect = "game/lZSBp";
-        break;
-    case 5:
-        $redirect = "game/cyAxI";
-        break;
-    case 6:
-        $redirect = "game/G9mIH";
-        break;
-    case 7:
-        $redirect = "game/dlYiB";
-        break;
-    case 8:
-        $redirect = "game/kZXYh";
-        break;
-    default:
-        $redirect = "./";
-}
-exit(header("location: $redirect"));
-
+$alt = "../../";
 if(!session_id()){
     session_start();
 }
 $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://"; 
 $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-require_once("connect.php");
-
-
+require_once("../../connect.php");
 
 // game detail
 $sql = "select * from game_entries where id = {$gameID}";
 $game = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
+if(empty($game['game_cover'])) $game['game_cover'] = "../../src/game_placeholder.png";
 
 // creator detail
 $sql = "select * from creator where gameid = {$gameID}";
@@ -55,10 +20,6 @@ $creator = $key->query($sql);
 $sql = "select count(*) vote from voting where gameid = {$gameID}";
 $voteCount = $key->query($sql);
 $voteCount = $voteCount->fetch(PDO::FETCH_ASSOC)['vote'];
-
-if($game == null){
-    return;
-}
 
 // Is vote
 $isVote = false;
@@ -76,8 +37,8 @@ if(isset($_SESSION['userData'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="src/g2x_logo.png">
     <title>Game Details</title>
-    <link rel="stylesheet" href="styledown1.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../styledown1.css">
+    <link rel="stylesheet" href="../../styles.css">
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
@@ -94,7 +55,7 @@ if(isset($_SESSION['userData'])){
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
     <style>
-        body{background-image: url("src/bg-website-game-page.png"); background-size: 1600px;}
+        body{background-image: url("../../src/bg-website-game-page.png"); background-size: 1600px;}
         .font_content{font-family: 'Varela', sans-serif;}
         
         .font_title{
@@ -104,13 +65,13 @@ if(isset($_SESSION['userData'])){
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
-    <?php require_once('header.php'); ?>
+    <?php require_once('../../header.php'); ?>
     <div class="container col col-lg-10 px-5">
         <div class="container container-md-fluid">
             <div class="d-flex justify-content-around mt-5">
-                <button class="align-self-center" style="background-color: transparent; border: 0px;"><img src="src/index/arrow_left.png" style="width: 100px; height: 100px;"/></button>
-                <img class="border border-dark border-4 rounded-4 w-75" src="src/game_placeholder.png"></img>
-                <button class="align-self-center" style="background-color: transparent; border: 0px;"><img src="src/index/arrow_right.png" style="width: 100px; height: 100px;"/></button>
+                <button class="align-self-center" style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_left.png" style="width: 100px; height: 100px;"/></button>
+                <img class="border border-dark border-4 rounded-4 w-75" src="<?=$game['game_cover']?>"></img>
+                <button class="align-self-center" style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_right.png" style="width: 100px; height: 100px;"/></button>
             </div>
             <div class="d-flex flex-column align-items-center mt-5">
                 <h1 class="mx-auto mt-5 text-center font_title"><?= $game['title'] ?></h1>
@@ -169,7 +130,7 @@ if(isset($_SESSION['userData'])){
         </div>
 
     </div>
-    <?php require_once('footer.php'); require_once("close.php");?>
+    <?php require_once('../../footer.php'); require_once("../../close.php");?>
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
@@ -179,7 +140,7 @@ if(isset($_SESSION['userData'])){
     <script>
         AOS.init();
     </script>
-    <script src="javadown.js" type="text/javascript"></script>
+    <script src="../../javadown.js" type="text/javascript"></script>
     <script type="text/javascript">
     var counter = 1;
     document.getElementById("btn_voting").addEventListener("click", function() {
@@ -187,7 +148,7 @@ if(isset($_SESSION['userData'])){
     });
     function vote() {
         $.ajax({
-            url:"elz00/4s4rW/",
+            url:"../elz00/4s4rW/",
             type: "post",
             data: {vote: '<?= $gameID?>', ReReURL: '<?= $url?>'},
             success:function(result){
@@ -206,7 +167,7 @@ if(isset($_SESSION['userData'])){
                 // }
                 if(result.includes('You unvoted')){ // already vote
                     $.ajax({
-                        url:"elz00/4s4rW/j59YI",
+                        url:"../elz00/4s4rW/j59YI",
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'unvote'},
                         success:function(re){
@@ -217,7 +178,7 @@ if(isset($_SESSION['userData'])){
                 }
                 if(result.includes('Thanks for voting')){ // vote
                     $.ajax({
-                        url:"elz00/4s4rW/j59YI",
+                        url:"../elz00/4s4rW/j59YI",
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'vote'},
                         success:function(re){
