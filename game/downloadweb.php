@@ -86,20 +86,20 @@ if(isset($_SESSION['userData'])){
     <?php require_once('../../header.php'); ?>
     <div class="container col col-lg-10 px-5">
         <div class="container container-md-fluid">
-            <div class="d-flex justify-content-around mt-5">
+            <div class="d-flex justify-content-around mt-3 mt-lg-5">
                 <form action="../" class="align-self-center">
                     <input type="text" name="game" hidden value="<?php if(empty($prev)){ echo $max['id'];} else { echo $prev['id']; }?>">
-                    <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_left.png" style="width: 100px; height: 100px;"/></button>
+                    <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_left.png" class="navbutton"/></button>
                 </form>
-                <img class="border border-dark border-4 rounded-4 w-75" src="../../src/game_placeholder.png"></img>
+                <img class="border border-dark border-4 rounded-4 w-75 img-fluid" src="../../src/game_placeholder.png"></img>
                 <form action="../" class="align-self-center">
                     <input type="text" name="game" hidden value="<?php if(empty($next)){ echo $min['id'];} else { echo $next['id']; }?>">
-                    <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_right.png" style="width: 100px; height: 100px;"/></button>
+                    <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_right.png" class="navbutton" /></button>
                 </form>
             </div>
             <div class="d-flex flex-column align-items-center mt-5">
-                <h1 class="mx-auto mt-5 text-center font_title"><?= $game['title'] ?></h1>
-                <h3 class="mb-5 text-center font_content">By <?= $game['team_name'] ?></h3>
+                <h1 class="mx-auto mt-5 text-center font_title" id="game_title"><?= $game['title'] ?></h1>
+                <h3 class="mb-5 text-center font_content" id="team_name">By <?= $game['team_name'] ?></h3>
                 <div class="d-flex justify-content-center container-lg-fluid">
                     <a href="<?= $game['download_link'] ?>">
                         <img class="py-2 mx-2 button-choose" src="../../src/buttons/download1.png"/>
@@ -120,26 +120,28 @@ if(isset($_SESSION['userData'])){
         </div>
         
         <div class=" d-flex mt-5 row row-2 row-lg-2 justify-content-lg-around justify-content-center">
-            <div class="col col-lg-6 col-12 mb-5">
-                <p class="h3 font_title">ABOUT GAME</p>
-                <p class="font_content"><?= $game['game_desc'] ?></p>
+            <div class="col col-lg-6 col-12 mb-3 mb-lg-5">
+                <p class="font_title about_how">ABOUT GAME</p>
+                <p class="font_content game_desc"><?= $game['game_desc'] ?></p>
             </div>
             <div class="col col-lg-6 col-12 ">
-                <p class="h3 font_title">HOW TO PLAY</p>
-                <p class="font_content"><?= $game['HowToPlay'] ?></p>
+                <p class="font_title about_how">HOW TO PLAY</p>
+                <p class="font_content game_desc"><?= $game['HowToPlay'] ?></p>
             </div>
         </div>
-        <div class="d-flex flex-column mx-auto mt-5">
-            <h3 class="mb-5 font_title">CREATORS</h3>
+        <div class="d-flex flex-column mx-auto mt-lg-5 mt-4">
+            <h3 class="mb-2 mb-3 mb-lg-5 font_title about_how" id="creators">CREATORS</h3>
             <div class="d-flex row row-2 ">
                 <div class="col col-lg-6 col-12">
                     <?php for($i = 0; $i < 3; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){?>
                     <div class="d-flex mb-3">
-                        <div class="profile rounded-circle"></div>
+                        <div>
+                            <img src="../../src/game_placeholder.png" class="profile rounded-circle"/>
+                        </div>
                         <div class="ms-3">
-                            <h5 class="mb-3 font_title"><?= $data['name']?></h5>
-                            <p class="mb-0 font_content"><?= $data['job']?></p>
-                            <p class="font_content"><?= $data['nim']?>(<?= $data['major']?>)</p>
+                            <h5 class="mb-2 mb-lg-3 font_title member_name"><?= $data['name']?></h5>
+                            <p class="mb-0 font_content member_job"><?= $data['job']?></p>
+                            <p class="font_content member_job"><?= $data['nim']?>(<?= $data['major']?>)</p>
                         </div>
                     </div>
                     <?php }}?>
@@ -147,11 +149,13 @@ if(isset($_SESSION['userData'])){
                 <div class="col col-lg-6 col-12">
                     <?php for($i = 0; $i < 3; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){?>
                     <div class="d-flex mb-3">
-                        <div class="profile rounded-circle"></div>
+                        <div>
+                            <img src="../../src/game_placeholder.png" class="profile rounded-circle"/>
+                        </div>
                         <div class="ms-3">
-                            <h5 class="mb-3 font_title"><?= $data['name']?></h5>
-                            <p class="mb-0 font_content"><?= $data['job']?></p>
-                            <p class="font_content"><?= $data['nim']?>(<?= $data['major']?>)</p>
+                            <h5 class="mb-2 mb-lg-3 font_title member_name"><?= $data['name']?></h5>
+                            <p class="mb-0 font_content member_job"><?= $data['job']?></p>
+                            <p class="font_content member_job"><?= $data['nim']?>(<?= $data['major']?>)</p>
                         </div>
                     </div>
                     <?php }}?>

@@ -202,16 +202,7 @@
     border-radius: 10px;
 }
 
-.button-choose {
-    width: 200px;
-}
 
-.profile {
-    width: 80px;
-    height: 80px;
-    background-color: gray;
-    border: 3px solid black;
-}
 
 .button-choose>p{
     font-size: 12px;
