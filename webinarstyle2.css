@@ -29,7 +29,7 @@
         width: 96px;
     }
     #webinar{
-        background-image: url('src/backgrounds/mobile_game_page.png') !important;
+        background-image: url('src/backgrounds/mobile-webinar.jpg') !important;
     }
     #game-mobile {
         margin-left: 20px;
@@ -149,7 +149,7 @@
     }
 
     #webinar {
-        background-image: url('src/backgrounds/website_game_page.png') !important;
+        background-image: url('src/backgrounds/webinar-competition.jpg') !important;
     }
 
     #game-desktop {
@@ -236,7 +236,7 @@
 
 #webinar {
     background-repeat: no-repeat !important;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #game-desktop {

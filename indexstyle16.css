@@ -149,6 +149,9 @@
 }
 
 @media screen and (max-width: 1400px) {
+    #index{
+        background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
+    }
     #judul {
         display: flex;
         flex-direction: column;
@@ -227,6 +230,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    #index{
+        background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
+    }
     #judul {
         display: flex;
         flex-direction: column;
@@ -291,6 +297,9 @@
 }
 
 @media screen and (max-width: 992px) {
+    #index{
+        background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
+    }
     #games, #competitions, #webinar {
         margin-bottom: 100px;
     }
@@ -356,6 +365,9 @@
 }
 
 @media screen and (max-width: 800px) {
+    #index{
+        background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
+    }
     #judul-welcome, #judul-g2x {
         font-size: 40px;
     }
@@ -408,6 +420,9 @@
 }
 
 @media screen and (max-width: 760px) {
+    #index{
+        background-image: url('src/backgrounds/mobile-landing-page-no-pulau.jpg') !important;
+    }
     .footer-box {
         width: 80px;
         height: 80px;
@@ -457,6 +472,9 @@
 }
 
 @media screen and (max-width: 730px) {
+    #index{
+        background-image: url('src/backgrounds/mobile-landing-page-no-pulau.jpg') !important;
+    }
     /* DRAGABLE CAROUSEL */
 
     .button-game-entries {
@@ -502,6 +520,9 @@
 }
 
 @media screen and (max-width: 600px) {
+    #index{
+        background-image: url('src/backgrounds/mobile-landing-page-no-pulau.jpg') !important;
+    }
     #judul {
         display: flex;
         flex-direction: column;
@@ -572,4 +593,9 @@
         top: 0;
         left: 0;
     }
+}
+
+#index{
+    background-repeat: no-repeat !important;
+    background-size: cover;
 }
