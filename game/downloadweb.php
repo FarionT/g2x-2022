@@ -101,8 +101,14 @@ if(isset($_SESSION['userData'])){
                 <h1 class="mx-auto mt-5 text-center font_title"><?= $game['title'] ?></h1>
                 <h3 class="mb-5 text-center font_content">By <?= $game['team_name'] ?></h3>
                 <div class="d-flex justify-content-center container-lg-fluid">
-                    <a href="<?= $game['download_link'] ?>"><button class="button-choose rounded-pill py-2 mx-2"><p class="m-auto">DOWNLOAD</p></button></a>
-                    <button class="button-choose rounded-pill py-2 mx-2" id="btn_voting"><p class="m-auto"><?php if($isVote) echo "UNVOTE ($voteCount)"; else echo "VOTE ($voteCount)";?></p></button>
+                    <a href="<?= $game['download_link'] ?>">
+                        <img class="py-2 mx-2 button-choose" src="../../src/buttons/download1.png"/>
+                    </a>
+                    <?php if($isVote){?>
+                        <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/unvote1.png">
+                    <?php } else {?>
+                        <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/vote1.png">
+                    <?php }?>
                 </div>
                 <div id="myModal" class="modal">
                     <div id="modal-content">
