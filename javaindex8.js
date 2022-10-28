@@ -18,7 +18,7 @@ if(window.innerWidth <= 1400) {
         
     sliderContainer.addEventListener("mouseup", () => {
         sliderContainer.style.cursor = "grab";
-            pressed = false;
+        pressed = false;
     });
 
     sliderContainer.addEventListener("mousemove", (e) => {
@@ -30,6 +30,34 @@ if(window.innerWidth <= 1400) {
         innerSlider.style.left = `${x - startX}px`;
     });
 
+    sliderContainer.addEventListener("mousemove", (e) => {
+        checkBoundary();
+    });
+
+    // MOBILE
+
+    sliderContainer.addEventListener("touchstart", (e) => {
+        pressed = true;
+        startX = e.touches[0].screenX - innerSlider.offsetLeft;
+    });
+        
+    sliderContainer.addEventListener("touchend", () => {
+        pressed = false;
+    });
+
+    sliderContainer.addEventListener("touchmove", (e) => {
+        if (!pressed) return;
+        e.preventDefault();
+    
+        x = e.touches[0].screenX;
+
+        innerSlider.style.left = `${x - startX}px`;
+    });
+
+    sliderContainer.addEventListener("touchmove", (e) => {
+        checkBoundary();
+    });
+
     const checkBoundary = () => {
         let outer = sliderContainer.getBoundingClientRect();
         let inner = innerSlider.getBoundingClientRect();
@@ -37,15 +65,10 @@ if(window.innerWidth <= 1400) {
         if (parseInt(innerSlider.style.left) > 0) {
             innerSlider.style.left = "0px";
         }
-        
         if (inner.right < outer.right) {
             innerSlider.style.left = `-${inner.width - outer.width}px`;
         }
     };
-
-    sliderContainer.addEventListener("mousemove", (e) => {
-        checkBoundary();
-    });
 }
 else {
     var left1 = 1;
