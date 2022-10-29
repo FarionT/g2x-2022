@@ -71,7 +71,11 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
             <div id="trio" class="d-flex flex-column flex-lg-row justify-content-lg-center" data-aos="fade-down">
                 <div id="games">
                     <img src="src/index/gameboy.png" class="logo-trio logo1 img-fluid"/>
-                    <a href="<?=$alt?>game_entries" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <div class="pulau d-flex justify-content-center">
+                        <a href="<?=$alt?>game_entries" class="button-arrow button-arrow-resp align-items-center d-flex justify-content-center">
+                            <img class="img-button-arrow mx-auto my-auto" src="src/index/awan_arrow1.png" />
+                        </a>
+                    </div>
                     <h1 class="sub-judul font_title">GAMES</h1>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
@@ -80,8 +84,11 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 </div>
                 <div id="competitions">
                     <img src="src/index/piala.png" class="logo-trio logo2 img-fluid"/>
-                    <a href="<?=$alt?>competition" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
-                    <h1 class="sub-judul font_title">COMPETITIONS</h1>
+                    <div class="pulau d-flex justify-content-center">
+                        <a href="<?=$alt?>competition" class="button-arrow button-arrow-resp align-items-center d-flex justify-content-center">
+                            <img class="img-button-arrow  mx-auto my-auto" src="src/index/awan_arrow1.png" />
+                        </a>
+                    </div>                    <h1 class="sub-judul font_title">COMPETITIONS</h1>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
@@ -89,7 +96,11 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 </div>
                 <div id="webinar">
                     <img src="src/index/laptop.png" class="logo-trio logo3"/>
-                    <a href="<?=$alt?>webinar" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <div class="pulau d-flex justify-content-center">
+                        <a href="<?=$alt?>webinar" class="button-arrow button-arrow-resp align-items-center d-flex justify-content-center">
+                            <img class="img-button-arrow  mx-auto my-auto" src="src/index/awan_arrow1.png" />
+                        </a>
+                    </div>
                     <h1 class="sub-judul font_title">WEBINAR</h1>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
@@ -148,8 +159,8 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 </div>
             </div>
             <br /><br /><br />
-            <h2 class="button-arrow text-center mt-5 mb-3 font_title" data-aos="fade-down">SPONSORS</h2>
-            <div class="d-flex justify-content-center" data-aos="fade-down">
+            <h2 class="button-arrow text-center mb-3 font_title" data-aos="fade-down" id="sponsors">SPONSORS</h2>
+            <div class="d-flex justify-content-center" data-aos="fade-down" >
                 <div class="mx-5 d-flex justify-content-start">
                     <img src="src/medpar_sponsor/Logo_Mandiri-Utama-Finance.png" class="footer-box" style="width:auto"/>
                 </div>
