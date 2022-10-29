@@ -21,10 +21,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
     <style>
         body{background-image: url("src/bg-website-game-page.png");}
-        .font_content{font-family: 'Varela', sans-serif;}
+        .font_content{
+            font-family: 'Varela', sans-serif;
+            color: #0A194F;
+        }
         
         .font_title{
             font-family: 'Dosis', sans-serif;
+            color: #0A194F;
         }
     </style>
 </head>
@@ -44,7 +48,7 @@
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
-                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle competition_profile"/>
+                            <img src="src/webi_compe/chardes_icon2.png" class="competition_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
@@ -82,7 +86,7 @@
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
-                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle competition_profile"/>
+                            <img src="src/webi_compe/envi_icon.png" class="competition_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
@@ -120,7 +124,7 @@
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
-                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle competition_profile"/>
+                            <img src="src/webi_compe/story_icon.png" class="competition_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">

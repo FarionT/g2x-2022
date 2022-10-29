@@ -50,7 +50,7 @@
     }
 
     #game-entries {
-        background-image: url('src/backgrounds/website_game_page.png') !important;
+        background-image: url('src/backgrounds/game-entries.jpg') !important;
     }
 
     #game-desktop {
@@ -96,7 +96,7 @@
 
 @media only screen and (max-width: 767px) {
     #game-entries {
-        background-image: url('src/backgrounds/mobile_game_page.png') !important;
+        background-image: url('src/backgrounds/mobile-game-entries.jpg') !important;
     }
 }
 
@@ -122,11 +122,15 @@
 
 #game-entries {
     background-repeat: no-repeat !important;
-    background-size: cover;
+    background-size: cover !important; 
 }
 
 #game-desktop {
     margin-top: 120px;
+}
+
+.img-select{
+    border: 3px solid #0A194F;
 }
 
 #game-mobile {
@@ -142,45 +146,20 @@
 }
 
 .nav-link {
-    color: white !important;
-    text-shadow: 1px 1px 15px dodgerblue;
-    transition: 0.1s;
+    color: #0A194F !important;
+    transition: 0.3s !important;
 }
 
 .nav-link:hover {
-    color: gainsboro !important;
-}
-
-.image-container {
-    position: relative;
+    transform: scale(1.1) !important;
 }
 
 .image-container img {
     transition: transform .3s;
 }
 
-.image-container:hover img {
+.image-container img:hover {
     transform: scale(1.05);
-}
-
-.play-button {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 10%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 1;
-    opacity: 0;
-    transition: transform .3s;
-    transition: opacity .3s;
-}
-
-.image-container:hover .play-button {
-    opacity: 100;
 }
 
 .btn-page {
@@ -222,16 +201,7 @@
     border-radius: 10px;
 }
 
-.button-choose {
-    width: 200px;
-}
 
-.profile {
-    width: 80px;
-    height: 80px;
-    background-color: gray;
-    border: 3px solid black;
-}
 
 .button-choose>p{
     font-size: 12px;

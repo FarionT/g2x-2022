@@ -21,10 +21,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
     <style>
         body{background-image: url("src/bg-website-game-page.png");}
-        .font_content{font-family: 'Varela', sans-serif;}
+        .font_content{
+            font-family: 'Varela', sans-serif;
+            color: #0A194F;
+        }
         
         .font_title{
             font-family: 'Dosis', sans-serif;
+            color: #0A194F;
         }
     </style>
 </head>

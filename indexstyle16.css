@@ -56,13 +56,52 @@
     justify-content: space-around;
 }
 
+.game-entries-div {
+    display: flex;
+    justify-content: center;
+}
+
+.game-entries-1 {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 0px;
+}
+
 .game-entries-box {
     width: 250px;
     height: 120px;
     background-color: gray;
     border: 3px solid black;
     border-radius: 10px;
-    margin-left: 90px;
+    margin-left: 80px;
+}
+
+#button-arrow-left {
+    margin-left: 50px;
+}
+
+#game-entries-box-1, #game-entries-box-6 {
+    margin-left: 0px;
+}
+
+#game-entries-box-3, #game-entries-box-8 {
+    margin-right: 0px;
+}
+
+.button-game-entries {
+    background-color: transparent;
+    border: 0px;
+    margin-bottom: 40px;
+}
+
+#button-arrow-left {
+    margin-left: 40px;
+}
+
+#button-arrow-right {
+    margin-right: 40px;
 }
 
 #game-entries-1, #game-entries-4 {
@@ -83,12 +122,6 @@
 
 .logo-arrow {
     width: 100px;
-}
-
-.button-game-entries {
-    background-color: transparent;
-    border: 0px;
-    margin-bottom: 40px;
 }
 
 .footer-box {
@@ -115,18 +148,10 @@
     height: 200px;
 }
 
-.game-entries-div {
-    display: flex;
-    justify-content: space-around;
-}
-
-.game-entries-1 {
-    width: 75%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 768px) {
+    #index{
+        background-image: url('src/backgrounds/landing-page-no-pulau.jpg');
+    }
     #judul {
         display: flex;
         flex-direction: column;
@@ -204,7 +229,10 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
+    #index{
+        background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
+    }
     #judul {
         display: flex;
         flex-direction: column;
@@ -268,7 +296,10 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+    #index{
+        background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
+    }
     #games, #competitions, #webinar {
         margin-bottom: 100px;
     }
@@ -333,7 +364,10 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+    #index{
+        background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
+    }
     #judul-welcome, #judul-g2x {
         font-size: 40px;
     }
@@ -385,7 +419,10 @@
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
+    #index{
+        background-image: url('src/backgrounds/mobile-landing-page-no-pulau.jpg') !important;
+    }
     .footer-box {
         width: 80px;
         height: 80px;
@@ -435,6 +472,9 @@
 }
 
 @media screen and (max-width: 730px) {
+    #index{
+        background-image: url('src/backgrounds/mobile-landing-page-no-pulau.jpg') !important;
+    }
     /* DRAGABLE CAROUSEL */
 
     .button-game-entries {
@@ -480,6 +520,9 @@
 }
 
 @media screen and (max-width: 600px) {
+    #index{
+        background-image: url('src/backgrounds/mobile-landing-page-no-pulau.jpg') !important;
+    }
     #judul {
         display: flex;
         flex-direction: column;
@@ -541,7 +584,7 @@
         overflow: hidden;
     }
     .game-entries-1 {
-        width: 150%;
+        width: 1000px;
         display: flex;
         flex-wrap: nowrap;
         gap: 10px;
@@ -550,4 +593,9 @@
         top: 0;
         left: 0;
     }
+}
+
+#index{
+    background-repeat: no-repeat !important;
+    background-size: 100%;
 }
