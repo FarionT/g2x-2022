@@ -86,7 +86,7 @@ if(isset($_SESSION['userData'])){
     <?php require_once('../../header.php'); ?>
     <div class="container col col-lg-10 px-5">
         <div class="container container-md-fluid">
-            <div class="d-flex justify-content-around mt-3 mt-lg-5">
+            <div class="d-flex justify-content-around" id="game-ss">
                 <form action="../" class="align-self-center">
                     <input type="text" name="game" hidden value="<?php if(empty($prev)){ echo $max['id'];} else { echo $prev['id']; }?>">
                     <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_left.png" class="navbutton"/></button>
@@ -97,7 +97,7 @@ if(isset($_SESSION['userData'])){
                     <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_right.png" class="navbutton" /></button>
                 </form>
             </div>
-            <div class="d-flex flex-column align-items-center mt-5">
+            <div class="d-flex flex-column align-items-center" id="game-content">
                 <h1 class="mx-auto mt-5 text-center font_title" id="game_title"><?= $game['title'] ?></h1>
                 <h3 class="mb-5 text-center font_content" id="team_name">By <?= $game['team_name'] ?></h3>
                 <div class="d-flex justify-content-center container-lg-fluid">
