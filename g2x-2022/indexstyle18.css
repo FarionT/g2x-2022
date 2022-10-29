@@ -200,7 +200,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 0 760px;
+        margin: 0 0 750px;
     }
 
     #trio-logo {
@@ -230,7 +230,6 @@
         width: 120px;
         height: 120px;
     }
-
     /* DRAGABLE CAROUSEL */
 
     .outside {
@@ -299,7 +298,7 @@
 
 @media screen and (max-width: 1301px) {
     #judul {
-        margin-bottom: 650px;
+        margin-bottom: 470px;
     }
 
     #competitions {
@@ -313,7 +312,7 @@
 
 @media screen and (max-width: 1251px) {
     #judul {
-        margin-bottom: 580px;
+        margin-bottom: 410px;
     }
 
     #competitions {
@@ -346,7 +345,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 0 510px;
+        margin: 0 0 360px;
     }
 
     #competitions {
@@ -368,7 +367,7 @@
 
 @media screen and (max-width: 1151px) {
     #judul {
-        margin-bottom: 450px;
+        margin-bottom: 300px;
     }
 
     #competitions {
@@ -390,7 +389,7 @@
 
 @media screen and (max-width: 1101px) {
     #judul {
-        margin-bottom: 440px;
+        margin-bottom: 290px;
     }
 
     .logo-trio {
@@ -421,7 +420,7 @@
 
 @media screen and (max-width: 1081px) {
     #judul {
-        margin-bottom: 410px;
+        margin-bottom: 270px;
     }
 
     .logo-trio {
@@ -460,7 +459,7 @@
     }
 
     #judul {
-        margin-bottom: 2050px;
+        margin-bottom: 1850px;
     }
 
     .sub-judul {
@@ -508,7 +507,7 @@
 
 @media screen and (max-width: 951px) {
     #judul {
-        margin-bottom: 1940px;
+        margin-bottom: 1740px;
     }
 
     .trio-content {
@@ -518,7 +517,7 @@
 
 @media screen and (max-width: 901px) {
     #judul {
-        margin-bottom: 1800px;
+        margin-bottom: 1600px;
     }
 
     .trio-content {
@@ -528,7 +527,7 @@
 
 @media screen and (max-width: 851px) {
     #judul {
-        margin-bottom: 1660px;
+        margin-bottom: 1480px;
     }
 
     .logo-trio {
@@ -550,7 +549,7 @@
     }
 
     #judul {
-        margin-bottom: 1530px;
+        margin-bottom: 1350px;
     }
 
     .logo-trio {
@@ -585,11 +584,11 @@
     }
 
     #judul {
-        margin-bottom: 1480px;
+        margin-bottom: 1320px;
     }
 
     .logo-trio {
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 
     .trio-content {
@@ -607,7 +606,7 @@
     }
 
     #judul {
-        margin-bottom: 1410px;
+        margin-bottom: 1240px;
     }
 
     .logo-trio {
@@ -625,7 +624,7 @@
 
 @media screen and (max-width: 701px) {
     #judul {
-        margin-bottom: 1320px;
+        margin-bottom: 1160px;
     }
 
     .logo-trio {
@@ -643,7 +642,7 @@
 
 @media screen and (max-width: 651px) {
     #judul {
-        margin-bottom: 1180px;
+        margin-bottom: 1040px;
     }
 
     .logo-trio {
@@ -671,7 +670,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 0 1090px;
+        margin: 0 0 1000px;
     }
 
     .logo-trio {
@@ -682,11 +681,11 @@
 
     .trio-content {
         font-size: 20px;
-        margin-bottom: 70px;
+        margin-bottom: 80px;
     }
 
     #competitions .trio-content {
-        margin-bottom: 65px;
+        margin-bottom: 90px;
     }
 
     #judul-welcome, #judul-g2x {
@@ -756,22 +755,22 @@
 
 @media screen and (max-width: 551px) {
     #judul {
-        margin-bottom: 950px;
+        margin-bottom: 870px;
     }
 
     .trio-content {
         font-size: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 
     #competitions .trio-content {
-        margin-bottom: 15px;
+        margin-bottom: 35px;
     }
 }
 
 @media screen and (max-width: 501px) {
     #judul {
-        margin-bottom: 850px;
+        margin-bottom: 780px;
     }
 
     .logo-trio {
@@ -789,11 +788,11 @@
 
     .trio-content {
         font-size: 15px;
-        margin-bottom: 55px;
+        margin-bottom: 75px;
     }
 
     #competitions .trio-content {
-        margin-bottom: 60px;
+        margin-bottom: 70px;
     }
 }
 
