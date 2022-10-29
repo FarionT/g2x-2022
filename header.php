@@ -32,7 +32,7 @@ if(empty($alt)){
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?=$alt?>#contact">
+                    <a class="nav-link" href="./#contact">
                         <h4 class="ps-1 font_title">Contact</h4>
                     </a>
                 </li>
