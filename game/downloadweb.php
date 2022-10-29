@@ -49,7 +49,7 @@ if(isset($_SESSION['userData'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="src/g2x_logo.png">
+    <link rel="icon" href="../../src/g2x_logo.png">
     <title>Game Details</title>
     <link rel="stylesheet" href="../../styledown1.css">
     <link rel="stylesheet" href="../../styles.css">
@@ -144,7 +144,7 @@ if(isset($_SESSION['userData'])){
                         <div class="ms-3">
                             <h5 class="mb-2 mb-lg-3 font_title member_name"><?= $data['name']?></h5>
                             <p class="mb-0 font_content member_job"><?= $data['job']?></p>
-                            <p class="font_content member_job"><?= $data['nim']?>(<?= $data['major']?>)</p>
+                            <p class="font_content member_job"><?= $data['nim']?> (<?= $data['major']?>)</p>
                         </div>
                     </div>
                     <?php }}?>
