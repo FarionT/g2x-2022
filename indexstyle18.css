@@ -574,9 +574,11 @@
     }
 
     #judul {
-        margin-bottom: 2100px !important;
+        margin-bottom: 2150px !important;
     }
-
+    #games{
+        margin-bottom: 80px !important;
+    }
     .sub-judul {
         font-size: 50px;
     }
@@ -587,15 +589,20 @@
     }
 
     #competitions {
-        margin-bottom: 70px !important;
+        margin: 0 !important;
     }
 
     .logo-trio {
         width: 250px !important;
         height: 250px !important;
-        margin-bottom: 35px;
+        margin-bottom: 45px !important;
     }
-
+    .logo2{
+        margin-bottom: 86px!important;
+    }
+    #competitions{
+        margin-bottom: 60px!important;
+    }
     #competitions .logo-trio {
         margin-bottom: 70px;
     }

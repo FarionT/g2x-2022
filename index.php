@@ -70,7 +70,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
             </div>
             <div id="trio" class="d-flex flex-column flex-lg-row justify-content-lg-center" data-aos="fade-down">
                 <div id="games">
-                    <img src="src/index/gameboy.png" class="logo-trio"/>
+                    <img src="src/index/gameboy.png" class="logo-trio logo1 img-fluid"/>
                     <a href="<?=$alt?>game_entries" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h1 class="sub-judul font_title">GAMES</h1>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
@@ -79,7 +79,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                     <a href="game_entries" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
                 <div id="competitions">
-                    <img src="src/index/piala.png" class="logo-trio"/>
+                    <img src="src/index/piala.png" class="logo-trio logo2 img-fluid"/>
                     <a href="<?=$alt?>competition" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h1 class="sub-judul font_title">COMPETITIONS</h1>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
@@ -88,7 +88,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                     <a href="competition" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
                 <div id="webinar">
-                    <img src="src/index/laptop.png" class="logo-trio"/>
+                    <img src="src/index/laptop.png" class="logo-trio logo3"/>
                     <a href="<?=$alt?>webinar" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h1 class="sub-judul font_title">WEBINAR</h1>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
