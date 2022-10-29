@@ -325,12 +325,18 @@
     #trio {
         margin-bottom: 500px !important;
     }
+
+    .game-entries-1 {
+        width: 155%;
+    }
 }
 @media screen and (max-width: 1325px){
     #judul{
         margin-bottom: 700px !important;
     }
-
+    .game-entries-1 {
+        width: 160%;
+    }
 }
 @media screen and (max-width: 1301px) {
     #judul {
@@ -344,6 +350,9 @@
     #trio {
         margin-bottom: 400px !important;
     }
+    .game-entries-1 {
+        width: 165%;
+    }
 }
 
 @media screen and (max-width: 1275px){
@@ -355,6 +364,9 @@
     }
     #trio{
         margin-bottom: 500px !important;
+    }
+    .game-entries-1 {
+        width: 165%;
     }
 }
 
@@ -379,11 +391,18 @@
     .logo-trio {
         margin-bottom: 170px !important;
     }
+
+    .game-entries-1 {
+        width: 170%;
+    }
 }
 
 @media screen and (max-width: 1220px){
     #judul{
         margin-bottom: 580px !important;
+    }
+    .game-entries-1 {
+        width: 175%;
     }
 }
 
@@ -422,6 +441,9 @@
         width: 110px;
         height: 110px;
     }
+    .game-entries-1 {
+        width: 180%;
+    }
 }
 
 @media screen and (max-width: 1175px){
@@ -430,6 +452,9 @@
     }
     .logo-trio{
         margin-bottom: 170px !important;
+    }
+    .game-entries-1 {
+        width: 185%;
     }
 }
 
@@ -456,6 +481,9 @@
     #trio {
         margin-bottom: 400px !important;
     }
+    .game-entries-1 {
+        width: 185%;
+    }
 }
 
 @media screen and (max-width: 1125px){
@@ -464,6 +492,9 @@
     }
     .logo-trio{
         margin-bottom: 130px !important;
+    }
+    .game-entries-1 {
+        width: 190%;
     }
 }
 
@@ -496,6 +527,10 @@
     #trio {
         margin-bottom: 400px !important;
     }
+    
+    .game-entries-1 {
+        width: 195%;
+    }
 }
 
 @media screen and (max-width: 1075px) {
@@ -527,6 +562,9 @@
     #trio {
         margin-bottom: 350px !important;
     }
+    .game-entries-1 {
+        width: 200%;
+    }
 }
 
 @media screen and (max-width: 1050px){
@@ -541,6 +579,9 @@
     #competitions{
         margin-top: 65px!important;
     }
+    .game-entries-1 {
+        width: 205%;
+    }
 }
 
 @media screen and (max-width: 1025px){
@@ -549,6 +590,9 @@
     }
     #competitions{
         margin-top: 65px!important;
+    }
+    .game-entries-1 {
+        width: 210%;
     }
 }
 
@@ -561,6 +605,9 @@
     }
     .logo-trio{
         margin-bottom: 130px!important;
+    }
+    .game-entries-1 {
+        width: 215%;
     }
 }
 
@@ -629,6 +676,10 @@
         width: 100px;
         height: 100px;
     }
+
+    .game-entries-1 {
+        width: 215%;
+    }
 }
 
 @media screen and (max-width: 951px) {
@@ -639,6 +690,10 @@
     .trio-content {
         margin-bottom: 180px !important;
     }
+
+    .game-entries-1 {
+        width: 230%;
+    }
 }
 
 @media screen and (max-width: 901px) {
@@ -648,6 +703,10 @@
 
     .trio-content {
         margin-bottom: 120px !important;
+    }
+
+    .game-entries-1 {
+        width: 240%;
     }
 }
 
@@ -662,6 +721,10 @@
 
     .trio-content {
         margin-bottom: 90px !important;
+    }
+
+    .game-entries-1 {
+        width: 250%;
     }
 }
 
@@ -698,6 +761,10 @@
         width: 90px;
         height: 90px;
     }
+
+    .game-entries-1 {
+        width: 270%;
+    }
 }
 
 @media screen and (max-width: 761px) {
@@ -724,6 +791,10 @@
     #competitions .logo-trio {
         margin-bottom: 30px !important;
     }
+
+    .game-entries-1 {
+        width: 280%;
+    }
 }
 
 @media screen and (max-width: 731px) {
@@ -746,6 +817,10 @@
     #competitions {
         margin-bottom: 80px !important;
     }
+
+    .game-entries-1 {
+        width: 290%;
+    }
 }
 
 @media screen and (max-width: 701px) {
@@ -763,6 +838,10 @@
 
     #competitions {
         margin-bottom: 80px !important;
+    }
+
+    .game-entries-1 {
+        width: 310%;
     }
 }
 
@@ -786,6 +865,10 @@
 
     .img-button-arrow {
         width: 120px !important;
+    }
+
+    .game-entries-1 {
+        width: 330%;
     }
 }
 
@@ -832,47 +915,9 @@
         width: 60px;
         height: 60px;
     }
-    /* DRAGABLE CAROUSEL */
 
-    .button-game-entries {
-        display: none;
-    }
-
-    .game-entries-def {
-        display: none;
-    }
-
-    .game-entries-resp {
-        display: block;
-    }
-
-    .game-entries-box {
-        height: 150px;
-        width: 250px;
-        border-radius: 5px;
-        background-color: #D9D9D9;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
-    .game-entries-div {
-        width: 100%;
-        height: 150px;
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        overflow: hidden;
-    }
     .game-entries-1 {
-        width: 1000px;
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 10px;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        left: 0;
+        width: 360%;
     }
 }
 
@@ -888,6 +933,10 @@
 
     #competitions {
         margin-bottom: 15px !important;
+    }
+
+    .game-entries-1 {
+        width: 390%;
     }
 }
 
@@ -916,6 +965,10 @@
 
     #competitions {
         margin-bottom: 0px !important;
+    }
+
+    .game-entries-1 {
+        width: 430%;
     }
 }
 
@@ -950,6 +1003,10 @@
     #competitions .trio-content {
         margin-bottom: 65px;
     }
+
+    .game-entries-1 {
+        width: 470%;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -983,6 +1040,10 @@
 
     #competitions {
         margin-bottom: 0px !important;
+    }
+
+    .game-entries-1 {
+        width: 500%;
     }
 }
 

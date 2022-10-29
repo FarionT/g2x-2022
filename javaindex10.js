@@ -3,6 +3,7 @@ if(window.innerWidth <= 1400) {
     let innerSlider = document.querySelector('.game-entries-1');
 
     let pressed = false;
+    let moved;
     let startX;
     let x;
 
@@ -38,15 +39,45 @@ if(window.innerWidth <= 1400) {
 
     sliderContainer.addEventListener("touchstart", (e) => {
         pressed = true;
+        moved = false;
         startX = e.touches[0].screenX - innerSlider.offsetLeft;
+        console.log(startX);
     });
         
     sliderContainer.addEventListener("touchend", () => {
         pressed = false;
+        // Untuk Width 425px
+        if(pressed == false && moved == false && window.innerWidth == 430) {
+            if(startX >= 336 && startX <= 564) {
+                location.href = "game?game=1";
+            }
+            else if(startX >= 595 && startX <= 824) {
+                location.href = "game?game=2";
+            }
+            else if(startX >= 854 && startX <= 1084) {
+                location.href = "game?game=3";
+            }
+            else if(startX >= 1116 && startX <= 1344) {
+                location.href = "game?game=4";
+            }
+            else if(startX >= 1377 && startX <= 1604) {
+                location.href = "game?game=5";
+            }
+            else if(startX >= 1636 && startX <= 1864) {
+                location.href = "game?game=6";
+            }
+            else if(startX >= 1897 && startX <= 2125) {
+                location.href = "game?game=7";
+            }
+            else if(startX >= 2154 && startX <= 2383) {
+                location.href = "game?game=8";
+            }
+        }
     });
 
     sliderContainer.addEventListener("touchmove", (e) => {
         if (!pressed) return;
+        moved = true;
         e.preventDefault();
     
         x = e.touches[0].screenX;
