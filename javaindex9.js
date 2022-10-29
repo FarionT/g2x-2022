@@ -1,4 +1,4 @@
-if(window.innerWidth <= 768) {
+if(window.innerWidth <= 1400) {
     let sliderContainer = document.querySelector('.game-entries-div');
     let innerSlider = document.querySelector('.game-entries-1');
 
@@ -72,29 +72,33 @@ if(window.innerWidth <= 768) {
 }
 else {
     var left1 = 1;
-    var left2 = 6;
+    var left2 = 5;
     var right1 = 3;
-    var right2 = 8;
+    var right2 = 7;
     
     var maxleft1 = 1;
-    var maxleft2 = 6;
-    var maxright1 = 5;
-    var maxright2 = -1;
+    var maxleft2 = 5;
+    var maxright1 = 4;
+    var maxright2 = 8;
     $('#button-arrow-left').click(function() {
-        if(right1 == maxright1 && right2 != maxright2 && left1 != 1 && left2 != 6) {
-            left1--;
-            left2--;
+        if(right1 == maxright1 && right2 != maxright2 && left1 != maxleft1 && left2 != maxleft2) {
             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5";
             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5";
+            left1--;
+            left2--;
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
             document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5 outside";
             right1--;
             right2--; 
         }
-        else if(left1 != 1 && left2 != 6) {
-            left1--;
-            left2--;
+        else if(left1 != maxleft1 && left2 != maxleft2) {
             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5";
             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5";
+            left1--;
+            left2--;
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
             document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5 outside";
             document.getElementById("game-entries-box-" + right2).className = "game-entries-box mb-5 outside";
             right1--;
@@ -103,20 +107,24 @@ else {
     });
 
     $('#button-arrow-right').click(function() {
-        if(right1 + 1 == maxright1 && right2 + 1 != maxright2 && right1 != 5 && right2 != 10) {
+        if(right1 + 1 == maxright1 && right2 + 1 != maxright2 && right1 != maxright1 && right2 != maxright2) {
             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 outside";
             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 outside";
             left1++;
             left2++;
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
             right1++;
             right2++;
             document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5";
         }
-        else if(right1 != 5 && right2 != 10) {
+        else if(right1 != maxright1 && right2 != maxright2) {
             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 outside";
             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 outside";
             left1++;
             left2++;
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
             right1++;
             right2++;
             document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5";

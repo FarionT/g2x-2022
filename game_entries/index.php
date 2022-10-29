@@ -107,7 +107,8 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="../game?game=<?= $dataRow['id'] ?>" class="image-container" style="background-color: transparent;border-width: 0;">
+                            <a href="../game?game=<?= $dataRow['id'] ?>" class="image-container text-decoration-none text-reset" style="background-color: transparent;border-width: 0;">
+                                <h3 class="mx-5 font_title play-button border border-0 rounded-2"><b>P L A Y</b></h3>
                                 <img class="border border-dark border-4 rounded-4" src="../src/game_placeholder.png" width="85%"/>
                             </a>
                             <h5 class="mt-3 px-3 font_title"><b><?= $dataRow['title'] ?></b></h5>
@@ -151,7 +152,8 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="../game?game=<?= ($i +1) ?>" class="image-container" style="background-color: transparent;border-width: 0;">
+                            <a href="../game?game=<?= ($n = $i + 1) ?>" class="image-container text-decoration-none text-reset" style="background-color: transparent;border-width: 0;">
+                                <h3 class="mx-5 font_title play-button border border-0 rounded-2"><b>P L A Y</b></h3>
                                 <img class="border border-dark border-4 rounded-4" src="../src/game_placeholder.png" width="85%"/>
                             </a>
                             <h5 class="mt-3 px-3 font_title"><b><?= $mbData[$i]['title'] ?></b></h5>
