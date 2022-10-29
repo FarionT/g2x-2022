@@ -1,3 +1,6 @@
+<?php
+    $alt = "../";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
