@@ -37,7 +37,11 @@
     <body id="index">
         <div class="container-fluid justify-content-center m-0 p-0">
             <header>
-                <?php require_once('header.php'); ?>
+                <?php 
+                    if(empty($alt)){
+                        $alt = "";
+                    }
+                    require_once('header.php'); ?>
             </header>
             <div id="judul" class="mt-5" data-aos="fade-down">
                 <div id="judul-text" class="d-flex mb-xl-0 mb-3">
@@ -56,7 +60,7 @@
             <div class="d-flex flex-column flex-lg-row justify-content-lg-around" data-aos="fade-down">
                 <div id="games">
                     <img src="src/index/gameboy.png" class="logo"/>
-                    <a href="game_entries.php" class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="<?=$alt?>game_entries" class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h2 class="sub-judul font_title">GAMES</h2>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
@@ -65,7 +69,7 @@
                 </div>
                 <div id="competitions">
                     <img src="src/index/piala.png" class="logo"/>
-                    <a href="competition.php" class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="<?=$alt?>competition" class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h2 class="sub-judul font_title">COMPETITIONS</h2>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
@@ -74,7 +78,7 @@
                 </div>
                 <div id="webinar">
                     <img src="src/index/laptop.png" class="logo"/>
-                    <a href="webinar.php" class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="<?=$alt?>webinar" class="button-arrow button-arrow-resp mb-5"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h2 class="sub-judul font_title">WEBINAR</h2>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>

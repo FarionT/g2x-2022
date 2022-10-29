@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="src/g2x_logo.png">
+    <link rel="icon" href="../src/g2x_logo.png">
     <title>Webinar</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="webinarstyle2.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../webinarstyle2.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- link font -->
@@ -20,11 +20,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
     <style>
-        body{background-image: url("src/bg-website-game-page.png");}
+        body{background-image: url("../src/bg-website-game-page.png");}
         .font_content{
             font-family: 'Varela', sans-serif;
             color: #0A194F;
-        }
+        }css
         
         .font_title{
             font-family: 'Dosis', sans-serif;
@@ -34,7 +34,7 @@
 </head>
 <body id="webinar">
     <header>  
-        <?php require_once('header.php'); ?>
+        <?php $alt = "../"; require_once('../header.php'); ?>
     </header>
 
     <div id="kosong"></div>
@@ -48,7 +48,7 @@
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
-                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
+                            <img src="../src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
@@ -71,7 +71,7 @@
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
-                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
+                            <img src="../src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
@@ -94,7 +94,7 @@
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
-                            <img src="src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
+                            <img src="../src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
@@ -115,11 +115,11 @@
             </div>
         </div>
         <div class="d-flex justify-content-center" data-aos="fade-down">
-            <a href="#"><img src="src/buttons/register_here.png" class="register_here"/></a>
+            <a href="#"><img src="../src/buttons/register_here.png" class="register_here"/></a>
         </div>
     </div>
     <footer>
-        <?php include("footer.php"); ?>
+        <?php include("../footer.php"); ?>
     </footer>
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
