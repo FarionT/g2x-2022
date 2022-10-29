@@ -64,7 +64,7 @@
     
 }
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:400px){
     #download {
         background-image: url('./src/backgrounds/mobile-game-page.jpg') !important;
     }
@@ -104,9 +104,12 @@
         width:44px;
         height:auto;
     }
-}
 
-@media only screen and (min-width:450px){
+    #game-content{
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 400px){
     #game_title{
         font-size: 35px;
     }
@@ -143,7 +146,91 @@
         width:67px;
         height:auto;
     }
+    #game-ss{
+        margin-top: 20px;
+    }
+    #game-content{
+        margin-top: 15px;
+    }
 }
+@media only screen and (min-width:450px){
+    #game-ss{
+        margin-top:30px;
+    }
+}
+
+@media only screen and (min-width: 480px){
+    #game-ss{
+        margin-top: 40px;
+    }
+    #game-content{
+        margin-top: 23px;
+    }
+}
+@media only screen and (min-width: 530px){
+    #game-ss{
+        margin-top: 50px;
+    }
+    #game-content{
+        margin-top: 28px;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    #game-ss{
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    #game-content{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 595px){
+    #game-ss{
+        margin-top: 85px;
+    }
+    #game-content{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 625px){
+    #game-ss{
+        margin-top:110px;
+    }
+    #game-content{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 650px){
+    #game-ss{
+        margin-top:130px;
+    }
+    #game-content{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 690px){
+    #game-ss{
+        margin-top:150px;
+    }
+    #game-content{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 720px){
+    #game-ss{
+        margin-top:180px;
+    }
+    #game-content{
+        margin-top: 60px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .navbar-brand img {
         width: 64px;
@@ -193,6 +280,12 @@
     .navbutton{
         width:90px;
         height:auto;
+    }
+    #game-ss{
+        margin-top:10px;
+    }
+    #game-content{
+        margin-top: 60px;
     }
 }
 

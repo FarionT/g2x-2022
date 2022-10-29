@@ -133,9 +133,9 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                     ?>
                         <button type="submit" class="btn btn-link btn-page p-0 rounded-circle" name="page" value="<?= $i ?>">
                         <?php if ($i != $page) {?>
-                            <img src="src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
+                            <img src="../src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
                         <?php } else {?>
-                            <img src="src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
+                            <img src="../src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
                         <?php }?>
                         </button>
                     <?php 
@@ -172,9 +172,9 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                     ?>
                         <button type="submit" class="btn btn-link btn-page p-0 rounded-circle" name="page" value="<?= $i ?>">
                         <?php if ($i != $page) {?>
-                            <img src="src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
+                            <img src="../src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
                         <?php } else {?>
-                            <img src="src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
+                            <img src="../src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
                         <?php }?>
                         </button>
                     <?php 
