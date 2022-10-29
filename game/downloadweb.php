@@ -104,14 +104,14 @@ if(isset($_SESSION['userData'])){
                     <a href="<?= $game['download_link'] ?>">
                         <img class="py-2 mx-2 button-choose" src="../../src/buttons/download1.png"/>
                     </a>
-                    <?php if($isVote){?>
-                        <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/unvote1.png?<?= time()?>">
-                    <?php } else {?>
-                        <div>
-                            <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/vote1.png?<?= time()?>">
-                            <p id='voteCount' class="font_content text-center">Vote: <?= $voteCount ?></p>
-                        </div>
-                    <?php }?>
+                    <div>
+                        <?php if($isVote){?>
+                            <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/unvote1.png?<?= time()?>">
+                        <?php } else {?>
+                                <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/vote1.png?<?= time()?>">
+                        <?php }?>
+                                <p id='voteCount' class="font_content text-center">Vote: <?= $voteCount ?></p>
+                    </div>
                 </div>
                 <div id="myModal" class="modal">
                     <div id="modal-content">
