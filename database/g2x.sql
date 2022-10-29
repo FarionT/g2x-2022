@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 26, 2022 at 04:54 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Waktu pembuatan: 29 Okt 2022 pada 16.02
+-- Versi server: 10.4.25-MariaDB
+-- Versi PHP: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `creator`
+-- Struktur dari tabel `creator`
 --
 
 CREATE TABLE `creator` (
@@ -37,19 +37,26 @@ CREATE TABLE `creator` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `creator`
+-- Dumping data untuk tabel `creator`
 --
 
 INSERT INTO `creator` (`gameID`, `name`, `nim`, `major`, `job`, `profile`) VALUES
-(1, 'nana', '11111', 'DKV', 'Design', ''),
-(1, 'nini', '22222', 'IT', 'Developer', ''),
-(1, 'nunu', '33333', 'IT', 'Developer', ''),
-(1, 'nene', '44444', 'IT', 'audio', '');
+(1, 'nana', '11111', 'DKV', 'Design', '../../src/creators/team1_11111.png'),
+(4, 'Adrix Richard Stanlee ', '12340', 'TI', 'Audio', '../../src/creators/team4_12340.png'),
+(4, 'Axel Ferdinand', '12344', 'TI', 'Coder', '../../src/creators/team4_12344.png'),
+(4, 'Farion Tekkry', '12345', 'TI', 'Coder', '../../src/creators/team4_12345.png'),
+(4, 'Gilbert Zaini', '12346', 'TI', 'Coder', '../../src/creators/team4_12346.png'),
+(4, 'Melvin Tungadi', '12347', 'TI', 'Coder', '../../src/creators/team4_12347.png'),
+(4, 'Aloisius Vincent Wongsowijaya', '12348', 'TI', 'Visual', '../../src/creators/team4_12348.png'),
+(4, 'Christfire Vincent Bunardi', '12349', 'TI', 'Visual', '../../src/creators/team4_12349.png'),
+(1, 'nini', '22222', 'IT', 'Developer', '../../src/creators/team1_22222.png'),
+(1, 'nunu', '33333', 'IT', 'Developer', '../../src/creators/team1_33333.png'),
+(1, 'nene', '44444', 'IT', 'audio', '../../src/creators/team1_44444.png');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `game_entries`
+-- Struktur dari tabel `game_entries`
 --
 
 CREATE TABLE `game_entries` (
@@ -63,23 +70,23 @@ CREATE TABLE `game_entries` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `game_entries`
+-- Dumping data untuk tabel `game_entries`
 --
 
 INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`, `download_link`, `game_cover`) VALUES
-(1, 'Title 1', 'Team 1', 'ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ', 'HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1', 'https://drive.google.com/drive/folders/1YHK5h_chV9VNBsjGZKVxfC-nHqBPsGq3', ''),
-(2, 'Title 2', 'Team 2', 'ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ', 'HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 ', 'https://drive.google.com/drive/folders/1EWZBUic6L6rPaDLTQf2zkfuh61xlcqKS', ''),
-(3, 'Title 3', 'Team 3', 'ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ', 'HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 ', 'https://drive.google.com/drive/folders/1a2aaV_O0NOE_GPt7YcEDtAEsQdkUDF_F', ''),
-(4, 'Title 4', 'Team 4', 'ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ABOUT-GAME-Description4 ', 'HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 HOW-TO-PLAY-DescriptionGame4 ', 'https://drive.google.com/drive/folders/1O-GcTReE6Jjr7gsNDIYcYvDP9uvYN50G', ''),
-(5, 'Title 5', 'Team 5', 'ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ', 'HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 ', 'https://drive.google.com/drive/folders/19qSKeWyi3HnrJ-60E23FpEyUJcIOS4s1', ''),
-(6, 'Title 6', 'Team 6', 'ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ', 'HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 ', 'https://drive.google.com/drive/folders/1OhqS_qNqQYRoystLfVaaxa5-6PVDRGg-', ''),
-(7, 'Title 7', 'Team 7', 'ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ', 'HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 ', 'https://drive.google.com/drive/folders/1DKYtirUeHqChtn5CYiOUlJGh6icDGQb9', ''),
-(8, 'Title 8', 'Team 8', 'ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ', 'HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 ', 'https://drive.google.com/drive/folders/1J1LCJTb0qwkQGGHMB6mBGFuLQdVxyvYG', '');
+(1, 'Title 1', 'Team 1', 'ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ', 'HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1', 'https://drive.google.com/drive/folders/1YHK5h_chV9VNBsjGZKVxfC-nHqBPsGq3', '../src/game_banner/banner_game1.png'),
+(2, 'Title 2', 'Team 2', 'ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ', 'HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 ', 'https://drive.google.com/drive/folders/1EWZBUic6L6rPaDLTQf2zkfuh61xlcqKS', '../src/game_banner/banner_game2.png'),
+(3, 'Title 3', 'Team 3', 'ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ', 'HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 ', 'https://drive.google.com/drive/folders/1a2aaV_O0NOE_GPt7YcEDtAEsQdkUDF_F', '../src/game_banner/banner_game3.png'),
+(4, 'Cosmic Snitcher', 'QWERTY Team', 'You\'re a sneaky bounty hunter whose job is to steal\r\nfrom all of the richest creatures in every universe.\r\nYou have assigned to take control of a special spaceship\r\nthat can travel through time and space from your mysterious\r\nchief, can you conquer the entire spaceship?', 'W,A,S,D - Move Up, Left, Down, Right<br>\r\n1,2,3 - Use Weapon<br>\r\nEsc - Pause<br>\r\nLeft Click - Shoot<br>', 'https://drive.google.com/drive/folders/1O-GcTReE6Jjr7gsNDIYcYvDP9uvYN50G', '../src/game_banner/banner_game4.png'),
+(5, 'Title 5', 'Team 5', 'ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ', 'HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 ', 'https://drive.google.com/drive/folders/19qSKeWyi3HnrJ-60E23FpEyUJcIOS4s1', '../src/game_banner/banner_game5.png'),
+(6, 'Title 6', 'Team 6', 'ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ', 'HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 ', 'https://drive.google.com/drive/folders/1OhqS_qNqQYRoystLfVaaxa5-6PVDRGg-', '../src/game_banner/banner_game6.png'),
+(7, 'Title 7', 'Team 7', 'ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ', 'HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 ', 'https://drive.google.com/drive/folders/1DKYtirUeHqChtn5CYiOUlJGh6icDGQb9', '../src/game_banner/banner_game7.png'),
+(8, 'Title 8', 'Team 8', 'ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ', 'HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 ', 'https://drive.google.com/drive/folders/1J1LCJTb0qwkQGGHMB6mBGFuLQdVxyvYG', '../src/game_banner/banner_game8.png');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -97,18 +104,19 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id`, `oauth_provider`, `oauth_uid`, `first_name`, `last_name`, `email`, `gender`, `locale`, `picture`, `created`, `modified`) VALUES
 (2, 'google', '112245201279323118066', 'RICH', 'EVAN LEE (00000055564)', 'rich.evan@student.umn.ac.id', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu0KYKtoBPIS_c6eAEKJRAyDgoEV6Yn0BBLRj3Fx=s96-c', '2022-10-08 14:52:52', '2022-10-08 14:52:52'),
 (5, 'google', '114850611052126455915', 'Super', 'Gamer', 'supergamerzone134@gmail.com', '', 'en-GB', 'https://lh3.googleusercontent.com/a/ALm5wu03_LUrw-qLR_9Gfei0jIEm7QvwoBJ_UWhJ3uO2=s96-c', '2022-10-24 06:52:21', '2022-10-26 16:53:50'),
-(6, 'google', '106392472297681206816', '???_kenzi', '', 'pixelmantm@gmail.com', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu28eowWZLqmpbsreDYRXqRQzqhxLB2ytzjVOJcBMA=s96-c', '2022-10-25 16:00:54', '2022-10-25 16:07:22');
+(6, 'google', '106392472297681206816', '???_kenzi', '', 'pixelmantm@gmail.com', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu28eowWZLqmpbsreDYRXqRQzqhxLB2ytzjVOJcBMA=s96-c', '2022-10-25 16:00:54', '2022-10-25 16:07:22'),
+(7, 'google', '108708430343742517990', 'JACINTHA', 'CORDELIE (00000053897)', 'jacintha.cordelie@student.umn.ac.id', '', 'id', 'https://lh3.googleusercontent.com/a/ALm5wu3x1LRMvf7yZxTmTcDSlQaEuKpnUqG53p_lFHVc=s96-c', '2022-10-29 14:32:51', '2022-10-29 14:34:50');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `voting`
+-- Struktur dari tabel `voting`
 --
 
 CREATE TABLE `voting` (
@@ -117,7 +125,7 @@ CREATE TABLE `voting` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `voting`
+-- Dumping data untuk tabel `voting`
 --
 
 INSERT INTO `voting` (`gameID`, `user_id`) VALUES
@@ -130,44 +138,44 @@ INSERT INTO `voting` (`gameID`, `user_id`) VALUES
 --
 
 --
--- Indexes for table `creator`
+-- Indeks untuk tabel `creator`
 --
 ALTER TABLE `creator`
   ADD UNIQUE KEY `nim` (`nim`);
 
 --
--- Indexes for table `game_entries`
+-- Indeks untuk tabel `game_entries`
 --
 ALTER TABLE `game_entries`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `voting`
+-- Indeks untuk tabel `voting`
 --
 ALTER TABLE `voting`
   ADD PRIMARY KEY (`gameID`,`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `game_entries`
+-- AUTO_INCREMENT untuk tabel `game_entries`
 --
 ALTER TABLE `game_entries`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
