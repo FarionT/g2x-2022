@@ -103,6 +103,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 <div class="game-entries-div mx-1">
                     <button id="button-arrow-left" class="button-game-entries"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
                     <div class="game-entries-1" style="left: 0px;"> 
+                    <p><?= $countRow['count'] ?></p>
                     <?php 
                     for ($i = 0; $i < $countRow['count']; $i++) {
                         $dataRow = $data->fetch(PDO::FETCH_ASSOC);
