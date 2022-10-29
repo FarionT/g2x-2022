@@ -100,7 +100,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
             ?>
                 <div class="row">
                 <?php 
-                for ($j = 0; $j < 3; $j++) {
+                for ($j = 0; $j < 3; $j++) { 
                     $dataRow = $data->fetch(PDO::FETCH_ASSOC);
                     array_push($mbData, $dataRow);
                     if ($dataRow == NULL) break;
@@ -109,7 +109,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                         <div class="game-container">
                             <a href="../game?game=<?= $dataRow['id'] ?>" class="image-container text-decoration-none text-reset" style="background-color: transparent;border-width: 0;">
                                 <h3 class="mx-5 font_title play-button border border-0 rounded-2"><b>P L A Y</b></h3>
-                                <img class="border border-dark border-4 rounded-4" src="../src/game_placeholder.png" width="85%"/>
+                                <img class="border border-dark border-4 rounded-4" src="<?= $dataRow['game_cover'] ?>" width="85%"/>
                             </a>
                             <h5 class="mt-3 px-3 font_title"><b><?= $dataRow['title'] ?></b></h5>
                             <p class="px-3 font_content">

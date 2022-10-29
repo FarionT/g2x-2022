@@ -231,6 +231,16 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    #msg h1 {
+        font-size: 14pt !important;
+    }
+
+    #modal-content img {
+        width: 130px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .navbar-brand img {
         width: 64px;
@@ -251,6 +261,11 @@
     #team_name{
         font-size: 18px;
     }
+
+    #modal-content img {
+        width: 300px;
+    }
+
     .button-choose{
         width:170px;
         height:auto;
@@ -419,11 +434,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     background-color: #fefefe;
     margin: 10% auto;
     padding: 20px;
+    padding-bottom: 50px;
     border: 1px solid #888;
     width: 50%;
+    border-radius: 20px;
+}
+
+#modal-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
  
 .close {
