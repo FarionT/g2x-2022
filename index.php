@@ -91,7 +91,7 @@
                 <div class="game-entries-div">
                     <button id="button-arrow-left" class="button-game-entries"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
                     <div class="game-entries-1"> 
-                        <a href="download.php"><img id="game-entries-box-1" class="game-entries-box mb-5" src="src/game_placeholder.png"/></a>
+                        <a href="game_entries.php"><img id="game-entries-box-1" class="game-entries-box mb-5" src="src/game_placeholder.png"/></a>
                         <div id="game-entries-box-2" class="game-entries-box mb-5">Slide 2</div>
                         <div id="game-entries-box-3" class="game-entries-box mb-5">Slide 3</div>
                         <div id="game-entries-box-4" class="game-entries-box mb-5 outside">Slide 4</div>

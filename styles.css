@@ -122,7 +122,7 @@
 
 #game-entries {
     background-repeat: no-repeat !important;
-    background-size: 100%; 
+    background-size: cover !important; 
 }
 
 #game-desktop {
@@ -146,13 +146,12 @@
 }
 
 .nav-link {
-    color: white !important;
-    text-shadow: 1px 1px 15px dodgerblue;
-    transition: 0.1s;
+    color: #0A194F !important;
+    transition: 0.3s !important;
 }
 
 .nav-link:hover {
-    color: gainsboro !important;
+    transform: scale(1.1) !important;
 }
 
 .image-container img {

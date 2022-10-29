@@ -148,9 +148,9 @@
     height: 200px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 768px) {
     #index{
-        background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
+        background-image: url('src/backgrounds/landing-page-no-pulau.jpg');
     }
     #judul {
         display: flex;
@@ -229,7 +229,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     #index{
         background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
     }
@@ -296,7 +296,7 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     #index{
         background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
     }
@@ -364,7 +364,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     #index{
         background-image: url('src/backgrounds/landing-page-no-pulau.jpg')
     }
@@ -419,7 +419,7 @@
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     #index{
         background-image: url('src/backgrounds/mobile-landing-page-no-pulau.jpg') !important;
     }
