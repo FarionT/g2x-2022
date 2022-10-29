@@ -4,9 +4,9 @@ require_once('../connect.php');
 $alt = "../";
 
 $page = 0;
-if(isset($_GET['page'])) 
-    if(is_numeric($_GET['page'])) $page = $_GET['page'];
-
+if(isset($_POST['page'])) {
+    $page = $_POST['page'];
+}
 
 function amount($countRow) {
     if ($countRow % 3 == 0) {
@@ -128,7 +128,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
 
         <div id="game-mobile" class="text-center">
             <div class="mb-5 text-center" data-aos="fade-down">
-                <form action="game_entries" method="get">
+                <form action="index.php" method="post">
                     <?php 
                     for ($i = 0; $i < page_amount($countRow['count']); $i++) {
                     ?>
@@ -168,7 +168,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
             </div>
 
             <div class="mb-5 text-center" data-aos="fade-down">
-                <form action="game_entries" method="get">
+                <form action="index.php" method="post">
                     <?php 
                     for ($i = 0; $i < page_amount($countRow['count']); $i++) {
                     ?>
