@@ -3,9 +3,15 @@
     background-size: cover;
 }
 #judul {
-    margin-left: 50%;
+    margin-left: 800px;
     margin-top: 250px;
     margin-bottom: 390px;
+}
+
+@media screen and (max-width: 1500px) {
+    #judul {
+        margin-left: 700px;
+    }
 }
 
 #judul-text {
@@ -28,7 +34,7 @@
 .button-logo {
     width: 220px;
     position: relative;
-    left: -5%;
+    left: -30px;
 }
 
 #games, #competitions, #webinar {
@@ -42,7 +48,7 @@
 }
 
 #trio {
-    margin-bottom: 40%;
+    margin-bottom: 400px;
 }
 
 #game-entries-all {
@@ -163,7 +169,7 @@
     }
 
     #trio {
-        margin-bottom: 45%;
+        margin-bottom: 450px;
     }
 }
 
@@ -177,7 +183,7 @@
     }
 
     #trio {
-        margin-bottom: 40%;
+        margin-bottom: 400px;
     }
 }
 
@@ -187,7 +193,7 @@
     }
 
     #trio {
-        margin-bottom: 40%;   
+        margin-bottom: 400px;   
     }
 
     #judul {
@@ -286,7 +292,7 @@
     }
 
     #trio {
-        margin-bottom: 40%;
+        margin-bottom: 400px;
     }
 }
 
@@ -300,7 +306,7 @@
     }
 
     #trio {
-        margin-bottom: 40%;
+        margin-bottom: 400px;
     }
 }
 
@@ -322,7 +328,7 @@
     }
 
     #trio {
-        margin-bottom: 40%;
+        margin-bottom: 400px;
     }
 }
 
@@ -332,7 +338,7 @@
     }
 
     #trio {
-        margin-bottom: 40%;
+        margin-bottom: 400px;
     }
 
     #judul {
@@ -377,7 +383,7 @@
     }
 
     #trio {
-        margin-bottom: 40%;
+        margin-bottom: 400px;
     }
 }
 
@@ -408,7 +414,7 @@
     }
 
     #trio {
-        margin-bottom: 40%;
+        margin-bottom: 400px;
     }
 }
 
@@ -439,7 +445,7 @@
     }
 
     #trio {
-        margin-bottom: 35%;
+        margin-bottom: 350px;
     }
 }
 
