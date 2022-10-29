@@ -109,7 +109,7 @@ if(isset($_SESSION['userData'])){
                     <?php } else {?>
                         <div>
                             <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/vote1.png?<?= time()?>">
-                            <p class="font_content text-center">Vote: 10</p>
+                            <p id='voteCount' class="font_content text-center">Vote: <?= $voteCount ?></p>
                         </div>
                     <?php }?>
                 </div>
@@ -196,7 +196,7 @@ if(isset($_SESSION['userData'])){
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'unvote'},
                         success:function(re){
-                            document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">VOTE ("+re+")</p>";
+                            document.getElementById("voteCount").innerHTML = "Vote "+re;
                             document.getElementById("btn_voting").src = "../../src/buttons/vote1.png?<?= time()?>";
                         }
                     });
@@ -207,7 +207,7 @@ if(isset($_SESSION['userData'])){
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'vote'},
                         success:function(re){
-                            document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">UNVOTE ("+re+")</p>";
+                            document.getElementById("voteCount").innerHTML = "Vote "+re
                             document.getElementById("btn_voting").src = "../../src/buttons/unvote1.png?<?= time()?>";
                         }
                     });

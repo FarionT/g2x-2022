@@ -65,7 +65,7 @@
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5 font_content">Copywriting Copywriting Copywriting</p>
-                    <a href="game_entries.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="<?=$alt?>game_entries" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
                 <div id="competitions">
                     <img src="src/index/piala.png" class="logo"/>
@@ -74,7 +74,7 @@
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5 font-content">Copywriting Copywriting Copywriting</p>
-                    <a href="competition.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="<?=$alt?>competition" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
                 <div id="webinar">
                     <img src="src/index/laptop.png" class="logo"/>
@@ -83,7 +83,7 @@
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5 font_content">Copywriting Copywriting Copywriting</p>
-                    <a href="webinar.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="<?=$alt?>webinar" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
             </div>
             <br /><br /><br /><br /><br /><br /><br /><br /><br />

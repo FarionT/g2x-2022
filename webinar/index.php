@@ -1,3 +1,6 @@
+<?php
+    $alt = "../";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,11 +23,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
     <style>
-        body{background-image: url("../src/bg-website-game-page.png");}
         .font_content{
             font-family: 'Varela', sans-serif;
             color: #0A194F;
-        }css
+        }
         
         .font_title{
             font-family: 'Dosis', sans-serif !important;
