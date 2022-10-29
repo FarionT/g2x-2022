@@ -91,7 +91,7 @@ if(isset($_SESSION['userData'])){
                     <input type="text" name="game" hidden value="<?php if(empty($prev)){ echo $max['id'];} else { echo $prev['id']; }?>">
                     <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_left.png" class="navbutton"/></button>
                 </form>
-                <img class="border border-dark border-4 rounded-4 w-75 img-fluid" src="../<?= $game['game_cover']?>"></img>
+                <img class="border border-dark border-4 rounded-4 w-75 img-fluid" src="<?= $game['game_cover']?>"></img>
                 <form action="../" class="align-self-center">
                     <input type="text" name="game" hidden value="<?php if(empty($next)){ echo $min['id'];} else { echo $next['id']; }?>">
                     <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_right.png" class="navbutton" /></button>
@@ -207,7 +207,7 @@ if(isset($_SESSION['userData'])){
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'vote'},
                         success:function(re){
-                            document.getElementById("voteCount").innerHTML = "Vote: "+re
+                            document.getElementById("voteCount").innerHTML = "Vote: "+re;
                             document.getElementById("btn_voting").src = "../../src/buttons/unvote1.png?<?= time()?>";
                         }
                     });
