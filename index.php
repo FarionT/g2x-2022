@@ -65,7 +65,7 @@
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5 font_content">Copywriting Copywriting Copywriting</p>
-                    <a href="game_entries.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="game_entries" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
                 <div id="competitions">
                     <img src="src/index/piala.png" class="logo"/>
@@ -74,7 +74,7 @@
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5 font-content">Copywriting Copywriting Copywriting</p>
-                    <a href="competition.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="competition" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
                 <div id="webinar">
                     <img src="src/index/laptop.png" class="logo"/>
@@ -83,7 +83,7 @@
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 mb-5 font_content">Copywriting Copywriting Copywriting</p>
-                    <a href="webinar.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="webinar" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
             </div>
             <br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -95,7 +95,7 @@
                 <div class="game-entries-div">
                     <button id="button-arrow-left" class="button-game-entries"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
                     <div class="game-entries-1"> 
-                        <a href="game_entries.php"><img id="game-entries-box-1" class="game-entries-box mb-5" src="src/game_placeholder.png"/></a>
+                        <a href="game_entries"><img id="game-entries-box-1" class="game-entries-box mb-5" src="src/game_placeholder.png"/></a>
                         <div id="game-entries-box-2" class="game-entries-box mb-5">Slide 2</div>
                         <div id="game-entries-box-3" class="game-entries-box mb-5">Slide 3</div>
                         <div id="game-entries-box-4" class="game-entries-box mb-5 outside">Slide 4</div>
