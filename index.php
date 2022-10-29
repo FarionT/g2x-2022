@@ -102,8 +102,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
             <div id="game-entries-all" class="body-slider" data-aos="fade-down">
                 <div class="game-entries-div mx-1">
                     <button id="button-arrow-left" class="button-game-entries"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
-                    <div class="game-entries-1" style="left: 0px;"> 
-                    <p><?= $countRow['count'] ?></p>
+                    <div class="game-entries-1" style="left: 0px;">
                     <?php 
                     for ($i = 0; $i < $countRow['count']; $i++) {
                         $dataRow = $data->fetch(PDO::FETCH_ASSOC);
@@ -162,7 +161,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script src="javaindex9.js"></script>
+        <script src="javaindex10.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
