@@ -107,7 +107,10 @@ if(isset($_SESSION['userData'])){
                     <?php if($isVote){?>
                         <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/unvote1.png?<?= time()?>">
                     <?php } else {?>
-                        <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/vote1.png?<?= time()?>">
+                        <div>
+                            <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/vote1.png?<?= time()?>">
+                            <p class="font_content text-center">Vote: 10</p>
+                        </div>
                     <?php }?>
                 </div>
                 <div id="myModal" class="modal">
