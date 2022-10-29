@@ -83,7 +83,7 @@ if(isset($_SESSION['userData'])){
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body id="download">
-    <?php require_once('../../header.php'); ?>
+    <?php require_once('../../header.php');?>
     <div class="container col col-lg-10 px-5">
         <div class="container container-md-fluid">
             <div class="d-flex justify-content-around" id="game-ss">
@@ -91,7 +91,7 @@ if(isset($_SESSION['userData'])){
                     <input type="text" name="game" hidden value="<?php if(empty($prev)){ echo $max['id'];} else { echo $prev['id']; }?>">
                     <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_left.png" class="navbutton"/></button>
                 </form>
-                <img class="border border-dark border-4 rounded-4 w-75 img-fluid" src="../../src/game_placeholder.png"></img>
+                <img class="border border-dark border-4 rounded-4 w-75 img-fluid" src="../<?= $game['game_cover']?>"></img>
                 <form action="../" class="align-self-center">
                     <input type="text" name="game" hidden value="<?php if(empty($next)){ echo $min['id'];} else { echo $next['id']; }?>">
                     <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_right.png" class="navbutton" /></button>
@@ -139,7 +139,7 @@ if(isset($_SESSION['userData'])){
                     <?php for($i = 0; $i < 3; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){  ?>
                     <div class="d-flex mb-3">
                         <div>
-                            <img src="../../src/creators/team<?= $data['gameID']?>_<?= $data['nim']?>.png" class="profile rounded-circle"/>
+                            <img src="<?= $data['profile']?>" class="profile rounded-circle"/>
                         </div>
                         <div class="ms-3">
                             <h5 class="mb-2 mb-lg-3 font_title member_name"><?= $data['name']?></h5>
@@ -153,7 +153,7 @@ if(isset($_SESSION['userData'])){
                     <?php for($i = 0; $i < 3; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){ ?>
                     <div class="d-flex mb-3">
                         <div>
-                            <img src="../../src/creators/team<?= $data['gameID']?>_<?= $data['nim']?>.png" class="profile rounded-circle"/>
+                            <img src="<?= $data['profile']?>" class="profile rounded-circle"/>
                         </div>
                         <div class="ms-3">
                             <h5 class="mb-2 mb-lg-3 font_title member_name"><?= $data['name']?></h5>
