@@ -56,21 +56,21 @@
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
                         <div class="d-flex justify-content-lg-start justify-content-sm-center justify-content-center">
-                            <h3 class="mx-2 competition_title font_title" >Competition Title</h3>
+                            <h3 class="mx-2 competition_title font_title" >CHARACTER DESIGN</h3>
                         </div>
                         <div>
                             <table class="table table-borderless d-flex justify-content-md-start justify-content-center">
                                 <tr>
                                     <td class="py-2 font_content font_content font_content">Theme</td>
-                                    <td class="py-2 font_content">theme theme</td>
+                                    <td class="py-2 font_content">PENJELAJAH LANGIT</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content">Start</td>
-                                    <td class="py-2 font_content">DD MM YYYY</td>
+                                    <td class="py-2 font_content">31 10 2022</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content">End</td>
-                                    <td class="py-2 font_content">DD MM YYYY</td2>
+                                    <td class="py-2 font_content">11 10 2022</td2>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content"></td>
@@ -94,21 +94,21 @@
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
                         <div class="d-flex justify-content-lg-start justify-content-center">
-                            <h3 class="mx-2 competition_title font_title">Competition Title</h3>
+                            <h3 class="mx-2 competition_title font_title">ENVIRONMENT DESIGN</h3>
                         </div>
                         <div>
                             <table class="table table-borderless d-flex justify-content-md-start justify-content-center">
                                 <tr>
                                     <td class="py-2 font_content font_content">Theme</td>
-                                    <td class="py-2 font_content font_content">theme theme</td>
+                                    <td class="py-2 font_content font_content">SKY ISLAND</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content font_content">Start</td>
-                                    <td class="py-2 font_content font_content">DD MM YYYY</td>
+                                    <td class="py-2 font_content font_content">31 10 2022</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content font_content">End</td>
-                                    <td class="py-2 font_content font_content">DD MM YYYY</td>
+                                    <td class="py-2 font_content font_content">10 11 2022</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content font_content"></td>
@@ -132,21 +132,21 @@
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
                         <div class="d-flex justify-content-lg-start justify-content-sm-center justify-content-center">
-                            <h3 class="mx-2 competition_title font_title">Competition Title</h3>
+                            <h3 class="mx-2 competition_title font_title">STORY WRITING</h3>
                         </div>
                         <div>
                             <table class="table table-borderless d-flex justify-content-md-start justify-content-center">
                                 <tr>
                                     <td class="py-2 font_content">Theme</td>
-                                    <td class="py-2 font_content">theme theme</td>
+                                    <td class="py-2 font_content">SKY</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content">Start</td>
-                                    <td class="py-2 font_content">DD MM YYYY</td>
+                                    <td class="py-2 font_content">31 10 2022</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content">End</td>
-                                    <td class="py-2 font_content">DD MM YYYY</td>
+                                    <td class="py-2 font_content">10 11 2022</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content"></td>
