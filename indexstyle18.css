@@ -9,160 +9,160 @@
 }
 
 @media screen and (max-width: 1537px) {
-#index {
-    background-repeat: no-repeat !important;
-    background-size: cover;
-}
-#judul {
-    margin-left: 800px;
-    margin-top: 250px;
-    margin-bottom: 600px !important;
-}
+    #index {
+        background-repeat: no-repeat !important;
+        background-size: cover;
+    }
+    #judul {
+        margin-left: 800px;
+        margin-top: 250px;
+        margin-bottom: 600px !important;
+    }
 
-#judul-text {
-    display: flex;
-    flex-direction: column;
-}
+    #judul-text {
+        display: flex;
+        flex-direction: column;
+    }
 
-#judul-welcome {
-    font-size: 65px;
-}
+    #judul-welcome {
+        font-size: 65px;
+    }
 
-#judul-g2x {
-    font-size: 120px;
-}
+    #judul-g2x {
+        font-size: 120px;
+    }
 
-#judul-button {
-    padding-left: 0px;
-}
+    #judul-button {
+        padding-left: 0px;
+    }
 
-.button-logo {
-    width: 220px;
-    position: relative;
-    left: -30px;
-}
+    .button-logo {
+        width: 220px;
+        position: relative;
+        left: -30px;
+    }
 
-#games, #competitions, #webinar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    #games, #competitions, #webinar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-#competitions {
-    margin: 100px 100px 0 !important;
-}
+    #competitions {
+        margin: 100px 100px 0 !important;
+    }
 
-#trio {
-    margin-bottom: 400px;
-}
+    #trio {
+        margin-bottom: 660px !important;
+    }
 
-#game-entries-all {
-    margin-bottom: 550px;
-}
+    #game-entries-all {
+        margin-bottom: 550px;
+    }
 
-.img-button-arrow {
-    width: 120px;
-}
+    .img-button-arrow {
+        width: 120px;
+    }
 
-.button-arrow {
-    font-size: 40px;
-    background-color: transparent;
-    border: 0px;
-}
+    .button-arrow {
+        font-size: 40px;
+        background-color: transparent;
+        border: 0px;
+    }
 
-.button-arrow-resp {
-    display: none;
-    justify-content: space-around;
-}
+    .button-arrow-resp {
+        display: none;
+        justify-content: space-around;
+    }
 
-.game-entries-div {
-    display: flex;
-    justify-content: center;
-    
-}
+    .game-entries-div {
+        display: flex;
+        justify-content: center;
+        
+    }
 
-#trio-judul-atas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    #trio-judul-atas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.game-entries-1 {
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-right: 0px;
-}
+    .game-entries-1 {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: 0px;
+    }
 
-.game-entries-box {
-    width: 300px;
-    height: 170px;
-    background-color: gray;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-left: 80px;
-}
+    .game-entries-box {
+        width: 300px;
+        height: 170px;
+        background-color: gray;
+        border: 3px solid black;
+        border-radius: 10px;
+        margin-left: 80px;
+    }
 
-#button-arrow-left {
-    margin-left: 50px;
-}
+    #button-arrow-left {
+        margin-left: 50px;
+    }
 
-.button-game-entries {
-    background-color: transparent;
-    border: 0px;
-    margin-bottom: 40px;
-}
+    .button-game-entries {
+        background-color: transparent;
+        border: 0px;
+        margin-bottom: 40px;
+    }
 
-#button-arrow-left {
-    margin-left: 40px;
-}
+    #button-arrow-left {
+        margin-left: 40px;
+    }
 
-#button-arrow-right {
-    margin-right: 40px;
-}
+    #button-arrow-right {
+        margin-right: 40px;
+    }
 
-.outside {
-    display: none;
-}
+    .outside {
+        display: none;
+    }
 
-.logo-arrow {
-    width: 100px;
-}
+    .logo-arrow {
+        width: 100px;
+    }
 
-.footer-box {
-    width: 120px;
-    height: 120px;
-}
+    .footer-box {
+        width: 120px;
+        height: 120px;
+    }
 
-#button-contact {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
-}
+    #button-contact {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
 
-.game-entries-def {
-    display: block;
-}
+    .game-entries-def {
+        display: block;
+    }
 
-.game-entries-resp {
-    display: none;
-}
+    .game-entries-resp {
+        display: none;
+    }
 
-.logo {
-    width: 200px;
-    height: 200px;
-}
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
 
-.logo-trio {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 200px;
-}
+    .logo-trio {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 200px;
+    }
 
-#media-partners-div {
-    margin-bottom: 120px;
-}
+    #media-partners-div {
+        margin-bottom: 120px;
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -176,7 +176,17 @@
     }
 
     #trio {
-        margin-bottom: 450px !important;
+        margin-bottom: 660px !important;
+    }
+
+    .logo-trio{
+        margin-bottom: 190px !important;
+    }
+}
+
+@media screen and (max-width: 1474px){
+    #judul{
+        margin-bottom: 540px !important;
     }
 }
 
@@ -190,7 +200,20 @@
     }
 
     #trio {
-        margin-bottom: 400px !important;
+        margin-bottom: 640px !important;
+    }
+}
+
+@media screen and (max-width: 1422px){
+    #judul{
+        margin-bottom: 465px !important;
+    }
+
+    #trio{
+        margin-bottom: 600px !important;
+    }
+    .logo-trio{
+        margin-bottom: 180px !important;
     }
 }
 
@@ -200,14 +223,14 @@
     }
 
     #trio {
-        margin-bottom: 400px !important;   
+        margin-bottom: 500px !important;   
     }
 
     #judul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 0 810px !important;
+        margin: 0 0 780px !important;
     }
 
     #trio-logo {
@@ -290,9 +313,9 @@
     }
 }
 
-@media screen and (max-width: 1351px) {
+@media screen and (max-width: 1355px) {
     #judul {
-        margin-bottom: 750px !important;
+        margin-bottom: 720px !important;
     }
 
     #competitions {
@@ -300,13 +323,18 @@
     }
 
     #trio {
-        margin-bottom: 400px !important;
+        margin-bottom: 500px !important;
     }
 }
+@media screen and (max-width: 1325px){
+    #judul{
+        margin-bottom: 700px !important;
+    }
 
+}
 @media screen and (max-width: 1301px) {
     #judul {
-        margin-bottom: 690px !important;
+        margin-bottom: 680px !important;
     }
 
     #competitions {
@@ -318,9 +346,22 @@
     }
 }
 
+@media screen and (max-width: 1275px){
+    #judul{
+        margin-bottom: 650px !important;
+    }
+    .logo-trio{
+        margin-bottom: 155px !important;
+    }
+    #trio{
+        margin-bottom: 500px !important;
+    }
+}
+
+
 @media screen and (max-width: 1251px) {
     #judul {
-        margin-bottom: 630px !important;
+        margin-bottom: 600px !important;
     }
 
     #competitions {
@@ -335,8 +376,14 @@
         font-size: 15px;
     }
 
-    #trio {
-        margin-bottom: 400px !important;
+    .logo-trio {
+        margin-bottom: 170px !important;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    #judul{
+        margin-bottom: 580px !important;
     }
 }
 
@@ -353,9 +400,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 0 560px !important;
+        margin: 0 0 525px !important;
     }
-
+    .logo-trio{
+        width: 180px !important;
+        height: auto !important;
+        margin-bottom: 180px !important;
+    }
     #competitions {
         margin: 80px 35px 0 !important;
     }
@@ -373,6 +424,15 @@
     }
 }
 
+@media screen and (max-width: 1175px){
+    #judul{
+        margin-bottom: 500px !important;
+    }
+    .logo-trio{
+        margin-bottom: 170px !important;
+    }
+}
+
 @media screen and (max-width: 1151px) {
     #judul {
         margin-bottom: 500px !important;
@@ -381,7 +441,10 @@
     #competitions {
         margin: 80px 25px 0 !important;
     }
-
+    .logo-trio{
+        width:170px !important;
+        height:auto !important;
+    }
     .sub-judul {
         font-size: 35px;
     }
@@ -395,9 +458,18 @@
     }
 }
 
+@media screen and (max-width: 1125px){
+    #judul{
+        margin-bottom: 480px !important;
+    }
+    .logo-trio{
+        margin-bottom: 130px !important;
+    }
+}
+
 @media screen and (max-width: 1101px) {
     #judul {
-        margin-bottom: 480px !important;
+        margin-bottom: 450px !important;
     }
 
     .logo-trio {
@@ -406,7 +478,7 @@
     }
 
     #competitions {
-        margin: 80px 30px 0 !important;
+        margin: 70px 30px 0 !important;
     }
 
     .sub-judul {
@@ -426,9 +498,9 @@
     }
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1075px) {
     #judul {
-        margin-bottom: 460px !important;
+        margin-bottom: 420px !important;
     }
 
     .logo-trio {
@@ -454,6 +526,41 @@
 
     #trio {
         margin-bottom: 350px !important;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    #judul{
+        margin-bottom: 440px !important;
+    }
+    .logo-trio{
+        width:135px !important;
+        height: auto !important;
+        margin-bottom: 140px!important;
+    }
+    #competitions{
+        margin-top: 65px!important;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    #judul{
+        margin-bottom: 410px!important;
+    }
+    #competitions{
+        margin-top: 65px!important;
+    }
+}
+
+@media screen and (max-width: 1007px){
+    #judul{
+        margin-bottom: 400px!important;
+    }
+    #competitions{
+        margin-top: 65px!important;
+    }
+    .logo-trio{
+        margin-bottom: 130px!important;
     }
 }
 
@@ -484,8 +591,8 @@
     }
 
     .logo-trio {
-        width: 250px;
-        height: 250px;
+        width: 250px !important;
+        height: 250px !important;
         margin-bottom: 35px;
     }
 

@@ -154,7 +154,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                         <div class="game-container">
                             <a href="../game?game=<?= ($n = $i + 1) ?>" class="image-container text-decoration-none text-reset" style="background-color: transparent;border-width: 0;">
                                 <h3 class="mx-5 font_title play-button border border-0 rounded-2"><b>P L A Y</b></h3>
-                                <img class="border border-dark border-4 rounded-4" src="../src/game_placeholder.png" width="85%"/>
+                                <img class="border border-dark border-4 rounded-4" src="<?= $alt.$mbData[$i]['game_cover'] ?>" width="85%"/>
                             </a>
                             <h5 class="mt-3 px-3 font_title"><b><?= $mbData[$i]['title'] ?></b></h5>
                             <p class="px-5 font_content">
