@@ -17,18 +17,23 @@ if(empty($alt)){
             <hr>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link pe-5" href="<?=$alt?>game_entries.php">
+                    <a class="nav-link pe-3" href="<?=$alt?>game_entries">
                         <h4 class="ps-1 font_title">Games</h4>
                     </a>
                 </li>
-                <li class="nav-item pe-5">
-                    <a class="nav-link" href="<?=$alt?>competition.php">
+                <li class="nav-item pe-3">
+                    <a class="nav-link" href="<?=$alt?>competition">
                         <h4 class="ps-1 font_title">Competition</h4>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?=$alt?>webinar.php">
+                <li class="nav-item pe-3">
+                    <a class="nav-link" href="<?=$alt?>webinar">
                         <h4 class="ps-1 font_title">Webinar</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?=$alt?>#contact">
+                        <h4 class="ps-1 font_title">Contact</h4>
                     </a>
                 </li>
             </ul>

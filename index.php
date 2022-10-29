@@ -37,7 +37,11 @@
     <body id="index">
         <div class="container-fluid justify-content-center m-0 p-0">
             <header>
-                <?php require_once('header.php'); ?>
+                <?php 
+                    if(empty($alt)){
+                        $alt = "";
+                    }
+                    require_once('header.php'); ?>
             </header>
             <div id="judul" class="mt-5" data-aos="fade-down">
                 <div id="judul-text" class="d-flex mb-xl-0 mb-3">
@@ -56,30 +60,30 @@
             <div id="trio" class="d-flex flex-column flex-lg-row justify-content-lg-center" data-aos="fade-down">
                 <div id="games">
                     <img src="src/index/gameboy.png" class="logo-trio"/>
-                    <a href="game_entries.php" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="<?=$alt?>game_entries" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h1 class="sub-judul font_title">GAMES</h1>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
-                    <a href="game_entries.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="game_entries" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
                 <div id="competitions">
                     <img src="src/index/piala.png" class="logo-trio"/>
-                    <a href="competition.php" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="<?=$alt?>competition" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h1 class="sub-judul font_title">COMPETITIONS</h1>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
-                    <a href="competition.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="competition" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
                 <div id="webinar">
                     <img src="src/index/laptop.png" class="logo-trio"/>
-                    <a href="webinar.php" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="<?=$alt?>webinar" class="button-arrow button-arrow-resp mb-3"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                     <h1 class="sub-judul font_title">WEBINAR</h1>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
-                    <a href="webinar.php" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
+                    <a href="webinar" class="button-arrow button-arrow-def"><img class="img-button-arrow" src="src/index/awan_arrow1.png" /></a>
                 </div>
             </div>
             <h2 class="button-arrow text-center game-entries-def mb-5 font_title" data-aos="fade-down">GAME ENTRIES →</h2>
@@ -88,7 +92,7 @@
                 <div class="game-entries-div">
                     <button id="button-arrow-left" class="button-game-entries"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
                     <div class="game-entries-1"> 
-                        <a href="download.php"><img id="game-entries-box-1" class="game-entries-box mb-5 ms-0" src="src/game_placeholder.png"/></a>
+                        <a href="game_entries"><img id="game-entries-box-1" class="game-entries-box mb-5 ms-0" src="src/game_placeholder.png"/></a>
                         <div id="game-entries-box-2" class="game-entries-box mb-5">Slide 2</div>
                         <div id="game-entries-box-3" class="game-entries-box mb-5">Slide 3</div>
                         <div id="game-entries-box-4" class="game-entries-box mb-5 outside">Slide 4</div>
@@ -118,6 +122,7 @@
                     <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="footer-box"/>
                 </div>
             </div>
+            <br /><br /><br />
             <h2 class="button-arrow text-center mt-5 mb-3 font_title" data-aos="fade-down">SPONSORS</h2>
             <div class="d-flex justify-content-center" data-aos="fade-down">
                 <div class="mx-5 d-flex justify-content-start">

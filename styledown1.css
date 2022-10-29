@@ -1,34 +1,3 @@
-@media only screen and (min-width: 992px) {
-    #download {
-        background-image: url('./src/backgrounds/game-page.jpg') !important;
-    }
-
-    #game-mobile {
-        display: none;
-    }
- 
-    .header-navbar {
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-
-    #title h1 {
-        font-size: 48pt;
-    }
-    
-    #title p {
-        font-size: 12pt;
-    }
-
-    .button-choose>p{
-        font-size: 24px;
-        font-weight: bold;
-    }
-    .button-choose {
-        width: 200px;
-    }
-}
-
 @media only screen and (max-width: 992px) {
     #game-desktop {
         display: none;
@@ -57,23 +26,6 @@
     .game-container p {
         font-size: 14pt;
     }
-}
-
-@media only screen and (min-width: 768px) {
-    .navbar-brand img {
-        width: 64px;
-    }
-
-    #game-desktop {
-        margin-left: 210px;
-        margin-right: 210px;
-    }
-
-    #title {
-        margin-top: 100px;
-    }
-
-    
 }
 
 @media only screen and (max-width: 768px) {
@@ -109,16 +61,297 @@
     }
 
 
-    .button-choose>p{
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .button-choose {
-        width: 123px;
-    }
     
 }
 
+@media only screen and (max-width:400px){
+    #download {
+        background-image: url('./src/backgrounds/mobile-game-page.jpg') !important;
+    }
+    #game_title{
+        font-size: 32px;
+    }
+    #team_name{
+        font-size: 16px;
+    }
+    .button-choose{
+        width:123px;
+        height:auto;
+    }
+
+    .about_how{
+        font-size: 24px;
+        margin-bottom:12px;
+    }
+
+    .game_desc{
+        font-size:14px;
+    }
+
+    .member_name{
+        font-size: 16px;
+    }
+
+    .member_job{
+        font-size: 14px;
+    }
+    .profile {
+        width: 73px;
+        height: 73px;
+        border: 3px solid #0A194F;
+    }
+    .navbutton{
+        width:44px;
+        height:auto;
+    }
+
+    #game-content{
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 400px){
+    #game_title{
+        font-size: 35px;
+    }
+    #team_name{
+        font-size: 16px;
+    }
+    .button-choose{
+        width:147px;
+        height:auto;
+    }
+
+    .about_how{
+        font-size: 29px;
+        margin-bottom:12px;
+    }
+
+    .game_desc{
+        font-size:14px;
+    }
+
+    .member_name{
+        font-size: 15px;
+    }
+
+    .member_job{
+        font-size: 14px;
+    }
+    .profile {
+        width: 73px;
+        height: 73px;
+        border: 3px solid #0A194F;
+    }
+    .navbutton{
+        width:67px;
+        height:auto;
+    }
+    #game-ss{
+        margin-top: 20px;
+    }
+    #game-content{
+        margin-top: 15px;
+    }
+}
+@media only screen and (min-width:450px){
+    #game-ss{
+        margin-top:30px;
+    }
+}
+
+@media only screen and (min-width: 480px){
+    #game-ss{
+        margin-top: 40px;
+    }
+    #game-content{
+        margin-top: 23px;
+    }
+}
+@media only screen and (min-width: 530px){
+    #game-ss{
+        margin-top: 50px;
+    }
+    #game-content{
+        margin-top: 28px;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    #game-ss{
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    #game-content{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 595px){
+    #game-ss{
+        margin-top: 85px;
+    }
+    #game-content{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 625px){
+    #game-ss{
+        margin-top:110px;
+    }
+    #game-content{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 650px){
+    #game-ss{
+        margin-top:130px;
+    }
+    #game-content{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 690px){
+    #game-ss{
+        margin-top:150px;
+    }
+    #game-content{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 720px){
+    #game-ss{
+        margin-top:180px;
+    }
+    #game-content{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand img {
+        width: 64px;
+    }
+
+    #game-desktop {
+        margin-left: 210px;
+        margin-right: 210px;
+    }
+
+    #title {
+        margin-top: 100px;
+    }
+
+    #game_title{
+        font-size: 42px;
+    }
+    #team_name{
+        font-size: 18px;
+    }
+    .button-choose{
+        width:170px;
+        height:auto;
+    }
+
+    .about_how{
+        font-size: 34px;
+        margin-bottom:12px;
+    }
+
+    .game_desc{
+        font-size:14px;
+    }
+
+    .member_name{
+        font-size: 16px;
+    }
+
+    .member_job{
+        font-size: 14px;
+    }
+    .profile {
+        width: 77px;
+        height: 77px;
+        border: 3px solid #0A194F;
+    }
+    .navbutton{
+        width:90px;
+        height:auto;
+    }
+    #game-ss{
+        margin-top:10px;
+    }
+    #game-content{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #download {
+        background-image: url('./src/backgrounds/game-page.jpg') !important;
+    }
+
+    #game-mobile {
+        display: none;
+    }
+ 
+    .header-navbar {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    #title h1 {
+        font-size: 48pt;
+    }
+    
+    #title p {
+        font-size: 12pt;
+    }
+
+    .button-choose {
+        width: 196px;
+    }
+
+    #game_title{
+        font-size: 48px;
+    }
+    #team_name{
+        font-size: 20px;
+    }
+    .button-choose{
+        width:196px;
+        height:auto;
+    }
+
+    .about_how{
+        font-size: 40px;
+        margin-bottom:12px;
+    }
+
+    .game_desc{
+        font-size:14px;
+    }
+
+    .member_name{
+        font-size: 20px;
+    }
+
+    .member_job{
+        font-size: 14px;
+    }
+    .profile {
+        width: 81px;
+        height: 81px;
+        border: 3px solid #0A194F;
+    }
+    .navbutton{
+        width:113px;
+        height:auto;
+    }
+}
 
 #download{
     background-repeat: no-repeat !important;
@@ -228,9 +461,4 @@
 
 
 
-.profile {
-    width: 80px;
-    height: 80px;
-    background-color: gray;
-    border: 3px solid black;
-}
+

@@ -3,7 +3,7 @@ if(empty($alt)){
     $alt = "";
 }
 ?>
-<div class="footer-info text-center">
+<div id="contact" class="footer-info text-center">
     <h3 class="mb-3 font_title">CONTACT US</h3>
 
     <a href="https://www.instagram.com/gdcumn/" target="_blank" class="text-decoration-none text-reset">

@@ -1,5 +1,7 @@
 <?php 
-require_once('connect.php');
+require_once('../connect.php');
+
+$alt = "../";
 
 $page = 0;
 if(isset($_GET['page'])) 
@@ -48,9 +50,9 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="src/g2x_logo.png">
+    <link rel="icon" href="../src/g2x_logo.png">
     <title>Game Entries</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
@@ -81,7 +83,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
   <body id="game-entries">
     <div class="container-fluid justify-content-center m-0 p-0">
         <header>
-            <?php include("header.php"); ?>
+            <?php include("../header.php"); ?>
         </header>
         
         <div id="title" class="text-center mx-3" data-aos="fade-down">
@@ -105,11 +107,11 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="game?game=<?= $dataRow['id'] ?>" class="image-container" style="background-color: transparent;border-width: 0;">
-                                <img class="border border-dark border-4 rounded-4" src="src/game_placeholder.png" width="85%"/>
+                            <a href="../game?game=<?= $dataRow['id'] ?>" class="image-container" style="background-color: transparent;border-width: 0;">
+                                <img class="border border-dark border-4 rounded-4" src="../src/game_placeholder.png" width="85%"/>
                             </a>
                             <h5 class="mt-3 px-3 font_title"><b><?= $dataRow['title'] ?></b></h5>
-                            <p class="px-5 font_content">
+                            <p class="px-3 font_content">
                                 <?= $dataRow['game_desc'] ?>
                             </p>
                         </div>
@@ -125,15 +127,15 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
 
         <div id="game-mobile" class="text-center">
             <div class="mb-5 text-center" data-aos="fade-down">
-                <form action="game_entries.php" method="get">
+                <form action="game_entries" method="get">
                     <?php 
                     for ($i = 0; $i < page_amount($countRow['count']); $i++) {
                     ?>
                         <button type="submit" class="btn btn-link btn-page p-0 rounded-circle" name="page" value="<?= $i ?>">
                         <?php if ($i != $page) {?>
-                            <img src="src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
+                            <img src="../src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
                         <?php } else {?>
-                            <img src="src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
+                            <img src="../src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
                         <?php }?>
                         </button>
                     <?php 
@@ -149,8 +151,8 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="game?game=<?= ($i +1) ?>" class="image-container" style="background-color: transparent;border-width: 0;">
-                                <img class="border border-dark border-4 rounded-4" src="src/game_placeholder.png" width="85%"/>
+                            <a href="../game?game=<?= ($i +1) ?>" class="image-container" style="background-color: transparent;border-width: 0;">
+                                <img class="border border-dark border-4 rounded-4" src="../src/game_placeholder.png" width="85%"/>
                             </a>
                             <h5 class="mt-3 px-3 font_title"><b><?= $mbData[$i]['title'] ?></b></h5>
                             <p class="px-5 font_content">
@@ -164,15 +166,15 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
             </div>
 
             <div class="mb-5 text-center" data-aos="fade-down">
-                <form action="game_entries.php" method="get">
+                <form action="game_entries" method="get">
                     <?php 
                     for ($i = 0; $i < page_amount($countRow['count']); $i++) {
                     ?>
                         <button type="submit" class="btn btn-link btn-page p-0 rounded-circle" name="page" value="<?= $i ?>">
                         <?php if ($i != $page) {?>
-                            <img src="src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
+                            <img src="../src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
                         <?php } else {?>
-                            <img src="src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
+                            <img src="../src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
                         <?php }?>
                         </button>
                     <?php 
@@ -183,7 +185,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
         </div>
 
         <footer>
-            <?php include("footer.php"); ?>
+            <?php include("../footer.php"); ?>
         </footer>
     </div>
     <script 
@@ -199,5 +201,5 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
 </html>
 
 <?php 
-require_once('close.php');
+require_once('../close.php');
 ?>

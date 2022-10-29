@@ -1,13 +1,16 @@
+<?php
+    $alt = "../";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="src/g2x_logo.png">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="stylecomp4.css">
+    <link rel="icon" href="../src/g2x_logo.png">
+    <title>Competition</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../stylecomp4.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- link font -->
@@ -20,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
     <style>
-        body{background-image: url("src/bg-website-game-page.png");}
+        body{background-image: url("../src/bg-website-game-page.png");}
         .font_content{
             font-family: 'Varela', sans-serif;
             color: #0A194F;
@@ -34,7 +37,7 @@
 </head>
 <body id="competition">
     <header>
-        <?php include("header.php"); ?>
+        <?php include("../header.php"); ?>
     </header>
     <div class="container col col-lg-10">
         
@@ -48,7 +51,7 @@
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
-                            <img src="src/webi_compe/chardes_icon2.png" class="competition_profile"/>
+                            <img src="../src/webi_compe/chardes_icon2.png" class="competition_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
@@ -75,7 +78,7 @@
                                 </tr>
                             </table>
                             <div class="d-flex justify-content-center justify-content-lg-start">
-                                <a href="#" class="register"><img src="src/buttons/register2.png"/></a>
+                                <a href="#" class="register"><img src="../src/buttons/register2.png"/></a>
                             </div>
                             
                         </div>
@@ -86,7 +89,7 @@
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
-                            <img src="src/webi_compe/envi_icon.png" class="competition_profile"/>
+                            <img src="../src/webi_compe/envi_icon.png" class="competition_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
@@ -113,7 +116,7 @@
                                 </tr>
                             </table>
                             <div class="d-flex justify-content-center justify-content-lg-start">
-                                <a href="#" class="register"><img src="src/buttons/register2.png"/></a>
+                                <a href="#" class="register"><img src="../src/buttons/register2.png"/></a>
                             </div>
                             
                         </div>
@@ -124,7 +127,7 @@
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
-                            <img src="src/webi_compe/story_icon.png" class="competition_profile"/>
+                            <img src="../src/webi_compe/story_icon.png" class="competition_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
@@ -151,7 +154,7 @@
                                 </tr>
                             </table>
                             <div class="d-flex justify-content-center justify-content-lg-start">
-                                <a href="#" class="register"><img src="src/buttons/register2.png"/></a>
+                                <a href="#" class="register"><img src="../src/buttons/register2.png"/></a>
                             </div>
                             
                         </div>
@@ -161,7 +164,7 @@
         </div>
     </div>
     <footer>
-        <?php include("footer.php"); ?>
+        <?php include("../footer.php"); ?>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
