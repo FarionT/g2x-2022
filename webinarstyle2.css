@@ -29,7 +29,7 @@
         width: 96px;
     }
     #webinar{
-        background-image: url('src/backgrounds/mobile-webinar.jpg~') !important;
+        background-image: url('src/backgrounds/mobile-webinar.jpg') !important;
     }
     #game-mobile {
         margin-left: 20px;
