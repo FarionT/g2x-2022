@@ -108,7 +108,7 @@
                     <button id="button-arrow-right" class="button-game-entries"><img src="src/index/arrow_right.png" class="logo-arrow"/></button>
                 </div>
             </div>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <h2 class="button-arrow text-center mt-5 mb-3 font_title" data-aos="fade-down">MEDIA PARTNERS</h2>
             <div class="d-flex justify-content-center" data-aos="fade-down">
                 <div class="mx-2">
@@ -127,6 +127,7 @@
                     <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="footer-box"/>
                 </div>
             </div>
+            <br /><br /><br />
             <h2 class="button-arrow text-center mt-5 mb-3 font_title" data-aos="fade-down">SPONSORS</h2>
             <div class="d-flex justify-content-center" data-aos="fade-down">
                 <div class="mx-5 d-flex justify-content-start">
@@ -136,8 +137,6 @@
                     <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="footer-box"/>
                 </div>
             </div>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br />
             <?php require_once('footer.php'); ?>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

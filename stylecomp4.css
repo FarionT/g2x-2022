@@ -149,7 +149,7 @@
     }
 
     #competition {
-        background-image: url('src/backgrounds/webinar-competition.jpg') !important;
+        background-image: url('src/backgrounds/webinar-competition.jpg~') !important;
     }
 
     #game-desktop {
@@ -249,20 +249,6 @@
 
 .game-container {
     width: auto;
-}
-
-.navbar-nav {
-    margin-left: auto;
-}
-
-.nav-link {
-    color: white !important;
-    text-shadow: 1px 1px 15px dodgerblue;
-    transition: 0.1s;
-}
-
-.nav-link:hover {
-    color: gainsboro !important;
 }
 
 .image-container img {

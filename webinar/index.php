@@ -1,3 +1,6 @@
+<?php
+    $alt = "../";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +29,8 @@
         }
         
         .font_title{
-            font-family: 'Dosis', sans-serif;
-            color: #0A194F;
+            font-family: 'Dosis', sans-serif !important;
+            color: #0A194F !important;
         }
     </style>
 </head>

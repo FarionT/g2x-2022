@@ -1,6 +1,8 @@
 <?php 
 require_once('../connect.php');
 
+$alt = "../";
+
 $page = 0;
 if(isset($_GET['page'])) 
     if(is_numeric($_GET['page'])) $page = $_GET['page'];
@@ -81,7 +83,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
   <body id="game-entries">
     <div class="container-fluid justify-content-center m-0 p-0">
         <header>
-            <?php $alt = "../"; include("../header.php"); ?>
+            <?php include("../header.php"); ?>
         </header>
         
         <div id="title" class="text-center mx-3" data-aos="fade-down">
@@ -105,11 +107,11 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="game?game=<?= $dataRow['id'] ?>" class="image-container" style="background-color: transparent;border-width: 0;">
+                            <a href="../game?game=<?= $dataRow['id'] ?>" class="image-container" style="background-color: transparent;border-width: 0;">
                                 <img class="border border-dark border-4 rounded-4" src="../src/game_placeholder.png" width="85%"/>
                             </a>
                             <h5 class="mt-3 px-3 font_title"><b><?= $dataRow['title'] ?></b></h5>
-                            <p class="px-5 font_content">
+                            <p class="px-3 font_content">
                                 <?= $dataRow['game_desc'] ?>
                             </p>
                         </div>
@@ -131,9 +133,9 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                     ?>
                         <button type="submit" class="btn btn-link btn-page p-0 rounded-circle" name="page" value="<?= $i ?>">
                         <?php if ($i != $page) {?>
-                            <img src="../src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
+                            <img src="src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
                         <?php } else {?>
-                            <img src="../src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
+                            <img src="src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
                         <?php }?>
                         </button>
                     <?php 
@@ -149,7 +151,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="game?game=<?= ($i +1) ?>" class="image-container" style="background-color: transparent;border-width: 0;">
+                            <a href="../game?game=<?= ($i +1) ?>" class="image-container" style="background-color: transparent;border-width: 0;">
                                 <img class="border border-dark border-4 rounded-4" src="../src/game_placeholder.png" width="85%"/>
                             </a>
                             <h5 class="mt-3 px-3 font_title"><b><?= $mbData[$i]['title'] ?></b></h5>
@@ -170,9 +172,9 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                     ?>
                         <button type="submit" class="btn btn-link btn-page p-0 rounded-circle" name="page" value="<?= $i ?>">
                         <?php if ($i != $page) {?>
-                            <img src="../src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
+                            <img src="src/buttons/<?= $n = $i + 1 ?>.png" width="64px">
                         <?php } else {?>
-                            <img src="../src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
+                            <img src="src/buttons/<?= $n = $i + 1 ?>select.png" width="64px">
                         <?php }?>
                         </button>
                     <?php 

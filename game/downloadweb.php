@@ -105,9 +105,12 @@ if(isset($_SESSION['userData'])){
                         <img class="py-2 mx-2 button-choose" src="../../src/buttons/download1.png"/>
                     </a>
                     <?php if($isVote){?>
-                        <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/unvote1.png">
+                        <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/unvote1.png?<?= time()?>">
                     <?php } else {?>
-                        <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/vote1.png">
+                        <div>
+                            <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/vote1.png?<?= time()?>">
+                            <p id='voteCount' class="font_content text-center">Vote: <?= $voteCount ?></p>
+                        </div>
                     <?php }?>
                 </div>
                 <div id="myModal" class="modal">
@@ -176,10 +179,6 @@ if(isset($_SESSION['userData'])){
     </script>
     <script src="../../javadown.js" type="text/javascript"></script>
     <script type="text/javascript">
-    var counter = 1;
-    msg = document.getElementById('msg');
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("btn_voting");
 
     document.getElementById("btn_voting").addEventListener("click", function() {
         vote();
@@ -190,26 +189,15 @@ if(isset($_SESSION['userData'])){
             type: "post",
             data: {vote: '<?= $gameID?>', ReReURL: '<?= $url?>'},
             success:function(result){
-                // tadi biar nggak kelooping button sign in googlenya, kalau ini jadinya nge looping tiap bukak tutup vote nya
-                // var counternya jangan dihilangin :')
-
-                //codingan ku udah perfect yak :)
                 msg.innerHTML = result;
-
-                // if(counter == 1){ // login button
-                    // var googlebutton = document.createElement('div');
-                    // googlebutton.innerHTML = result;
-                    // var divmodal = document.getElementById("modal-content");
-                    // divmodal.appendChild(googlebutton);
-                    // counter = 2;
-                // }
                 if(result.includes('You unvoted')){ // already vote
                     $.ajax({
                         url:"../elz00/4s4rW/j59YI",
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'unvote'},
                         success:function(re){
-                            document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">VOTE ("+re+")</p>";
+                            document.getElementById("voteCount").innerHTML = "Vote "+re;
+                            document.getElementById("btn_voting").src = "../../src/buttons/vote1.png?<?= time()?>";
                         }
                     });
                 }
@@ -219,7 +207,8 @@ if(isset($_SESSION['userData'])){
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'vote'},
                         success:function(re){
-                            document.getElementById("btn_voting").innerHTML = "<p class=\"m-auto\">UNVOTE ("+re+")</p>";
+                            document.getElementById("voteCount").innerHTML = "Vote "+re
+                            document.getElementById("btn_voting").src = "../../src/buttons/unvote1.png?<?= time()?>";
                         }
                     });
                 }

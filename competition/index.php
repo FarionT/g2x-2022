@@ -1,11 +1,14 @@
+<?php
+    $alt = "../";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../src/g2x_logo.png">
-    <title>Document</title>
+    <link rel="icon" href="src/g2x_logo.png">
+    <title>Competition</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../stylecomp4.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -34,7 +37,7 @@
 </head>
 <body id="competition">
     <header>
-        <?php $alt = "../"; include("../header.php"); ?>
+        <?php include("../header.php"); ?>
     </header>
     <div class="container col col-lg-10">
         
