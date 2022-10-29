@@ -109,7 +109,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                                 <img class="border border-dark border-4 rounded-4" src="src/game_placeholder.png" width="85%"/>
                             </a>
                             <h5 class="mt-3 px-3 font_title"><b><?= $dataRow['title'] ?></b></h5>
-                            <p class="px-5 font_content">
+                            <p class="px-3 font_content">
                                 <?= $dataRow['game_desc'] ?>
                             </p>
                         </div>
