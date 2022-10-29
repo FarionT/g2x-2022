@@ -196,7 +196,7 @@ if(isset($_SESSION['userData'])){
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'unvote'},
                         success:function(re){
-                            document.getElementById("voteCount").innerHTML = "Vote "+re;
+                            document.getElementById("voteCount").innerHTML = "Vote: "+re;
                             document.getElementById("btn_voting").src = "../../src/buttons/vote1.png?<?= time()?>";
                         }
                     });
@@ -207,7 +207,7 @@ if(isset($_SESSION['userData'])){
                         type: "get",
                         data: {vote: '<?= $gameID?>'<?php if(!empty($_SESSION['userData']['oauth_uid'])) echo ", user: '{$_SESSION['userData']['oauth_uid']}'"?>, doing: 'vote'},
                         success:function(re){
-                            document.getElementById("voteCount").innerHTML = "Vote "+re
+                            document.getElementById("voteCount").innerHTML = "Vote: "+re
                             document.getElementById("btn_voting").src = "../../src/buttons/unvote1.png?<?= time()?>";
                         }
                     });
