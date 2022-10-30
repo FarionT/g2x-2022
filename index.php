@@ -34,10 +34,9 @@
                     <h1 class="font_title my-0" style="font-size: 48pt;">WELCOME TO&nbsp;</h1>
                     <h1 class="font_title my-0" style="font-size: 84pt;">G2X</h1>
                     <p class="mb-5 ps-2 font_content" style="font-size: 11pt;">
-                        Event terbesar yang diselenggarakan oleh UKM <br />
-                        GDC (Game Development Club) UMN setiap tahunnya <br />
-                        yang menghadirkan berbagai game karya UKM GDC <br />
-                        dan acara lainnya seperti kompetisi berhadiah serta webinar.
+                        GDC Game Expo (G2X) merupakan acara tahunan <br/>
+                        dari Game Development Club UMN <br/>
+                        sebagai bagian dari proyek akhir kerja GDC.
                     </p>
                     <a href="#content-island" id="title-button">
                         <img class="button-logo" src="src/index/awan_start2.png" width="200px" />
@@ -48,10 +47,9 @@
             <div id="sub-title" class="text-center" data-aos="fade-down">
                 <h1 class="font_title mb-3" style="font-size: 32pt;">G2X</h1>
                 <p class="mb-5 ps-2 font_content" style="font-size: 10pt;">
-                    Event terbesar yang diselenggarakan oleh UKM <br />
-                    GDC (Game Development Club) UMN setiap tahunnya <br />
-                    yang menghadirkan berbagai game karya UKM GDC <br />
-                    dan acara lainnya seperti kompetisi berhadiah serta webinar.
+                    GDC Game Expo (G2X) merupakan acara tahunan <br/>
+                    dari Game Development Club UMN <br/>
+                    sebagai bagian dari proyek akhir kerja GDC.
                 </p>
             </div>
 
