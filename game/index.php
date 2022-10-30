@@ -160,7 +160,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
 
         <div id="game-mobile" class="text-center">
             <div class="mb-5 text-center" data-aos="fade-down">
-                <form action="index.php" method="post">
+                <form action="./" method="post">
                     <?php 
                     for ($i = 0; $i < page_amount($countRow['count']); $i++) {
                     ?>
@@ -200,7 +200,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
             </div>
 
             <div class="mb-5 text-center" data-aos="fade-down">
-                <form action="index.php" method="post">
+                <form action="./" method="post">
                     <?php 
                     for ($i = 0; $i < page_amount($countRow['count']); $i++) {
                     ?>
