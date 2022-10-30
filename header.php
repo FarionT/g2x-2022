@@ -17,7 +17,7 @@ if(empty($alt)){
             <hr>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link pe-3" href="<?=$alt?>game_entries">
+                    <a class="nav-link pe-3" href="#game-entries">
                         <h4 class="ps-1 font_title">Games</h4>
                     </a>
                 </li>
