@@ -1,4 +1,6 @@
-
+.webinar_profile {
+    border: 3.5px solid #0A194F;
+}
 
 @media only screen and (max-width: 992px) {
     #game-desktop {
@@ -88,7 +90,7 @@
 
     .webinar_profile{
         width:113px;
-        height:113px;   
+        height:113px;
     }
 
     .webinar_title{

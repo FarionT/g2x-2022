@@ -51,7 +51,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../src/g2x_logo.png">
-    <title>Game Entries</title>
+    <title>G2X 2022 - Game Entries</title>
     <link rel="stylesheet" href="../styles.css">
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
