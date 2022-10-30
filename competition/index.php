@@ -47,30 +47,30 @@
             <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
         </div>
         <div id="competitions" class="my-5">
-            <div id="firstCompetition" class="d-flex justify-content-lg-start justify-content-center mx-5" data-aos="fade-down">
+        <div id="firstCompetition" class="d-flex justify-content-lg-start justify-content-center mx-5" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
-                            <img src="../src/webi_compe/chardes_icon2.png" class="competition_profile"/>
+                            <img src="../src/webi_compe/story_icon.png" class="competition_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
                         <div class="d-flex justify-content-lg-start justify-content-sm-center justify-content-center">
-                            <h3 class="mx-2 competition_title font_title" >CHARACTER DESIGN</h3>
+                            <h3 class="mx-2 competition_title font_title">STORY WRITING</h3>
                         </div>
                         <div>
                             <table class="table table-borderless d-flex justify-content-md-start justify-content-center">
                                 <tr>
-                                    <td class="py-2 font_content font_content font_content">Theme</td>
-                                    <td class="py-2 font_content">PENJELAJAH LANGIT</td>
+                                    <td class="py-2 font_content">Theme</td>
+                                    <td class="py-2 font_content">Sky</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content">Start</td>
-                                    <td class="py-2 font_content">31 10 2022</td>
+                                    <td class="py-2 font_content">31 Oktober 2022</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content">End</td>
-                                    <td class="py-2 font_content">11 10 2022</td2>
+                                    <td class="py-2 font_content">10 November 2022</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content"></td>
@@ -100,15 +100,15 @@
                             <table class="table table-borderless d-flex justify-content-md-start justify-content-center">
                                 <tr>
                                     <td class="py-2 font_content font_content">Theme</td>
-                                    <td class="py-2 font_content font_content">SKY ISLAND</td>
+                                    <td class="py-2 font_content font_content">Sky Island</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content font_content">Start</td>
-                                    <td class="py-2 font_content font_content">31 10 2022</td>
+                                    <td class="py-2 font_content font_content">31 Oktober 2022</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content font_content">End</td>
-                                    <td class="py-2 font_content font_content">10 11 2022</td>
+                                    <td class="py-2 font_content font_content">10 November 2022</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content font_content"></td>
@@ -127,26 +127,26 @@
                 <div class="d-flex row row-md-2 justify-content-center" id="upCompetition">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto me-lg-5">
-                            <img src="../src/webi_compe/story_icon.png" class="competition_profile"/>
+                            <img src="../src/webi_compe/chardes_icon2.png" class="competition_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
                         <div class="d-flex justify-content-lg-start justify-content-sm-center justify-content-center">
-                            <h3 class="mx-2 competition_title font_title">STORY WRITING</h3>
+                            <h3 class="mx-2 competition_title font_title" >CHARACTER DESIGN</h3>
                         </div>
                         <div>
                             <table class="table table-borderless d-flex justify-content-md-start justify-content-center">
                                 <tr>
-                                    <td class="py-2 font_content">Theme</td>
-                                    <td class="py-2 font_content">SKY</td>
+                                    <td class="py-2 font_content font_content font_content">Theme</td>
+                                    <td class="py-2 font_content">Penjelajah Langit</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content">Start</td>
-                                    <td class="py-2 font_content">31 10 2022</td>
+                                    <td class="py-2 font_content">31 Oktober 2022</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content">End</td>
-                                    <td class="py-2 font_content">10 11 2022</td>
+                                    <td class="py-2 font_content">11 10 2022</td2>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content"></td>
@@ -161,6 +161,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     <footer>
