@@ -23,10 +23,7 @@
 <body id="index">
     <div class="container-fluid m-0 p-0">
         <header>
-            <?php 
-            if(empty($alt)){
-                $alt = "";
-            }
+            <?php
             include('header.php'); 
             ?>
         </header>
