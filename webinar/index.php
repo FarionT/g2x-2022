@@ -50,19 +50,20 @@
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
-                            <img src="../src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
+                            <img src="../src/webi_compe/yohannes_yokomichi.jpg" class="bg-secondary rounded-circle webinar_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
                         <div class="d-flex justify-content-md-start justify-content-center justify-content-center">
-                            <p class="mx-2 font_title webinar_title">Webinar title title<br> Webinar title title</p>
+                            <p class="mx-2 font_title webinar_title">Break Through Your Limits</p>
                         </div>
                         <div>
                             <div class="d-flex justify-content-md-start justify-content-center">
                                 <div>
-                                    <p id="category" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Category</p>
-                                    <p id="day" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Day, DD MM YY</p>
-                                    <p id="time" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Pukul 00.00 WIB</p>
+                                    <p id="speaker" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Yohannes Yokomichi - Game Design MNC Games</p>
+                                    <p id="category" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Game Design</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Jumat, 11 November 2022</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Pukul 18.30 WIB</p>
                                 </div> 
                             </div>                    
                         </div>
@@ -73,26 +74,27 @@
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
-                            <img src="../src/game_placeholder.png" class="bg-secondary rounded-circle webinar_profile"/>
+                            <img src="../src/webi_compe/sarah_johana.jpg" class="bg-secondary rounded-circle webinar_profile"/>
                         </div>
                     </div>
                     <div id="upRight" class="mx-4 col col-auto">
                         <div class="d-flex justify-content-md-start justify-content-sm-center justify-content-center">
-                            <p class="mx-2 font_title webinar_title">Webinar title title<br> Webinar title title</p>
+                            <p class="mx-2 font_title webinar_title">Sales Went to the Sky</p>
                         </div>
                         <div>
                             <div class="d-flex justify-content-md-start justify-content-center">
                                 <div>
-                                    <p id="category" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Category</p>
-                                    <p id="day" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Day, DD MM YY</p>
-                                    <p id="time" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Pukul 00.00 WIB</p>
+                                    <p id="speaker" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Sarah Johanna - Lead Marketing Toge</p>
+                                    <p id="category" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Game Marketing</p>
+                                    <p id="day" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Sabtu, 12 November 2022</p>
+                                    <p id="time" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Pukul 13.00 WIB</p>
                                 </div> 
                             </div>                    
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-lg-start justify-content-center mx-5" id="webinar3" data-aos="fade-down">
+            <!-- <div class="d-flex justify-content-lg-start justify-content-center mx-5" id="webinar3" data-aos="fade-down">
                 <div class="d-flex row row-md-2 justify-content-center">
                     <div id="upLeft" class="d-flex mx-4 my-lg-0 my-4 col justify-content-center">
                         <div class="col-auto">
@@ -114,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="d-flex justify-content-center" data-aos="fade-down">
             <a href="#"><img src="../src/buttons/register_here.png" class="register_here"/></a>

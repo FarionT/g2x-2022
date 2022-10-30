@@ -88,7 +88,8 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                         <a href="<?=$alt?>competition" class="button-arrow button-arrow-resp align-items-center d-flex justify-content-center">
                             <img class="img-button-arrow  mx-auto my-auto" src="src/index/awan_arrow1.png" />
                         </a>
-                    </div>                    <h1 class="sub-judul font_title">COMPETITIONS</h1>
+                    </div>                    
+                    <h1 class="sub-judul font_title">COMPETITIONS</h1>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mb-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
                     <p class="mt-0 font_content trio-content">Copywriting Copywriting Copywriting</p>
