@@ -37,8 +37,10 @@
                     <h1 class="font_title my-0" style="font-size: 48pt;">WELCOME TO&nbsp;</h1>
                     <h1 class="font_title my-0" style="font-size: 84pt;">G2X</h1>
                     <p class="mb-5 ps-2 font_content" style="font-size: 11pt;">
-                        Copywriting Copywriting Copywriting <br />
-                        Copywriting Copywriting Copywriting
+                        Event terbesar yang diselenggarakan oleh UKM <br />
+                        GDC (Game Development Club) UMN setiap tahunnya <br />
+                        yang menghadirkan berbagai game karya UKM GDC <br />
+                        dan acara lainnya seperti kompetisi berhadiah serta webinar.
                     </p>
                     <a href="#content-island" id="title-button">
                         <img class="button-logo" src="src/index/awan_start2.png" width="200px" />
@@ -49,8 +51,10 @@
             <div id="sub-title" class="text-center" data-aos="fade-down">
                 <h1 class="font_title mb-3" style="font-size: 32pt;">G2X</h1>
                 <p class="mb-5 ps-2 font_content" style="font-size: 10pt;">
-                    Copywriting Copywriting Copywriting <br />
-                    Copywriting Copywriting Copywriting
+                    Event terbesar yang diselenggarakan oleh UKM <br />
+                    GDC (Game Development Club) UMN setiap tahunnya <br />
+                    yang menghadirkan berbagai game karya UKM GDC <br />
+                    dan acara lainnya seperti kompetisi berhadiah serta webinar.
                 </p>
             </div>
 
@@ -58,10 +62,11 @@
                 <div class="row">
                     <div class="col-4 pe-3 content-container content-left">
                         <h1 class="font_title">GAMES</h1>
-                        <p class="mb-5 font_content">
-                            Copywriting Copywriting Copywriting <br />
-                            Copywriting Copywriting Copywriting <br />
-                            Copywriting Copywriting Copywriting
+                        <p class="mb-5 font_content" style="text-align: center; font-size: 15px">
+                        Lagi gabut? Ayoo telusuri, mainkan, dan vote berbagai
+                        game-game menarik hasil peserta lomba G2X. Psst.. kalian
+                        juga bisa dapat skkm minat & bakat juga loh kalau merekam
+                        (syarat dan ketentuan berlaku).
                         </p>
                         <a href="#game-direct">
                             <img src="src/index/awan_arrow1.png" width="96px" />
@@ -69,10 +74,11 @@
                     </div>
                     <div class="col-4 px-3 content-container content-center">
                         <h1 class="font_title">COMPETITIONS</h1>
-                        <p class="mb-5 font_content">
-                            Copywriting Copywriting Copywriting <br />
-                            Copywriting Copywriting Copywriting <br />
-                            Copywriting Copywriting Copywriting
+                        <p class="mb-5 font_content" style="text-align: center; font-size: 15px">
+                        Ikut serta dalam berbagai kompetisi seperti character
+                        design, environment design, ataupun story writing dan
+                        menangkan SKKM minat & bakat, begitu juga dengan hadiah
+                        total hingga 900.000 rupiah!
                         </p>
                         <a href="competition">
                             <img src="src/index/awan_arrow1.png" width="96px" />
@@ -80,10 +86,11 @@
                     </div>
                     <div class="col-4 ps-3 content-container content-right">
                         <h1 class="font_title">WEBINAR</h1>
-                        <p class="mb-5 font_content">
-                            Copywriting Copywriting Copywriting <br />
-                            Copywriting Copywriting Copywriting <br />
-                            Copywriting Copywriting Copywriting
+                        <p class="mb-5 font_content" style="text-align: center; font-size: 15px">
+                        Ingin tahu lebih banyak mengenai dunia pengembangan game
+                        dan menambah wawasan? Ikuti webinar yang dibawakan oleh
+                        pakar profesional yang akan membahas mengenai game design
+                        maupun game marketing.
                         </p>
                         <a href="webinar">
                             <img src="src/index/awan_arrow1.png" width="96px" />
@@ -119,8 +126,10 @@
                 <div class="landing-title" data-aos="fade-down">
                     <h1 class="font_title my-0" style="font-size: 24pt;">WELCOME TO G2X</h1>
                     <p class="mb-5 ps-2 font_content" style="font-size: 8pt;">
-                        Copywriting Copywriting Copywriting <br />
-                        Copywriting Copywriting Copywriting
+                    Event terbesar yang diselenggarakan oleh UKM <br />
+                    GDC (Game Development Club) UMN setiap tahunnya <br />
+                    yang menghadirkan berbagai game karya UKM GDC <br />
+                    dan acara lainnya seperti kompetisi berhadiah serta webinar.
                     </p>
                 </div>
             </div>
@@ -128,8 +137,10 @@
             <div id="sub-title" class="text-center" data-aos="fade-down">
                 <h1 class="font_title mb-3" style="font-size: 32pt;">G2X</h1>
                 <p class="mb-5 ps-2 font_content" style="font-size: 10pt;">
-                    Copywriting Copywriting Copywriting <br />
-                    Copywriting Copywriting Copywriting
+                Event terbesar yang diselenggarakan oleh UKM <br />
+                    GDC (Game Development Club) UMN setiap tahunnya <br />
+                    yang menghadirkan berbagai game karya UKM GDC <br />
+                    dan acara lainnya seperti kompetisi berhadiah serta webinar.
                 </p>
             </div>
 
@@ -139,10 +150,11 @@
                         <img src="src/index/awan_arrow1.png" />
                     </a>
                     <h1 class="font_title">GAMES</h1>
-                    <p class="mb-5 pb-5 font_content">
-                        Copywriting Copywriting Copywriting <br />
-                        Copywriting Copywriting Copywriting <br />
-                        Copywriting Copywriting Copywriting
+                    <p class="mb-5 pb-5 font_content" style="text-align: center; margin: auto 30px;">
+                        Lagi gabut? Ayoo telusuri, mainkan, dan vote berbagai
+                        game-game menarik hasil peserta lomba G2X. Psst.. kalian
+                        juga bisa dapat skkm minat & bakat juga loh kalau merekam
+                        (syarat dan ketentuan berlaku).
                     </p>
                 </div>
 
@@ -151,10 +163,11 @@
                         <img src="src/index/awan_arrow1.png" />
                     </a>
                     <h1 class="font_title">COMPETITIONS</h1>
-                    <p class="mb-5 pb-5 font_content">
-                        Copywriting Copywriting Copywriting <br />
-                        Copywriting Copywriting Copywriting <br />
-                        Copywriting Copywriting Copywriting
+                    <p class="mb-5 pb-5 font_content" style="text-align: center; margin: auto 30px;">
+                        Ikut serta dalam berbagai kompetisi seperti character
+                        design, environment design, ataupun story writing dan
+                        menangkan SKKM minat & bakat, begitu juga dengan hadiah
+                        total hingga 900.000 rupiah!
                     </p>
                 </div>
 
@@ -163,10 +176,11 @@
                         <img src="src/index/awan_arrow1.png" />
                     </a>
                     <h1 class="font_title">WEBINAR</h1>
-                    <p class="mb-5 pb-5 font_content">
-                        Copywriting Copywriting Copywriting <br />
-                        Copywriting Copywriting Copywriting <br />
-                        Copywriting Copywriting Copywriting
+                    <p class="mb-5 pb-5 font_content" style="text-align: center; margin: auto 30px;">
+                        Ingin tahu lebih banyak mengenai dunia pengembangan game
+                        dan menambah wawasan? Ikuti webinar yang dibawakan oleh
+                        pakar profesional yang akan membahas mengenai game design
+                        maupun game marketing.
                     </p>
                 </div>
             </div>
