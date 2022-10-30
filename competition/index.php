@@ -43,8 +43,11 @@
         
         <div class="container text-center" id="title" data-aos="fade-down">
             <h1 id="pageTitle" class="mb-4 font_title">COMPETITIONS</h1>
-            <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
-            <p class="mb-0 font_content">Copywriting Copywriting Copywriting</p>
+            <p class="mb-0 font_content text-center">
+                Ikut serta dalam berbagai kompetisi seperti character design,<br/>
+                environment design, ataupun story writing dan menangkan hadiah <br/>
+                berupa SKKM dan uang hingga 900.000 rupiah!    
+            </p>
         </div>
         <div id="competitions" class="my-5">
         <div id="firstCompetition" class="d-flex justify-content-lg-start justify-content-center mx-5" data-aos="fade-down">
@@ -74,11 +77,11 @@
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content"></td>
-                                    <td class="py-2 font_content">pukul 00:00 WIB</td>
+                                    <td class="py-2 font_content">pukul 23:59 WIB</td>
                                 </tr>
                             </table>
                             <div class="d-flex justify-content-center justify-content-lg-start">
-                                <a href="#" class="register"><img src="../src/buttons/register2.png"/></a>
+                                <a href="https://bit.ly/g2xstorywriting" class="register"><img src="../src/buttons/register2.png"/></a>
                             </div>
                             
                         </div>
@@ -112,11 +115,11 @@
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content font_content"></td>
-                                    <td class="py-2 font_content font_content">pukul 00:00 WIB</td>
+                                    <td class="py-2 font_content font_content">pukul 23:59 WIB</td>
                                 </tr>
                             </table>
                             <div class="d-flex justify-content-center justify-content-lg-start">
-                                <a href="#" class="register"><img src="../src/buttons/register2.png"/></a>
+                                <a href="https://bit.ly/g2xenvirontmentdesign" class="register"><img src="../src/buttons/register2.png"/></a>
                             </div>
                             
                         </div>
@@ -146,15 +149,15 @@
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content">End</td>
-                                    <td class="py-2 font_content">11 10 2022</td2>
+                                    <td class="py-2 font_content">10 November 2022</td2>
                                 </tr>
                                 <tr>
                                     <td class="py-2 font_content"></td>
-                                    <td class="py-2 font_content">pukul 00:00 WIB</td>
+                                    <td class="py-2 font_content">pukul 23:59 WIB</td>
                                 </tr>
                             </table>
                             <div class="d-flex justify-content-center justify-content-lg-start">
-                                <a href="#" class="register"><img src="../src/buttons/register2.png"/></a>
+                                <a href="https://bit.ly/g2xcharacterdesign" class="register"><img src="../src/buttons/register2.png"/></a>
                             </div>
                             
                         </div>

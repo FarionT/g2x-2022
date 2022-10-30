@@ -43,7 +43,11 @@
     <div class="container-fluid justify-content-center mx-auto px-auto col col-lg-10">
         <div id="title" data-aos="fade-down">
             <p class="d-flex justify-content-center font_title" id="judul" style="font-size:64px;">WEBINAR</p>
-            <p class="d-flex justify-content-center font_content" id="subjudul">Copywriting Copywriting Copywriting<br>Copywriting Copywriting Copywriting</p>
+            <p class="d-flex justify-content-center font_content text-center" id="subjudul">
+            Penasaran mengenai dunia pengembangan game?<br>
+            Ikuti webinar yang dibawakan oleh pakar profesional <br/>
+            yang akan membahas mengenai game design dan game marketing.
+            </p>
         </div>
         <div id="webinars">
             <div class="d-flex justify-content-lg-start justify-content-center mx-5" id="webinar1" data-aos="fade-down">
@@ -60,10 +64,15 @@
                         <div>
                             <div class="d-flex justify-content-md-start justify-content-center">
                                 <div>
-                                    <p id="speaker" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Yohannes Yokomichi - Game Designer MNC Games</p>
+                                    <p id="speaker" class="mx-2 d-flex justify-content-md-start justify-content-center font_content text-center">Yohannes Yokomichi - Former Game Designer MNC Games</p>
                                     <p id="category" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Game Design</p>
                                     <p id="day" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Jumat, 11 November 2022</p>
                                     <p id="time" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Pukul 18.30 WIB</p>
+                                    <div class="d-flex justify-content-center" data-aos="fade-down">
+                                        <a href="https://bit.ly/webinarg2xlimitbreak">
+                                            <img src="../src/buttons/register_here.png" class="register_here">
+                                        </a>
+                                    </div>
                                 </div> 
                             </div>                    
                         </div>
@@ -84,10 +93,15 @@
                         <div>
                             <div class="d-flex justify-content-md-start justify-content-center">
                                 <div>
-                                    <p id="speaker" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Sarah Johana - Lead Marketing Toge</p>
+                                    <p id="speaker" class="mx-2 d-flex justify-content-md-start justify-content-center font_content text-center">Sarah Johana - Lead Marketing Toge Productions</p>
                                     <p id="category" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Game Marketing</p>
                                     <p id="day" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Sabtu, 12 November 2022</p>
                                     <p id="time" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Pukul 13.00 WIB</p>
+                                    <div class="d-flex justify-content-center" data-aos="fade-down">
+                                        <a href="https://bit.ly/webinarg2xskysales">
+                                            <img src="../src/buttons/register_here.png" class="register_here">
+                                        </a>
+                                    </div>
                                 </div> 
                             </div>                    
                         </div>
@@ -117,9 +131,6 @@
                     </div>
                 </div>
             </div> -->
-        </div>
-        <div class="d-flex justify-content-center" data-aos="fade-down">
-            <a href="#"><img src="../src/buttons/register_here.png" class="register_here"/></a>
         </div>
     </div>
     <footer>
