@@ -60,7 +60,7 @@
                         <div>
                             <div class="d-flex justify-content-md-start justify-content-center">
                                 <div>
-                                    <p id="speaker" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Yohannes Yokomichi - Game Design MNC Games</p>
+                                    <p id="speaker" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Yohannes Yokomichi - Game Designer MNC Games</p>
                                     <p id="category" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Game Design</p>
                                     <p id="day" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Jumat, 11 November 2022</p>
                                     <p id="time" class="mx-2 d-flex justify-content-md-start justify-content-center font_content">Pukul 18.30 WIB</p>
