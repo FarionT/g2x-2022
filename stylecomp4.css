@@ -104,6 +104,12 @@
     }
 }
 
+@media only screen and (max-width: 350px) {
+    #title h1{
+        font-size: 30px;
+    }
+}
+
 @media only screen and (min-width: 450px) {
     .footer-info h3 {
         padding-top: 400px;
