@@ -105,13 +105,13 @@
                     <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="mx-2" width="120px"/>
                     <img src="src/medpar_sponsor/Logo_jcafest.png" class="mx-2" width="120px"/>
                     <img src="src/medpar_sponsor/Logo_MXM.png" class="mx-2" width="120px"/>
-                    <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="mx-2" width="120px"/>
+                    <img src="src/medpar_sponsor/logo_jcafe.png" class="mx-2" width="140px"/>
                 </div>
 
                 <h1 class="font_title mt-5 mb-4" style="font-size: 32pt;">SPONSORS</h1>
                 <div class="d-inline">
                     <img src="src/medpar_sponsor/Logo_Mandiri-Utama-Finance.png" class="mx-5" width="250px"/>
-                    <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="mx-5" width="120px"/>
+                    <img src="src/medpar_sponsor/Logo_tomstorecars.jpg" class="mx-5" width="120px"/>
                 </div>
             </div>
         </div>
@@ -191,13 +191,13 @@
                     <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="mx-2" width="42px"/>
                     <img src="src/medpar_sponsor/Logo_jcafest.png" class="mx-2" width="42px"/>
                     <img src="src/medpar_sponsor/Logo_MXM.png" class="mx-2" width="42px"/>
-                    <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="mx-2" width="42px"/>
+                    <img src="src/medpar_sponsor/logo_jcafe.png" class="mx-2" width="42px"/>
                 </div>
 
                 <h1 class="font_title mt-5 mb-4" style="font-size: 24pt;">SPONSORS</h1>
                 <div class="d-inline">
                     <img src="src/medpar_sponsor/Logo_Mandiri-Utama-Finance.png" class="mx-5" width="100px"/>
-                    <img src="src/medpar_sponsor/Logo_eventapaaja.png" class="mx-5" width="42px"/>
+                    <img src="src/medpar_sponsor/Logo_tomstorecars.jpg" class="mx-5" width="42px"/>
                 </div>
             </div>
         </div>
