@@ -204,6 +204,13 @@
     }
 }
 
+@media screen and (max-width: 1425px) {
+    .game-entries-box {
+        width: 280px;
+        height: 160px;
+    }
+}
+
 @media screen and (max-width: 1422px){
     #judul{
         margin-bottom: 465px !important;
