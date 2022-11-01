@@ -2,9 +2,9 @@
  
 class User { 
     private $dbHost     = 'localhost'; 
-    private $dbUsername = 'root'; 
-    private $dbPassword = ''; 
-    private $dbName     = 'g2x'; 
+    private $dbUsername = 'gdcgame1_g2x'; 
+    private $dbPassword = 'GAMEDEVCLUB2020/2021'; 
+    private $dbName     = 'gdcgame1_g2x'; 
     private $userTbl    = 'users';
     private $voteTbl    = 'voting';
      

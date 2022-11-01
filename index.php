@@ -63,7 +63,7 @@
                         juga bisa dapat skkm minat & bakat juga loh kalau merekam
                         (syarat dan ketentuan berlaku).
                         </p>
-                        <a href="#game-direct">
+                        <a href="game">
                             <img src="src/index/awan_arrow1.png" width="96px" />
                         </a>
                     </div>
@@ -141,7 +141,7 @@
 
             <div id="content-island">
                 <div id="content-up" class="content-container text-center" data-aos="fade-down">
-                    <a href="#game-direct">
+                    <a href="game">
                         <img src="src/index/awan_arrow1.png" />
                     </a>
                     <h1 class="font_title">GAMES</h1>
