@@ -13,18 +13,21 @@ $game = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
 if(empty($game['game_cover'])) $game['game_cover'] = "../../src/game_placeholder.png";
 
 // Prev and next game
-$min = 1;
-$sql = "select * from game_entries where id = (select min(id) from game_entries)";
-$min = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
-$prev = $gameID - 1;
-$sql = "select * from game_entries where id = $prev";
-$prev = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
-$next = $gameID + 1;
-$sql = "select * from game_entries where id = $next";
-$next = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
-$max = 8;
-$sql = "select * from game_entries where id = (select max(id) from game_entries)";
-$max = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
+$sql = "select * from game_entries";
+$l = $key->query($sql);
+$game_entries = array();
+for($i = 0 ; $row = $l->fetch(PDO::FETCH_ASSOC) ; $i++){
+    $game_entries[$i] = $row['id'];
+}
+$g_idx = array_search($gameID, $game_entries);
+if($g_idx-1 < 0)
+$prev = $game_entries[count($game_entries)-1];
+else
+$prev = $game_entries[$g_idx-1];
+if($g_idx+1 >= count($game_entries))
+$next = $game_entries[0];
+else
+$next = $game_entries[$g_idx+1];
 
 // creator detail
 $sql = "select * from creator where gameid = {$gameID}";
@@ -94,12 +97,12 @@ if(isset($_SESSION['userData'])){
         <div class="container container-md-fluid">
             <div class="d-flex justify-content-around" id="game-ss">
                 <form action="../" class="align-self-center">
-                    <input type="text" name="game" hidden value="<?php if(empty($prev)){ echo $max['id'];} else { echo $prev['id']; }?>">
+                    <input type="text" name="game" hidden value="<?php echo $prev; ?>">
                     <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_left.png" class="navbutton"/></button>
                 </form>
                 <img class="border border-dark border-4 game-cover rounded-4 img-fluid" src="<?= $alt.$game['game_cover']?>"></img>
                 <form action="../" class="align-self-center">
-                    <input type="text" name="game" hidden value="<?php if(empty($next)){ echo $min['id'];} else { echo $next['id']; }?>">
+                    <input type="text" name="game" hidden value="<?php echo $next; ?>">
                     <button style="background-color: transparent; border: 0px;"><img src="../../src/index/arrow_right.png" class="navbutton" /></button>
                 </form>
             </div>
