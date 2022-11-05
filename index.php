@@ -1,3 +1,14 @@
+<?php 
+require_once('connect.php');
+
+$query = "SELECT * FROM game_entries";
+$data = $key->query($query);
+
+$query = "SELECT COUNT(*) AS count FROM game_entries";
+$count = $key->query($query);
+$countRow = $count->fetch(PDO::FETCH_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,7 +106,40 @@
             </div>
 
             <div id="game-cloud" class="text-center" data-aos="fade-down">
-                <h1 id="game-direct" class="font_title" style="font-size: 72pt;">COMING SOON!</h1>
+                <!-- <h1 id="game-direct" class="font_title" style="font-size: 72pt;">COMING SOON!</h1> -->
+
+                <h2 class="button-arrow text-center mb-5 font_title" data-aos="fade-down">GAME ENTRIES →</h2>
+                <div id="game-entries-all" class="body-slider" data-aos="fade-down">
+                    <div class="game-entries-div mx-1">
+                        <button id="button-arrow-left" class="button-game-entries"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
+                        <div class="game-entries-1" style="left: 0px;">
+                        <?php 
+                        for ($i = 0; $i < $countRow['count']; $i++) {
+                            $dataRow = $data->fetch(PDO::FETCH_ASSOC);
+                        ?>
+                            <?php 
+                            if ($i == 0 || $i == 3) {
+                            ?>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 ms-0" src="src/game_placeholder.png"/></a>
+                            <?php 
+                            } else if ($i == 3 || $i == 6) {
+                            ?>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 outside" src="src/game_placeholder.png"/></a>
+                            <?php 
+                            } else {
+                            ?>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5" src="src/game_placeholder.png"/></a>
+                            <?php 
+                            }
+                            ?>
+                        <?php 
+                        }
+                        ?>
+                        </div>
+                        <button id="button-arrow-right" class="button-game-entries"><img src="src/index/arrow_right.png" class="logo-arrow"/></button>
+                    </div>
+                </div>
+
             </div>
 
             <div id="media-sponsor" class="text-center" data-aos="fade-down">
@@ -181,7 +225,38 @@
             </div>
 
             <div id="game-cloud" class="text-center" data-aos="fade-down">
-                <h1 id="game-direct" class="font_title" style="font-size: 32pt;">COMING SOON!</h1>
+                <!-- <h1 id="game-direct" class="font_title" style="font-size: 32pt;">COMING SOON!</h1> -->
+                
+                <h2 class="button-arrow text-center mb-5 font_title" data-aos="fade-down">GAME ENTRIES</h2>
+                <div id="game-entries-all" class="body-slider" data-aos="fade-down">
+                    <div class="game-entries-div game-entries-mobile-div mx-1">
+                        <div class="game-entries-1 game-entries-mobile-1" style="left: 0px;">
+                        <?php 
+                        for ($i = 0; $i < $countRow['count']; $i++) {
+                            $dataRow = $data->fetch(PDO::FETCH_ASSOC);
+                        ?>
+                            <?php 
+                            if ($i == 0 || $i == 3) {
+                            ?>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 ms-0" src="src/game_placeholder.png"/></a>
+                            <?php 
+                            } else if ($i == 3 || $i == 6) {
+                            ?>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 outside" src="src/game_placeholder.png"/></a>
+                            <?php 
+                            } else {
+                            ?>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5" src="src/game_placeholder.png"/></a>
+                            <?php 
+                            }
+                            ?>
+                        <?php 
+                        }
+                        ?>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div id="media-sponsor" class="text-center" data-aos="fade-down">
@@ -208,13 +283,22 @@
     </div>
 
     <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous">
+    </script>
+    <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
         crossorigin="anonymous">
     </script>
+    <script src="javaindex10.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
 </html>
+<?php 
+require_once('close.php');
+?>
