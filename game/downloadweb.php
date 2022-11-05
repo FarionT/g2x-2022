@@ -29,6 +29,12 @@ $max = $key->query($sql)->fetch(PDO::FETCH_ASSOC);
 // creator detail
 $sql = "select * from creator where gameid = {$gameID}";
 $creator = $key->query($sql);
+$sql = "select count(*) count from creator where gameid = {$gameID}";
+$creatorCount = $key->query($sql);
+$creatorCount = $creatorCount->fetch(PDO::FETCH_ASSOC)['count'];
+$creatorCount /= 2;
+if(is_float($creatorCount)) $creatorCount = array(ceil($creatorCount), floor($creatorCount));
+else $creatorCount = array($creatorCount, $creatorCount);
 
 // vote count
 $sql = "select count(*) vote from voting where gameid = {$gameID}";
@@ -136,7 +142,7 @@ if(isset($_SESSION['userData'])){
             <h3 class="mb-2 mb-3 mb-lg-5 font_title about_how" id="creators">CREATORS</h3>
             <div class="d-flex row row-2 ">
                 <div class="col col-lg-6 col-12">
-                    <?php for($i = 0; $i < 3; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){  ?>
+                    <?php for($i = 0; $i < $creatorCount[0]; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){  ?>
                     <div class="d-flex mb-3">
                         <div>
                             <img src="<?= $data['profile']?>" class="profile rounded-circle"/>
@@ -150,7 +156,7 @@ if(isset($_SESSION['userData'])){
                     <?php }}?>
                 </div>
                 <div class="col col-lg-6 col-12">
-                    <?php for($i = 0; $i < 3; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){ ?>
+                    <?php for($i = 0; $i < $creatorCount[1]; $i++) {if($data = $creator->fetch(PDO::FETCH_ASSOC) ){ ?>
                     <div class="d-flex mb-3">
                         <div>
                             <img src="<?= $data['profile']?>" class="profile rounded-circle"/>
