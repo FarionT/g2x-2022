@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 30, 2022 at 06:19 PM
+-- Generation Time: Nov 05, 2022 at 01:06 PM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -75,9 +75,7 @@ INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`
 (3, 'Title 3', 'Team 3', 'ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ', 'HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 ', 'https://drive.google.com/drive/folders/1a2aaV_O0NOE_GPt7YcEDtAEsQdkUDF_F', 'src/game_banner/banner_game3.png'),
 (4, 'Cosmic Snitcher', 'QWERTY Team', 'You\'re a sneaky bounty hunter whose job is to steal\r\nfrom all of the richest creatures in every universe.\r\nYou have assigned to take control of a special spaceship\r\nthat can travel through time and space from your mysterious\r\nchief, can you conquer the entire spaceship?', 'W,A,S,D - Move Up, Left, Down, Right<br>\r\n1,2,3 - Use Weapon<br>\r\nEsc - Pause<br>\r\nLeft Click - Shoot<br>', 'https://drive.google.com/drive/folders/1O-GcTReE6Jjr7gsNDIYcYvDP9uvYN50G', 'src/game_banner/banner_game4.png'),
 (5, 'Title 5', 'Team 5', 'ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ', 'HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 ', 'https://drive.google.com/drive/folders/19qSKeWyi3HnrJ-60E23FpEyUJcIOS4s1', 'src/game_banner/banner_game5.png'),
-(6, 'Title 6', 'Team 6', 'ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ', 'HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 ', 'https://drive.google.com/drive/folders/1OhqS_qNqQYRoystLfVaaxa5-6PVDRGg-', 'src/game_banner/banner_game6.png'),
-(7, 'Title 7', 'Team 7', 'ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ABOUT-GAME-Description7 ', 'HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 HOW-TO-PLAY-DescriptionGame7 ', 'https://drive.google.com/drive/folders/1DKYtirUeHqChtn5CYiOUlJGh6icDGQb9', 'src/game_banner/banner_game7.png'),
-(8, 'Title 8', 'Team 8', 'ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ABOUT-GAME-Description8 ', 'HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 HOW-TO-PLAY-DescriptionGame8 ', 'https://drive.google.com/drive/folders/1J1LCJTb0qwkQGGHMB6mBGFuLQdVxyvYG', 'src/game_banner/banner_game8.png');
+(6, 'Title 6', 'Team 6', 'ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ', 'HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 ', 'https://drive.google.com/drive/folders/1OhqS_qNqQYRoystLfVaaxa5-6PVDRGg-', 'src/game_banner/banner_game6.png');
 
 -- --------------------------------------------------------
 
