@@ -110,6 +110,7 @@ if(isset($_SESSION['userData'])){
                     <a href="<?= $game['download_link'] ?>">
                         <img class="py-2 mx-2 button-choose" src="../../src/buttons/download1.png"/>
                     </a>
+                    <?php if($game['vote_able']){?>
                     <div>
                         <?php if($isVote){?>
                             <input type="image" class="py-2 mx-2 button-choose" id="btn_voting" src="../../src/buttons/unvote1.png">
@@ -118,6 +119,7 @@ if(isset($_SESSION['userData'])){
                         <?php }?>
                                 <p id='voteCount' class="font_content text-center">Vote: <?= $voteCount ?></p>
                     </div>
+                    <?php } ?>
                 </div>
                 <div id="myModal" class="modal">
                     <div id="modal-content">
@@ -128,6 +130,7 @@ if(isset($_SESSION['userData'])){
             </div>
         </div>
         
+        <?php if($game['vote_able']){?>
         <div class=" d-flex mt-5 row row-2 row-lg-2 justify-content-lg-around justify-content-center">
             <div class="col col-lg-6 col-12 mb-3 mb-lg-5">
                 <p class="font_title about_how">ABOUT GAME</p>
@@ -171,6 +174,7 @@ if(isset($_SESSION['userData'])){
                 </div>
             </div>
         </div>
+        <?php }?>
 
     </div>
     <?php require_once('../../footer.php'); require_once("../../close.php");?>

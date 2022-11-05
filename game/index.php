@@ -28,6 +28,18 @@ switch($gameID){
     case 8:
         $redirect = "kZXYh";
         break;
+    case 70:
+        $redirect = "dmUCR";
+        break;
+    case 71:
+        $redirect = "mXUQu";
+        break;
+    case 72:
+        $redirect = "LHSNP";
+        break;
+    case 73:
+        $redirect = "6zjdo";
+        break;
 }
 if(!empty($redirect)) exit(header("location: $redirect"));
 
@@ -184,7 +196,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 ?>
                     <div class="col-lg-4 mb-5 px-0" data-aos="fade-up">
                         <div class="game-container">
-                            <a href="../game?game=<?= ($n = $i + 1) ?>" class="image-container text-decoration-none text-reset" style="background-color: transparent;border-width: 0;">
+                            <a href="../game?game=<?= $mbData[$i]['id'] ?>" class="image-container text-decoration-none text-reset" style="background-color: transparent;border-width: 0;">
                                 <h3 class="mx-5 font_title play-button border border-0 rounded-2"><b>P L A Y</b></h3>
                                 <img class="border border-dark border-4 rounded-4" src="<?= $alt.$mbData[$i]['game_cover'] ?>" width="85%"/>
                             </a>
