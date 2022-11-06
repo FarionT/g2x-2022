@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2022 at 09:00 AM
+-- Generation Time: Nov 06, 2022 at 03:31 PM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -86,11 +86,18 @@ INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`
 (1, 'PaperflareEXE', 'Without Bullsh*t Studios (WiBuS)', 'Paperflare is a horror game, don\'t play it if you are easily scared.', 'right Mouse button to navigate <br>\r\n\"E\" to Identify clue <br>\r\n\"G\" to Lock Doors <br>', 'https://drive.google.com/file/d/1Ce_zjsAaoquLHog_IN0azyqXbYcbMbBt/view?usp=share_link', 'src/game_banner/banner_game1.png', 1),
 (2, 'Cosmic Snitcher', 'QWERTY Team', 'You\'re a sneaky bounty hunter whose job is to steal\r\nfrom all of the richest creatures in every universe.\r\nYou have assigned to take control of a special spaceship\r\nthat can travel through time and space from your mysterious\r\nchief, can you conquer the entire spaceship?', 'W,A,S,D - Move Up, Left, Down, Right<br>\r\n1,2,3 - Use Weapon<br>\r\nEsc - Pause<br>\r\nLeft Click - Shoot<br>', 'https://drive.google.com/drive/folders/1O-GcTReE6Jjr7gsNDIYcYvDP9uvYN50G', 'src/game_banner/banner_game2.png', 1),
 (3, 'Suspiciously', 'Selai Ide', 'Sebagai Dede, ungkaplah rahasia yang disembunyikan Supriyadi, seorang teman lama. Quest demi quest, rahasia yang seorang sahabat-pun tidak boleh tahu akan diungkap secara perlahan. Di tengah itu semua, bantulah orang-orang di sekitar Dede dalam menyelesaikan masalah keseharian mereka.', 'Sistem open world ala franchise yakuza dimana player dapat mengerjakan quest utama secara langsung atau mengeksplorasi dunia dan mengerjakan sidequest\r\n\r\nKontrol:\r\nWASD untuk bergerak, dekati orang untuk berbincang.', 'https://drive.google.com/file/d/16lWd-KPxZusGDI0e4NJEj2gXAtZbKqFP/view?usp=share_link', 'src/game_banner/banner_game3.png', 1),
-(70, 'Lightbringer', 'Cavebirb', '', '', 'https://drive.google.com/file/d/1mJXHutvDach7aM6H_Rm6A8kaTvo8IqDS/view?usp=share_link', 'src/game_banner/banner_game4.png', 0),
-(71, 'Isolomn', '', '', '', 'https://drive.google.com/file/d/1uRMfnl8yRI__IScX3dbn4RxVnC2vuChn/view?usp=sharing', 'src/game_banner/banner_game71.png', 0),
-(72, 'AntBerry', '', '', '', 'https://drive.google.com/file/d/1qgOR7nbOx3DI2-brC1YtZcozqYq6Uc9b/view?usp=sharing', 'src/game_banner/banner_game72.png', 0),
-(73, 'MixedDimension', '', '', '', 'https://ggj.s3.amazonaws.com/games/2021/01/233594/src/14uW0/Project_x.zip', 'src/game_banner/banner_game73.png', 0),
-(74, 'Before the WWorld End', '', '', '', 'https://drive.google.com/drive/folders/1clmMenW6YfcmHYA8hrqNU5CJqLXL1y0E?usp=share_link', 'src/game_banner/banner_game74.png', 0);
+(70, 'Lightbringer', 'Cavebirb', '', '', 'https://drive.google.com/file/d/1mJXHutvDach7aM6H_Rm6A8kaTvo8IqDS/view?usp=share_link', 'src/game_banner/banner_game70.png', 0),
+(71, 'Isolomn', '', 'Find your lost memories about the past before it\'s too late', '', 'https://drive.google.com/file/d/1uRMfnl8yRI__IScX3dbn4RxVnC2vuChn/view?usp=sharing', 'src/game_banner/banner_game71.png', 0),
+(72, 'AntBerry', '', 'A little red ant lost her eggs while scavenging for food. Lets help her get her eggs back!!', '', 'https://drive.google.com/file/d/1qgOR7nbOx3DI2-brC1YtZcozqYq6Uc9b/view?usp=sharing', 'src/game_banner/banner_game72.png', 0),
+(73, 'MixedDimension', '', 'A game about finding people\'s missing item', '', 'https://ggj.s3.amazonaws.com/games/2021/01/233594/src/14uW0/Project_x.zip', 'src/game_banner/banner_game73.png', 0),
+(74, 'Before the World End', '', '', '', 'https://drive.google.com/drive/folders/1clmMenW6YfcmHYA8hrqNU5CJqLXL1y0E?usp=share_link', 'src/game_banner/banner_game74.png', 0),
+(75, 'A Helping Hand', 'ThaiTea', 'A short visual novel game/hidden object game. Players need to search five objects to finish the game.', '', 'https://www.mediafire.com/file/vkv1sr7t4w9w3a6/helping_hand.rar/file', 'src/game_banner/banner_game75.png', 0),
+(76, 'Abattoir Breakout', '', 'Terkadang kita hanya perlu satu hari yg buruk untuk mengerti makna dari sebuah kehidupan dan itulah yang dialami oleh Riviera bisa kah kalian menuntun dia untuk menemukan kunci untuk kebebasan agar ia mendapatkan kehidupannya kembali.', '', 'https://ggj.s3.amazonaws.com/games/2021/01/335409/src/4_Gi8/Abattoir%20Breakout.zip', 'src/game_banner/banner_game76.jpg', 0),
+(77, 'Lost Keys', '', 'Lost Keys is a game about escaping a room by collecting some items. You can only see with your flashlight. Move - W,A,S,D Look around - Mouse', '', 'https://drive.google.com/file/d/1Lcn5uU4gkG3OQm_PN3cRvxHBTFs3bXOb/view?usp=sharing', 'src/game_banner/banner_game77.png', 0),
+(78, 'Mission Impowssible', '', '(Rated T+, NOT for children!!!) Taro, a small Husky puppy, wants to find Mr. Ham. It should be easy, right? A very-cute-and-absolutely-not-horrifying game :) ....unless. ((made by a group of three artists and one coder with absolutely no game-making experience. enjoy.))', '', 'https://ggj.s3.amazonaws.com/games/2021/01/333563/src/qMq9c/mission%20impawssible%20%281%29.zip', 'src/game_banner/banner_game78.jpg', 0),
+(79, 'Must Escape', 'Mi-Sharanghaeyo~', 'While hiking the mountains with your friends, you slipped on mud and fell towards the depths of the misty mountains. Surprisingly, you survived the fall. However, will you survive whatever will happen next? Your last hope lies upon your limited survival knowledge and your smartphone with 20% battery', '', '', 'src/game_banner/banner_game79.png', 0),
+(80, 'Waifu Hunt', '', 'maze game, you move through the maze by clicking the obstacles to move them', '', 'https://ggj.s3.amazonaws.com/games/2021/01/333650/src/Mlh74/Waifu%20Hunt.zip', 'src/game_banner/banner_game80.png', 0),
+(81, 'Where\'s Bleky?', '', 'Game hidden object', '', 'https://ggj.s3.amazonaws.com/games/2021/01/334993/src/ndD8A/GGJProject.zip', 'src/game_banner/banner_game81.png', 0);
 
 -- --------------------------------------------------------
 
@@ -159,7 +166,7 @@ ALTER TABLE `voting`
 -- AUTO_INCREMENT for table `game_entries`
 --
 ALTER TABLE `game_entries`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
 -- AUTO_INCREMENT for table `users`

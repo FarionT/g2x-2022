@@ -177,8 +177,14 @@ if(isset($_SESSION['userData'])){
                 </div>
             </div>
         </div>
+        <?php }else{?>
+            <div class=" d-flex mt-5 row row-2 row-lg-2 justify-content-lg-around justify-content-center">
+                <div class="col col-lg-6 col-12 mb-3 mb-lg-5">
+                    <p class="font_title about_how">ABOUT GAME</p>
+                    <p class="font_content game_desc"><?= $game['game_desc'] ?></p>
+                </div>
+            </div>
         <?php }?>
-
     </div>
     <?php require_once('../../footer.php'); require_once("../../close.php");?>
     <script 
