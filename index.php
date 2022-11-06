@@ -3,6 +3,7 @@ require_once('connect.php');
 
 $query = "SELECT * FROM game_entries";
 $data = $key->query($query);
+$data2 = $key->query($query);
 
 $query = "SELECT COUNT(*) AS count FROM game_entries";
 $count = $key->query($query);
@@ -108,10 +109,9 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
             <div id="game-cloud" class="text-center" data-aos="fade-down">
                 <!-- <h1 id="game-direct" class="font_title" style="font-size: 72pt;">COMING SOON!</h1> -->
 
-                <h2 class="button-arrow text-center mb-5 font_title" data-aos="fade-down">GAME ENTRIES →</h2>
+                <h1 class="button-arrow text-center mb-5 font_title" data-aos="fade-down" style="font-size: 32pt;">GAME ENTRIES →</h1>
                 <div id="game-entries-all" class="body-slider" data-aos="fade-down">
                     <div class="game-entries-div mx-1">
-                        <button id="button-arrow-left" class="button-game-entries"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
                         <div class="game-entries-1" style="left: 0px;">
                         <?php 
                         for ($i = 0; $i < $countRow['count']; $i++) {
@@ -120,15 +120,15 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                             <?php 
                             if ($i == 0 || $i == 3) {
                             ?>
-                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 ms-0" src="src/game_placeholder.png"/></a>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-4 ms-0" src="<?= $dataRow['game_cover'] ?>"/></a>
                             <?php 
                             } else if ($i == 3 || $i == 6) {
                             ?>
-                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 outside" src="src/game_placeholder.png"/></a>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-4 outside" src="<?= $dataRow['game_cover'] ?>"/></a>
                             <?php 
                             } else {
                             ?>
-                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5" src="src/game_placeholder.png"/></a>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-4" src="<?= $dataRow['game_cover'] ?>"/></a>
                             <?php 
                             }
                             ?>
@@ -136,7 +136,6 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                         }
                         ?>
                         </div>
-                        <button id="button-arrow-right" class="button-game-entries"><img src="src/index/arrow_right.png" class="logo-arrow"/></button>
                     </div>
                 </div>
 
@@ -233,20 +232,20 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                         <div class="game-entries-1 game-entries-mobile-1" style="left: 0px;">
                         <?php 
                         for ($i = 0; $i < $countRow['count']; $i++) {
-                            $dataRow = $data->fetch(PDO::FETCH_ASSOC);
+                            $dataRow = $data2->fetch(PDO::FETCH_ASSOC);
                         ?>
                             <?php 
                             if ($i == 0 || $i == 3) {
                             ?>
-                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 ms-0" src="src/game_placeholder.png"/></a>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 ms-0" src="<?= $dataRow['game_cover'] ?>"/></a>
                             <?php 
                             } else if ($i == 3 || $i == 6) {
                             ?>
-                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 outside" src="src/game_placeholder.png"/></a>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 outside" src="<?= $dataRow['game_cover'] ?>"/></a>
                             <?php 
                             } else {
                             ?>
-                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5" src="src/game_placeholder.png"/></a>
+                                <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5" src="<?= $dataRow['game_cover'] ?>"/></a>
                             <?php 
                             }
                             ?>
