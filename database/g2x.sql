@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2022 at 01:06 PM
+-- Generation Time: Nov 06, 2022 at 08:14 AM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,7 +32,7 @@ CREATE TABLE `creator` (
   `name` varchar(50) NOT NULL,
   `nim` varchar(20) NOT NULL,
   `major` varchar(20) NOT NULL,
-  `job` varchar(20) NOT NULL,
+  `job` varchar(64) NOT NULL,
   `profile` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -41,13 +41,25 @@ CREATE TABLE `creator` (
 --
 
 INSERT INTO `creator` (`gameID`, `name`, `nim`, `major`, `job`, `profile`) VALUES
-(4, 'Adrix Richard Stanlee ', '12340', 'TI', 'Audio', '../../src/creators/team4_12340.png'),
-(4, 'Axel Ferdinand', '12344', 'TI', 'Coder', '../../src/creators/team4_12344.png'),
-(4, 'Farion Tekkry', '12345', 'TI', 'Coder', '../../src/creators/team4_12345.png'),
-(4, 'Gilbert Zaini', '12346', 'TI', 'Coder', '../../src/creators/team4_12346.png'),
-(4, 'Melvin Tungadi', '12347', 'TI', 'Coder', '../../src/creators/team4_12347.png'),
-(4, 'Aloisius Vincent Wongsowijaya', '12348', 'TI', 'Visual', '../../src/creators/team4_12348.png'),
-(4, 'Christfire Vincent Bunardi', '12349', 'TI', 'Visual', '../../src/creators/team4_12349.png');
+(2, 'Adrix Richard Stanlee ', '00000055952', 'TI', 'Audio', '../../src/creators/default.png'),
+(2, 'Melvin Tungadi', '00000056010', 'Informatika', 'Coder', '../../src/creators/Melvin Tungadi - 00000056010 - Informatika.jpg'),
+(2, 'Farion Tekkry', '00000056034', 'Informatika', 'Coder', '../../src/creators/Farion Tekkry - 00000056034 - Infornatika.jpg'),
+(2, 'Gilbert Zaini', '00000056145', 'Teknik Komputer', 'Coder', '../../src/creators/Gilbert Zaini - 00000056145 - Teknik Komputer_.jpg'),
+(2, 'Christfire Vincent Bunardi', '00000056268', 'Film', 'Visual', '../../src/creators/ChristfireVincentBunardi_00000056268_Film.jpg'),
+(1, 'Davin Edbert', '11', '', 'Lead Creative Director, Sound Designer, Coder', '../../src/creators/default.png'),
+(1, 'Paulus Michael Liang', '12', '', 'Lead Coder', '../../src/creators/default.png'),
+(2, 'Axel Ferdinand', '12344', 'Informatika', 'Coder', '../../src/creators/AxelFerdinand-00000055952-Informatika.jpg'),
+(2, 'Aloisius Vincent Wongsowijaya', '12348', 'TI', 'Visual', '../../src/creators/default.png'),
+(1, 'Alif Brillian', '13', '', 'Asset Visual Novel', '../../src/creators/default.png'),
+(1, 'Victorio Robin', '14', '', 'Asset Background Game', '../../src/creators/default.png'),
+(1, 'M. Naufal Syarif', '15', '', 'Coder', '../../src/creators/default.png'),
+(3, 'Mohamad Naufal', '61', '', 'Game Director', '../../src/creators/default.png'),
+(3, 'Adhy Ardhana Setyawan', '62', '', 'Lead Programmer', '../../src/creators/default.png'),
+(3, 'Yolanda Mere', '63', '', 'Programmer', '../../src/creators/default.png'),
+(3, 'Leonard D. Atmadja', '64', '', 'Lead Writer', '../../src/creators/default.png'),
+(3, 'Chyntia', '65', '', 'Lead Character Artist', '../../src/creators/default.png'),
+(3, 'Muhammad Iqbal Wahyudi', '66', '', 'Lead Environment Artist', '../../src/creators/default.png'),
+(3, 'Adhelio Reyhandro', '67', '', 'Sound Designer', '../../src/creators/default.png');
 
 -- --------------------------------------------------------
 
@@ -62,20 +74,23 @@ CREATE TABLE `game_entries` (
   `game_desc` varchar(300) NOT NULL,
   `HowToPlay` varchar(300) NOT NULL,
   `download_link` varchar(150) NOT NULL,
-  `game_cover` varchar(50) NOT NULL
+  `game_cover` varchar(50) NOT NULL,
+  `vote_able` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `game_entries`
 --
 
-INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`, `download_link`, `game_cover`) VALUES
-(1, 'Title 1', 'Team 1', 'ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ABOUT-GAME-Description1 ', 'HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1 HOW-TO-PLAY-DescriptionGame1', 'https://drive.google.com/drive/folders/1YHK5h_chV9VNBsjGZKVxfC-nHqBPsGq3', 'src/game_banner/banner_game1.png'),
-(2, 'Title 2', 'Team 2', 'ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ABOUT-GAME-Description2 ', 'HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 HOW-TO-PLAY-DescriptionGame2 ', 'https://drive.google.com/drive/folders/1EWZBUic6L6rPaDLTQf2zkfuh61xlcqKS', 'src/game_banner/banner_game2.png'),
-(3, 'Title 3', 'Team 3', 'ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ABOUT-GAME-Description3 ', 'HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 HOW-TO-PLAY-DescriptionGame3 ', 'https://drive.google.com/drive/folders/1a2aaV_O0NOE_GPt7YcEDtAEsQdkUDF_F', 'src/game_banner/banner_game3.png'),
-(4, 'Cosmic Snitcher', 'QWERTY Team', 'You\'re a sneaky bounty hunter whose job is to steal\r\nfrom all of the richest creatures in every universe.\r\nYou have assigned to take control of a special spaceship\r\nthat can travel through time and space from your mysterious\r\nchief, can you conquer the entire spaceship?', 'W,A,S,D - Move Up, Left, Down, Right<br>\r\n1,2,3 - Use Weapon<br>\r\nEsc - Pause<br>\r\nLeft Click - Shoot<br>', 'https://drive.google.com/drive/folders/1O-GcTReE6Jjr7gsNDIYcYvDP9uvYN50G', 'src/game_banner/banner_game4.png'),
-(5, 'Title 5', 'Team 5', 'ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ABOUT-GAME-Description5 ABOUT-GAME-Description5  ', 'HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 HOW-TO-PLAY-DescriptionGame5 ', 'https://drive.google.com/drive/folders/19qSKeWyi3HnrJ-60E23FpEyUJcIOS4s1', 'src/game_banner/banner_game5.png'),
-(6, 'Title 6', 'Team 6', 'ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ABOUT-GAME-Description6 ', 'HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 HOW-TO-PLAY-DescriptionGame6 ', 'https://drive.google.com/drive/folders/1OhqS_qNqQYRoystLfVaaxa5-6PVDRGg-', 'src/game_banner/banner_game6.png');
+INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`, `download_link`, `game_cover`, `vote_able`) VALUES
+(1, 'PaperflareEXE', 'Without Bullsh*t Studios (WiBuS)', 'Paperflare is a horror game, don\'t play it if you are easily scared.', 'right Mouse button to navigate <br>\r\n\"E\" to Identify clue <br>\r\n\"G\" to Lock Doors <br>', 'https://drive.google.com/file/d/1Ce_zjsAaoquLHog_IN0azyqXbYcbMbBt/view?usp=share_link', 'src/game_banner/banner_game1.png', 1),
+(2, 'Cosmic Snitcher', 'QWERTY Team', 'You\'re a sneaky bounty hunter whose job is to steal\r\nfrom all of the richest creatures in every universe.\r\nYou have assigned to take control of a special spaceship\r\nthat can travel through time and space from your mysterious\r\nchief, can you conquer the entire spaceship?', 'W,A,S,D - Move Up, Left, Down, Right<br>\r\n1,2,3 - Use Weapon<br>\r\nEsc - Pause<br>\r\nLeft Click - Shoot<br>', 'https://drive.google.com/drive/folders/1O-GcTReE6Jjr7gsNDIYcYvDP9uvYN50G', 'src/game_banner/banner_game2.png', 1),
+(3, 'Suspiciously', 'Selai Ide', 'Sebagai Dede, ungkaplah rahasia yang disembunyikan Supriyadi, seorang teman lama. Quest demi quest, rahasia yang seorang sahabat-pun tidak boleh tahu akan diungkap secara perlahan. Di tengah itu semua, bantulah orang-orang di sekitar Dede dalam menyelesaikan masalah keseharian mereka.', 'Sistem open world ala franchise yakuza dimana player dapat mengerjakan quest utama secara langsung atau mengeksplorasi dunia dan mengerjakan sidequest\r\n\r\nKontrol:\r\nWASD untuk bergerak, dekati orang untuk berbincang.', 'https://drive.google.com/file/d/16lWd-KPxZusGDI0e4NJEj2gXAtZbKqFP/view?usp=share_link', 'src/game_banner/banner_game3.png', 1),
+(70, 'Lightbringer', 'Cavebirb', '', '', 'https://drive.google.com/file/d/1mJXHutvDach7aM6H_Rm6A8kaTvo8IqDS/view?usp=share_link', 'src/game_placeholder.png', 0),
+(71, 'Isolomn', '', '', '', 'https://drive.google.com/file/d/1uRMfnl8yRI__IScX3dbn4RxVnC2vuChn/view?usp=sharing', 'src/game_banner/banner_game71.png', 0),
+(72, 'AntBerry', '', '', '', 'https://drive.google.com/file/d/1qgOR7nbOx3DI2-brC1YtZcozqYq6Uc9b/view?usp=sharing', 'src/game_banner/banner_game72.png', 0),
+(73, 'MixedDimension', '', '', '', 'https://ggj.s3.amazonaws.com/games/2021/01/233594/src/14uW0/Project_x.zip', 'src/game_banner/banner_game73.png', 0),
+(74, 'Before the WWorld End', '', '', '', 'https://drive.google.com/drive/folders/1clmMenW6YfcmHYA8hrqNU5CJqLXL1y0E?usp=share_link', 'src/game_banner/banner_game74.png', 0);
 
 -- --------------------------------------------------------
 
@@ -96,16 +111,6 @@ CREATE TABLE `users` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `oauth_provider`, `oauth_uid`, `first_name`, `last_name`, `email`, `gender`, `locale`, `picture`, `created`, `modified`) VALUES
-(2, 'google', '112245201279323118066', 'RICH', 'EVAN LEE (00000055564)', 'rich.evan@student.umn.ac.id', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu0KYKtoBPIS_c6eAEKJRAyDgoEV6Yn0BBLRj3Fx=s96-c', '2022-10-08 14:52:52', '2022-10-08 14:52:52'),
-(5, 'google', '114850611052126455915', 'Super', 'Gamer', 'supergamerzone134@gmail.com', '', 'en-GB', 'https://lh3.googleusercontent.com/a/ALm5wu03_LUrw-qLR_9Gfei0jIEm7QvwoBJ_UWhJ3uO2=s96-c', '2022-10-24 06:52:21', '2022-10-30 06:29:47'),
-(6, 'google', '106392472297681206816', '???_kenzi', '', 'pixelmantm@gmail.com', '', 'en', 'https://lh3.googleusercontent.com/a/ALm5wu28eowWZLqmpbsreDYRXqRQzqhxLB2ytzjVOJcBMA=s96-c', '2022-10-25 16:00:54', '2022-10-25 16:07:22'),
-(7, 'google', '108708430343742517990', 'JACINTHA', 'CORDELIE (00000053897)', 'jacintha.cordelie@student.umn.ac.id', '', 'id', 'https://lh3.googleusercontent.com/a/ALm5wu3x1LRMvf7yZxTmTcDSlQaEuKpnUqG53p_lFHVc=s96-c', '2022-10-29 14:32:51', '2022-10-29 14:34:50');
 
 -- --------------------------------------------------------
 
@@ -154,13 +159,13 @@ ALTER TABLE `voting`
 -- AUTO_INCREMENT for table `game_entries`
 --
 ALTER TABLE `game_entries`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

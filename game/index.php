@@ -40,6 +40,9 @@ switch($gameID){
     case 73:
         $redirect = "6zjdo";
         break;
+    case 74:
+        $redirect = "uTpz3";
+        break;
 }
 if(!empty($redirect)) exit(header("location: $redirect"));
 
