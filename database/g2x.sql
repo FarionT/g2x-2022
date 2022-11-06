@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2022 at 08:14 AM
+-- Generation Time: Nov 06, 2022 at 09:00 AM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -86,7 +86,7 @@ INSERT INTO `game_entries` (`id`, `title`, `team_name`, `game_desc`, `HowToPlay`
 (1, 'PaperflareEXE', 'Without Bullsh*t Studios (WiBuS)', 'Paperflare is a horror game, don\'t play it if you are easily scared.', 'right Mouse button to navigate <br>\r\n\"E\" to Identify clue <br>\r\n\"G\" to Lock Doors <br>', 'https://drive.google.com/file/d/1Ce_zjsAaoquLHog_IN0azyqXbYcbMbBt/view?usp=share_link', 'src/game_banner/banner_game1.png', 1),
 (2, 'Cosmic Snitcher', 'QWERTY Team', 'You\'re a sneaky bounty hunter whose job is to steal\r\nfrom all of the richest creatures in every universe.\r\nYou have assigned to take control of a special spaceship\r\nthat can travel through time and space from your mysterious\r\nchief, can you conquer the entire spaceship?', 'W,A,S,D - Move Up, Left, Down, Right<br>\r\n1,2,3 - Use Weapon<br>\r\nEsc - Pause<br>\r\nLeft Click - Shoot<br>', 'https://drive.google.com/drive/folders/1O-GcTReE6Jjr7gsNDIYcYvDP9uvYN50G', 'src/game_banner/banner_game2.png', 1),
 (3, 'Suspiciously', 'Selai Ide', 'Sebagai Dede, ungkaplah rahasia yang disembunyikan Supriyadi, seorang teman lama. Quest demi quest, rahasia yang seorang sahabat-pun tidak boleh tahu akan diungkap secara perlahan. Di tengah itu semua, bantulah orang-orang di sekitar Dede dalam menyelesaikan masalah keseharian mereka.', 'Sistem open world ala franchise yakuza dimana player dapat mengerjakan quest utama secara langsung atau mengeksplorasi dunia dan mengerjakan sidequest\r\n\r\nKontrol:\r\nWASD untuk bergerak, dekati orang untuk berbincang.', 'https://drive.google.com/file/d/16lWd-KPxZusGDI0e4NJEj2gXAtZbKqFP/view?usp=share_link', 'src/game_banner/banner_game3.png', 1),
-(70, 'Lightbringer', 'Cavebirb', '', '', 'https://drive.google.com/file/d/1mJXHutvDach7aM6H_Rm6A8kaTvo8IqDS/view?usp=share_link', 'src/game_placeholder.png', 0),
+(70, 'Lightbringer', 'Cavebirb', '', '', 'https://drive.google.com/file/d/1mJXHutvDach7aM6H_Rm6A8kaTvo8IqDS/view?usp=share_link', 'src/game_banner/banner_game4.png', 0),
 (71, 'Isolomn', '', '', '', 'https://drive.google.com/file/d/1uRMfnl8yRI__IScX3dbn4RxVnC2vuChn/view?usp=sharing', 'src/game_banner/banner_game71.png', 0),
 (72, 'AntBerry', '', '', '', 'https://drive.google.com/file/d/1qgOR7nbOx3DI2-brC1YtZcozqYq6Uc9b/view?usp=sharing', 'src/game_banner/banner_game72.png', 0),
 (73, 'MixedDimension', '', '', '', 'https://ggj.s3.amazonaws.com/games/2021/01/233594/src/14uW0/Project_x.zip', 'src/game_banner/banner_game73.png', 0),

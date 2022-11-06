@@ -81,65 +81,65 @@ if(window.innerWidth <= 768) {
         }
     };
 }
-// else {
-//     var left1 = 1;
-//     var left2 = 5;
-//     var right1 = 3;
-//     var right2 = 7;
+else {
+    var left1 = 1;
+    var left2 = 5;
+    var right1 = 3;
+    var right2 = 7;
     
-//     var maxleft1 = 1;
-//     var maxleft2 = 5;
-//     var maxright1 = 4;
-//     var maxright2 = 8;
-//     $('#button-arrow-left').click(function() {
-//         if(right1 == maxright1 && right2 != maxright2 && left1 != maxleft1 && left2 != maxleft2) {
-//             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5";
-//             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5";
-//             left1--;
-//             left2--;
-//             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
-//             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
-//             document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5 outside";
-//             right1--;
-//             right2--; 
-//         }
-//         else if(left1 != maxleft1 && left2 != maxleft2) {
-//             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5";
-//             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5";
-//             left1--;
-//             left2--;
-//             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
-//             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
-//             document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5 outside";
-//             document.getElementById("game-entries-box-" + right2).className = "game-entries-box mb-5 outside";
-//             right1--;
-//             right2--;
-//         }
-//     });
+    var maxleft1 = 1;
+    var maxleft2 = 5;
+    var maxright1 = 4;
+    var maxright2 = 8;
+    $('#button-arrow-left').click(function() {
+        if(right1 == maxright1 && right2 != maxright2 && left1 != maxleft1 && left2 != maxleft2) {
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5";
+            left1--;
+            left2--;
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
+            document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5 outside";
+            right1--;
+            right2--; 
+        }
+        else if(left1 != maxleft1 && left2 != maxleft2) {
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5";
+            left1--;
+            left2--;
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
+            document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5 outside";
+            document.getElementById("game-entries-box-" + right2).className = "game-entries-box mb-5 outside";
+            right1--;
+            right2--;
+        }
+    });
 
-//     $('#button-arrow-right').click(function() {
-//         if(right1 + 1 == maxright1 && right2 + 1 != maxright2 && right1 != maxright1 && right2 != maxright2) {
-//             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 outside";
-//             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 outside";
-//             left1++;
-//             left2++;
-//             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
-//             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
-//             right1++;
-//             right2++;
-//             document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5";
-//         }
-//         else if(right1 != maxright1 && right2 != maxright2) {
-//             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 outside";
-//             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 outside";
-//             left1++;
-//             left2++;
-//             document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
-//             document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
-//             right1++;
-//             right2++;
-//             document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5";
-//             document.getElementById("game-entries-box-" + right2).className = "game-entries-box mb-5";
-//         }
-//     });
-// }
+    $('#button-arrow-right').click(function() {
+        if(right1 + 1 == maxright1 && right2 + 1 != maxright2 && right1 != maxright1 && right2 != maxright2) {
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 outside";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 outside";
+            left1++;
+            left2++;
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
+            right1++;
+            right2++;
+            document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5";
+        }
+        else if(right1 != maxright1 && right2 != maxright2) {
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 outside";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 outside";
+            left1++;
+            left2++;
+            document.getElementById("game-entries-box-" + left1).className = "game-entries-box mb-5 ms-0";
+            document.getElementById("game-entries-box-" + left2).className = "game-entries-box mb-5 ms-0";
+            right1++;
+            right2++;
+            document.getElementById("game-entries-box-" + right1).className = "game-entries-box mb-5";
+            document.getElementById("game-entries-box-" + right2).className = "game-entries-box mb-5";
+        }
+    });
+}

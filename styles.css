@@ -297,8 +297,8 @@ body::-webkit-scrollbar {
     }
 
     #game-cloud {
-        padding-top: 1200px;
-        padding-bottom: 1100px;
+        padding-top: 1400px;
+        padding-bottom: 1250px;
     }
     
     .content-left {
@@ -337,8 +337,8 @@ body::-webkit-scrollbar {
     }
 
     #game-cloud {
-        padding-top: 680px;
-        padding-bottom: 650px;
+        padding-top: 950px;
+        padding-bottom: 950px;
     }
     
     .content-left {
@@ -377,8 +377,8 @@ body::-webkit-scrollbar {
     }
 
     #game-cloud {
-        padding-top: 600px;
-        padding-bottom: 550px;
+        padding-top: 950px;
+        padding-bottom: 850px;
     }
     
     .content-left {
@@ -417,8 +417,8 @@ body::-webkit-scrollbar {
     }
 
     #game-cloud {
-        padding-top: 550px;
-        padding-bottom: 500px;
+        padding-top: 870px;
+        padding-bottom: 800px;
     }
     
     .content-left {
@@ -457,8 +457,8 @@ body::-webkit-scrollbar {
     }
 
     #game-cloud {
-        padding-top: 480px;
-        padding-bottom: 450px;
+        padding-top: 750px;
+        padding-bottom: 650px;
     }
     
     .content-left {
@@ -497,8 +497,8 @@ body::-webkit-scrollbar {
     }
 
     #game-cloud {
-        padding-top: 400px;
-        padding-bottom: 400px;
+        padding-top: 620px;
+        padding-bottom: 600px;
     }
     
     .content-left {
@@ -533,8 +533,8 @@ body::-webkit-scrollbar {
     }
 
     #game-cloud {
-        padding-top: 360px;
-        padding-bottom: 400px;
+        padding-top: 500px;
+        padding-bottom: 650px;
     }
     
     .content-left {
@@ -569,8 +569,8 @@ body::-webkit-scrollbar {
     }
 
     #game-cloud {
-        padding-top: 300px;
-        padding-bottom: 350px;
+        padding-top: 450px;
+        padding-bottom: 600px;
     }
 
     .content-left {
@@ -605,8 +605,8 @@ body::-webkit-scrollbar {
     }
 
     #game-cloud {
-        padding-top: 270px;
-        padding-bottom: 200px;
+        padding-top: 400px;
+        padding-bottom: 600px;
     }
 
     .content-left {
@@ -641,8 +641,8 @@ body::-webkit-scrollbar {
     }
 
     #game-cloud {
-        padding-top: 240px;
-        padding-bottom: 250px;
+        padding-top: 400px;
+        padding-bottom: 600px;
     }
 }
 
@@ -964,14 +964,13 @@ body::-webkit-scrollbar {
 }
 
 .button-game-entries {
-    /* background-color: transparent;
+    background-color: transparent;
     border: 0px;
-    margin-bottom: 40px; */
-    display: none;
+    margin-bottom: 40px;
 }
 
 .outside {
-    display: block;
+    display: none;
 }
 
 @media screen and (max-width: 1425px) {
@@ -985,6 +984,10 @@ body::-webkit-scrollbar {
     .game-entries-box {
         width: 270px;
         height: 155px;
+    }
+
+    .logo-arrow {
+        width: 100px;
     }
 }
 
@@ -1065,6 +1068,12 @@ body::-webkit-scrollbar {
     }
 }
 
+@media screen and (max-width: 872px) {
+    .logo-arrow {
+        width: 90px;
+    }
+}
+
 @media screen and (max-width: 860px) {
     .game-entries-box {
         width: 150px;
@@ -1079,6 +1088,10 @@ body::-webkit-scrollbar {
         height: 90px;
     }
 
+    .logo-arrow {
+        width: 80px;
+    }
+
 }
 @media screen and (max-width: 782px) {
     .game-entries-box {
@@ -1088,6 +1101,14 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 768px) {
+    .outside {
+        display: block;
+    }
+
+    .button-game-entries {
+        display: none;
+    }
+
     #game-entries-all {
         margin-bottom: 200px;
     }
@@ -1111,7 +1132,7 @@ body::-webkit-scrollbar {
         overflow: hidden;
     }
     .game-entries-1 {
-        width: 210%;
+        width: 280%;
         display: flex;
         flex-wrap: nowrap;
         gap: 10px;
@@ -1128,181 +1149,187 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 740px) {
     .game-entries-1 {
-        width: 220%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .game-entries-1 {
-        width: 230%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .game-entries-1 {
-        width: 240%;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .game-entries-1 {
-        width: 250%;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .game-entries-1 {
-        width: 260%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .game-entries-1 {
-        width: 270%;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .game-entries-1 {
-        width: 280%;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .game-entries-1 {
         width: 290%;
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 720px) {
     .game-entries-1 {
         width: 300%;
     }
 }
 
-@media screen and (max-width: 530px) {
-    .game-entries-1 {
-        width: 305%;
-    }
-}
-
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 700px) {
     .game-entries-1 {
         width: 310%;
     }
 }
 
-@media screen and (max-width: 510px) {
-    .game-entries-1 {
-        width: 315%;
-    }
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 680px) {
     .game-entries-1 {
         width: 320%;
     }
 }
 
-@media screen and (max-width: 491px) {
+@media screen and (max-width: 650px) {
     .game-entries-1 {
         width: 330%;
     }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 630px) {
     .game-entries-1 {
-        width: 340%;
+        width: 345%;
     }
 }
 
-@media screen and (max-width: 466px) {
-    .game-entries-1 {
-        width: 350%;
-    }
-}
-
-@media screen and (max-width: 451px) {
+@media screen and (max-width: 600px) {
     .game-entries-1 {
         width: 360%;
     }
 }
 
-@media screen and (max-width: 441px) {
+@media screen and (max-width: 580px) {
     .game-entries-1 {
         width: 370%;
     }
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 560px) {
     .game-entries-1 {
         width: 380%;
     }
 }
 
-@media screen and (max-width: 421px) {
-    .game-entries-1 {
-        width: 390%;
-    }
-}
-
-@media screen and (max-width: 411px) {
-    .game-entries-1 {
-        width: 400%;
-    }
-}
-
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 540px) {
     .game-entries-1 {
         width: 410%;
     }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 530px) {
+    .game-entries-1 {
+        width: 415%;
+    }
+}
+
+@media screen and (max-width: 520px) {
     .game-entries-1 {
         width: 420%;
     }
 }
 
-@media screen and (max-width: 381px) {
+@media screen and (max-width: 510px) {
+    .game-entries-1 {
+        width: 425%;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .game-entries-1 {
         width: 430%;
     }
 }
 
-@media screen and (max-width: 371px) {
+@media screen and (max-width: 491px) {
     .game-entries-1 {
         width: 440%;
     }
 }
 
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 481px) {
     .game-entries-1 {
         width: 450%;
     }
 }
 
-@media screen and (max-width: 351px) {
+@media screen and (max-width: 466px) {
     .game-entries-1 {
         width: 460%;
     }
 }
 
-@media screen and (max-width: 341px) {
+@media screen and (max-width: 451px) {
     .game-entries-1 {
-        width: 475%;
+        width: 480%;
     }
 }
 
-@media screen and (max-width: 331px) {
+@media screen and (max-width: 441px) {
     .game-entries-1 {
         width: 490%;
     }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 431px) {
     .game-entries-1 {
         width: 500%;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .game-entries-1 {
+        width: 510%;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .game-entries-1 {
+        width: 525%;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    .game-entries-1 {
+        width:535%;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .game-entries-1 {
+        width: 550%;
+    }
+}
+
+@media screen and (max-width: 381px) {
+    .game-entries-1 {
+        width: 570%;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    .game-entries-1 {
+        width: 580%;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .game-entries-1 {
+        width: 600%;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    .game-entries-1 {
+        width: 615%;
+    }
+}
+
+@media screen and (max-width: 341px) {
+    .game-entries-1 {
+        width: 635%;
+    }
+}
+
+@media screen and (max-width: 331px) {
+    .game-entries-1 {
+        width: 650%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .game-entries-1 {
+        width: 665%;
     }
 }
 

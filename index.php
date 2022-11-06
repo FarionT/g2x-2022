@@ -112,17 +112,18 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                 <h1 class="button-arrow text-center mb-5 font_title" data-aos="fade-down" style="font-size: 32pt;">GAME ENTRIES →</h1>
                 <div id="game-entries-all" class="body-slider" data-aos="fade-down">
                     <div class="game-entries-div mx-1">
+                        <button id="button-arrow-left" class="button-game-entries"><img src="src/index/arrow_left.png" class="logo-arrow"/></button>
                         <div class="game-entries-1" style="left: 0px;">
                         <?php 
                         for ($i = 0; $i < $countRow['count']; $i++) {
                             $dataRow = $data->fetch(PDO::FETCH_ASSOC);
                         ?>
                             <?php 
-                            if ($i == 0 || $i == 3) {
+                            if ($i == 0 || $i == 4) {
                             ?>
                                 <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-4 ms-0" src="<?= $dataRow['game_cover'] ?>"/></a>
                             <?php 
-                            } else if ($i == 3 || $i == 6) {
+                            } else if ($i == 3 || $i == 7) {
                             ?>
                                 <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-4 outside" src="<?= $dataRow['game_cover'] ?>"/></a>
                             <?php 
@@ -136,6 +137,7 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                         }
                         ?>
                         </div>
+                        <button id="button-arrow-right" class="button-game-entries"><img src="src/index/arrow_right.png" class="logo-arrow"/></button>
                     </div>
                 </div>
 
@@ -235,11 +237,11 @@ $countRow = $count->fetch(PDO::FETCH_ASSOC);
                             $dataRow = $data2->fetch(PDO::FETCH_ASSOC);
                         ?>
                             <?php 
-                            if ($i == 0 || $i == 3) {
+                            if ($i == 0 || $i == 4) {
                             ?>
                                 <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 ms-0" src="<?= $dataRow['game_cover'] ?>"/></a>
                             <?php 
-                            } else if ($i == 3 || $i == 6) {
+                            } else if ($i == 3 || $i == 7) {
                             ?>
                                 <a href="game?game=<?= $dataRow['id'] ?>"><img id="game-entries-box-<?= $n = $i + 1 ?>" class="game-entries-box mb-5 outside" src="<?= $dataRow['game_cover'] ?>"/></a>
                             <?php 
