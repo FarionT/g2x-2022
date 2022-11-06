@@ -28,42 +28,6 @@ switch($gameID){
     case 8:
         $redirect = "kZXYh";
         break;
-    case 70:
-        $redirect = "dmUCR";
-        break;
-    case 71:
-        $redirect = "mXUQu";
-        break;
-    case 72:
-        $redirect = "LHSNP";
-        break;
-    case 73:
-        $redirect = "6zjdo";
-        break;
-    case 74:
-        $redirect = "uTpz3";
-        break;
-    case 75:
-        $redirect = "mpI8W";
-        break;
-    case 76:
-        $redirect = "bPswY";
-        break;
-    case 77:
-        $redirect = "qH9uJ";
-        break;
-    case 78:
-        $redirect = "uRC31";
-        break;
-    case 79:
-        $redirect = "jjh5V";
-        break;
-    case 80:
-        $redirect = "5DBCS";
-        break;
-    case 81:
-        $redirect = "eXteo";
-        break;
 }
 if(!empty($redirect)) exit(header("location: $redirect"));
 
