@@ -40,8 +40,8 @@
         <?php include("../header.php"); ?>
     </header>
     <div class="container col col-lg-10">
-        <img src="../src/medpar_sponsor/headline.jpg" class="w-100"/>
-        <img src="../src/medpar_sponsor/headline2.jpg" class="w-100"/>
+        <img src="../src/medpar_sponsor/headline.jpg" class="w-100 rounded mb-3"/>
+        <img src="../src/medpar_sponsor/headline2.jpg" class="w-100 rounded mb-5"/>
         <h1 class="text-center font_title my-4">
             MAXIMA 2022<br>
             Adventure of Glimpse Future<br>
